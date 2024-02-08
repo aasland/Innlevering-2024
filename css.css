@@ -4,10 +4,30 @@
   box-sizing: border-box;
 }
 
+:root {
+  --eksFarge1: #d90429;
+  --eksFarge2: #ef233c;
+  --eksFarge3: #edf2f4;
+  --eksFarge4: #8d99ae;
+  --eksFarge5: #2b2d42;
+}
+
+.darkTheme {
+  --eksFarge1: #284b63;
+  --eksFarge2: D9D9D9;
+  --eksFarge3: #ffffff;
+  --eksFarge4: #3c6e71;
+  --eksFarge5: #353535;
+}
+
+body {
+  background-color: var(--eksFarge1);
+}
+
 /* Header start */
 
 header {
-  background-color: red;
+  background-color: var(--eksFarge3);
   height: 9vh;
   display: flex;
   justify-content: right;
@@ -17,7 +37,7 @@ header {
 
 header a {
   text-decoration: none;
-  color: white;
+  color: var(--eksFarge5);
 }
 
 .divContainer {
@@ -32,7 +52,18 @@ header a {
   font-size: 25px;
 }
 /* Header end */
-/* Logg inn start */
+/* Night/Light-mode start */
+
+#moonIcon {
+  color: var(--eksFarge5);
+}
+
+#sunIcon {
+  color: var(--eksFarge3);
+}
+
+/* Night/Light-mode end */
+/* Login start */
 .wrapper {
   position: relative;
   width: 440px;
@@ -47,7 +78,7 @@ header a {
   align-items: center;
   overflow: hidden;
   transform: scale(0);
-  transition: transform 0.5 ease, height 0.2s ease;
+  transition: transform 0.2s ease, height 0.2s ease;
 }
 
 .wrapper.active-popup {
@@ -210,4 +241,4 @@ header a {
 .icon {
   display: block;
 }
-/* Logg inn end */
+/* Login end */
