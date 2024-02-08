@@ -14,7 +14,7 @@
 
 .darkTheme {
   --eksFarge1: #284b63;
-  --eksFarge2: D9D9D9;
+  --eksFarge2: #d9d9d9;
   --eksFarge3: #ffffff;
   --eksFarge4: #3c6e71;
   --eksFarge5: #353535;
@@ -242,3 +242,26 @@ header a {
   display: block;
 }
 /* Login end */
+
+/* Back to top button start*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+#backToTopButton {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--eksFarge5);
+  color: var(--eksFarge2);
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Back to top button end*/
