@@ -50,6 +50,7 @@ header a {
   font-size: 25px;
 }
 /* Header end */
+
 /* Night/Light-mode start */
 
 #moonIcon {
@@ -61,6 +62,7 @@ header a {
 }
 
 /* Night/Light-mode end */
+
 /* Login start */
 .wrapper {
   position: relative;
@@ -263,3 +265,16 @@ html {
   align-items: center;
 }
 /* Back to top button end*/
+
+/* Forside layout*/
+
+#flexForsideLayout{
+  display: flex;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+#footer{
+  background-color: #1b4242;
+  color: #edf2f4;
+  
+}
