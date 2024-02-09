@@ -5,29 +5,27 @@
 }
 
 :root {
-  --eksFarge1: #d90429;
-  --eksFarge2: #ef233c;
-  --eksFarge3: #edf2f4;
-  --eksFarge4: #8d99ae;
-  --eksFarge5: #2b2d42;
+  --red-dark: #d90429;
+  --red-light: #ef233c;
+  --white: #edf2f4;
+  --light-grey: #8d99ae;
+  --dark-grey: #2b2d42;
 }
 
 .darkTheme {
-  --eksFarge1: #284b63;
-  --eksFarge2: #d9d9d9;
-  --eksFarge3: #ffffff;
-  --eksFarge4: #3c6e71;
-  --eksFarge5: #353535;
+  --red-dark: #9ec8b9;
+  --white: #1b4242;
+  --dark-grey: #092635;
 }
 
 body {
-  background-color: var(--eksFarge1);
+  background-color: var(--white);
 }
 
 /* Header start */
 
 header {
-  background-color: var(--eksFarge3);
+  background-color: var(--white);
   height: 9vh;
   display: flex;
   justify-content: right;
@@ -37,7 +35,7 @@ header {
 
 header a {
   text-decoration: none;
-  color: var(--eksFarge5);
+  color: var(--red-light);
 }
 
 .divContainer {
@@ -55,11 +53,11 @@ header a {
 /* Night/Light-mode start */
 
 #moonIcon {
-  color: var(--eksFarge5);
+  color: var(--red-light);
 }
 
 #sunIcon {
-  color: var(--eksFarge3);
+  color: var(--dark-grey);
 }
 
 /* Night/Light-mode end */
@@ -255,8 +253,8 @@ html {
   width: 50px;
   bottom: 30px;
   right: 30px;
-  background-color: var(--eksFarge5);
-  color: var(--eksFarge2);
+  background-color: var(--dark-grey);
+  color: var(--white);
   text-decoration: none;
   font-size: 30px;
   font-weight: 600;
