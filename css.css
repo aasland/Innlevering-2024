@@ -272,3 +272,10 @@ html {
   margin: 0 auto;
   background-color: #092635;
 }
+
+/* fake news spill*/
+
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
