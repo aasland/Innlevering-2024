@@ -31,6 +31,7 @@ header {
   justify-content: right;
   align-items: center;
   font-size: 25px;
+
 }
 
 header a {
@@ -255,8 +256,8 @@ html {
   width: 50px;
   bottom: 30px;
   right: 30px;
-  background-color: var(--dark-grey);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--dark-grey);
   text-decoration: none;
   font-size: 30px;
   font-weight: 600;
@@ -276,5 +277,5 @@ html {
 #footer{
   background-color: #092635;
   color: #edf2f4;
-  height: 450px;
+  height: 350px;
 }
