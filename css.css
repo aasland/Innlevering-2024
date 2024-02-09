@@ -265,3 +265,12 @@ html {
   align-items: center;
 }
 /* Back to top button end*/
+
+
+/*Instagram side*/
+
+.container{
+  max-width: 50%;
+  margin: 0 auto;
+  background-color: var(--eksFarge5);
+}
