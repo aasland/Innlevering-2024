@@ -1,13 +1,13 @@
 // Night/Light-mode start
 
-icon = document.getElementById("moonIcon");
+let icon = document.querySelector("#moonIcon");
 
 icon.onclick = function () {
   document.body.classList.toggle("darkTheme");
-  if (icon.classList.contains("darkTheme")) {
-    icon.src = "Bilder/sun.png";
+  if (document.body.classList.contains("darkTheme")) {
+    icon.src = "bilder/sun.png";
   } else {
-    icon.src = "Bilder/moon.png";
+    icon.src = "bilder/moon.png";
   }
 };
 
@@ -43,3 +43,14 @@ loginClose.onclick = function () {
 };
 
 // Login end
+
+// GDPR start
+
+const gdpr = document.querySelector(".gdpr");
+
+window.addEventListener("load", () => {
+  gdpr.classList.add("showGdpr");
+  gdpr.childNodes[1].classList.add("showGdpr");
+});
+
+// GDPR end

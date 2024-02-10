@@ -31,7 +31,6 @@ header {
   justify-content: right;
   align-items: center;
   font-size: 25px;
-
 }
 
 header a {
@@ -55,14 +54,24 @@ header a {
 /* Night/Light-mode start */
 
 #moonIcon {
-  color: var(--red-light);
-}
-
-#sunIcon {
-  color: var(--dark-grey);
+  height: 30px;
+  width: 30px;
 }
 
 /* Night/Light-mode end */
+
+/* GDPR start */
+
+.gdpr {
+  height: 300px;
+  width: 300px;
+  background-color: var(--red-light);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+/* GDPR end */
 
 /* Login start */
 .wrapper {
@@ -269,12 +278,12 @@ html {
 
 /* Forside */
 
-#flexForsideLayout{
+#flexForsideLayout {
   display: flex;
   grid-template-columns: 1fr 4fr 1fr;
 }
 
-#footer{
+#footer {
   background-color: #092635;
   color: #edf2f4;
   height: 350px;
