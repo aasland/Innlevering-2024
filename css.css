@@ -63,12 +63,80 @@ header a {
 /* GDPR start */
 
 .gdpr {
-  height: 300px;
-  width: 300px;
-  background-color: var(--red-light);
-  display: flex;
-  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: grid;
+  place-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 200ms ease-in-out opacity;
+}
+.gdprContainer {
+  width: clamp(300px, 90vw, 500px);
+  background-color: #fff;
+  padding: clamp(1.5rem, 100vw, 2.5rem);
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+  border-radius: 0.5em;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: 200ms ease-in-out opacity, 200ms ease-in-out transform;
+  position: relative;
+  overflow: hidden;
+}
+.gdpr h1 {
   position: absolute;
+  top: 2rem;
+  right: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+}
+.gdpr h1:active {
+  transform: scale(0.9);
+}
+
+.gdpr h2 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+#btnContainer {
+  display: flex;
+  justify-content: right;
+  gap: 8px;
+}
+
+.gdpr button {
+  font-size: 15px;
+  border-radius: 2em;
+  padding: 10px;
+  background-color: var(--dark-grey);
+  color: var(--white);
+  border: 2px solid var(--light-grey);
+  font-weight: 600;
+}
+
+.gdpr button:hover {
+  background-color: transparent;
+  color: var(--dark-grey);
+}
+
+#tilpassBtn {
+  background-color: transparent;
+  color: var(--dark-grey);
+}
+
+#tilpassBtn:hover {
+  background-color: whitesmoke;
+  color: var(--dark-grey);
+}
+.showGdpr {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
 }
 
 /* GDPR end */
