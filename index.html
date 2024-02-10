@@ -38,6 +38,11 @@
         </h1>
         <h2 id="SamtykkeH2">Samtykkeinnstillinger</h2>
         <br />
+        <img
+          src="bilder/KlikkenLogo.jpg"
+          alt="Klikken Logo"
+          id="samtykkeBilde"
+        />
         <p id="SamtykkeP1">
           Når du samtykker, godtar du at Klikken Norge og våre 44 partnere kan
           samle og bruke persondata, slik som enhets-IDer og informasjon om
@@ -62,24 +67,52 @@
         </p>
         <br />
         <br />
-        <div id="btnContainer">
-          <button id="tilpassBtn">Tilpass</button>
-          <button class="godtaBtn" onclick="endreH2()">Godta alle</button>
-        </div>
-
-        <!-- <div class="gdprOverflow">
-          <h2>Vet du hva du godkjente til nå?</h2>
-          <p>
-            Du leste jo nettopp den informasjonen vi tar fra deg, eller gjorde
-            du det? Leste du i det hele tatt informasjonen, eller trykket du
-            bare "Godkjenn alle" av vane?
-          </p>
+        <div id="newUl">
+          <ul>
+            <li>
+              <input
+                type="checkbox"
+                id="henteInfo1"
+                name="henteInfo1"
+                value="lagre"
+              />
+              <label for="henteInfo1"
+                >Lagre og/eller få informasjon på en enhet</label
+              >
+            </li>
+            <br />
+            <li>
+              <input
+                type="checkbox"
+                id="henteInfo2"
+                name="henteInfo2"
+                value="lagre"
+              />
+              <label for="henteInfo2"
+                >Personlig tilpasset annonsering og innhold, annonsering- og
+                innholdsmåling, publikumsunderøekelser og
+                tjenesteutvikling</label
+              >
+            </li>
+            <br />
+            <li>
+              <input
+                type="checkbox"
+                id="henteInfo3"
+                name="henteInfo3"
+                value="lagre"
+              />
+              <label for="henteInfo3"
+                >Schibsteds personlig tilpassede annonsering</label
+              >
+            </li>
+          </ul>
           <br />
-          <p id="lesMerP">
-            Les mer om personvern på <a href="#">her</a>, eller på personvern
-            siden vår.
-          </p>
-        </div> -->
+        </div>
+        <div id="btnContainer">
+          <button id="tilpassBtn" onclick="endreH2Tilpass()">Tilpass</button>
+          <button class="godtaBtn" onclick="endreH2Godta()">Godta alle</button>
+        </div>
       </div>
     </section>
 

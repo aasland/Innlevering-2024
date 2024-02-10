@@ -139,6 +139,27 @@ header a {
   pointer-events: all;
 }
 
+.gdprContainer img {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 80px;
+  top: 40px;
+  transform: rotate(-25deg);
+  border: 2px solid var(--dark-grey);
+  border-radius: 2em;
+}
+
+#newUl ul {
+  display: none;
+  list-style-type: none;
+}
+
+#newUl.active ul {
+  display: flex;
+  flex-direction: column;
+}
+
 /* GDPR end */
 
 /* Login start */

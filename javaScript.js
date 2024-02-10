@@ -58,18 +58,37 @@ const closeGdprPopup = function () {
 
 gdprPopupCloseBtn.addEventListener("click", closeGdprPopup);
 
-let samtykkeHeader = document.querySelector("#SamtykkeH2");
-let samtykkeP1 = document.querySelector("#SamtykkeP1");
-let samtykkeP2 = document.querySelector("#SamtykkeP2");
-let samtykkeUl = document.querySelector("#SamtykkeUl");
+const samtykkeHeader = document.querySelector("#SamtykkeH2");
+const samtykkeP1 = document.querySelector("#SamtykkeP1");
+const samtykkeP2 = document.querySelector("#SamtykkeP2");
+const samtykkeUl = document.querySelector("#SamtykkeUl");
 const btnContainer = document.querySelector("#btnContainer");
+const tilpassBtn = document.querySelector("tilpassBtn");
+const newUl = document.getElementById("newUl");
 
-const endreH2 = function () {
+const endreH2Godta = function () {
   samtykkeHeader.innerHTML = "Vet du hva du godkjente til nå?";
   samtykkeP1.innerHTML =
     "Du leste jo nettopp hva slags informasjon vi tar fra deg, eller gjorde du det? Leste du i det hele tatt informasjonen, eller trykket du bare 'Godkjenn alle' av vane?";
   samtykkeP2.innerHTML = "";
   samtykkeUl.innerHTML = "Les mer om personvern på vår egen personvern siden.";
   btnContainer.innerHTML = "";
+  document.getElementById("samtykkeBilde").style.display = "none";
+  newUl.innerHTML = "";
 };
+
+const endreH2Tilpass = function () {
+  samtykkeHeader.innerHTML = "Samtykkeinnstillinger";
+  samtykkeP1.innerHTML =
+    "Klikken trenger ditt samtykke for å kunne behandle persondata for flere formål. Når du klikker “Godta alle” godtar du at Klikken og partnere behandler persondata for formålene under. Du kan håndtere innstillingene nedenfor.";
+
+  samtykkeP2.innerHTML = "";
+  samtykkeUl.innerHTML = "Les mer om personvern på vår egen personvern siden.";
+
+  if (newUl.classList.contains("active")) {
+  } else {
+    newUl.classList.add("active");
+  }
+};
+
 // GDPR end
