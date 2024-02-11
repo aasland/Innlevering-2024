@@ -63,7 +63,6 @@ const samtykkeP1 = document.querySelector("#SamtykkeP1");
 const samtykkeP2 = document.querySelector("#SamtykkeP2");
 const samtykkeUl = document.querySelector("#SamtykkeUl");
 const btnContainer = document.querySelector("#btnContainer");
-const tilpassBtn = document.querySelector("tilpassBtn");
 const newUl = document.getElementById("newUl");
 
 const endreH2Godta = function () {
@@ -72,6 +71,8 @@ const endreH2Godta = function () {
     "Du leste jo nettopp hva slags informasjon vi tar fra deg, eller gjorde du det? Leste du i det hele tatt informasjonen, eller trykket du bare 'Godkjenn alle' av vane?";
   samtykkeP2.innerHTML = "";
   samtykkeUl.innerHTML = "Les mer om personvern på vår egen personvern siden.";
+  document.querySelector("#SamtykkeUl").style.fontWeight = "600";
+  document.querySelector("#SamtykkeUl").style.fontStyle = "normal";
   btnContainer.innerHTML = "";
   document.getElementById("samtykkeBilde").style.display = "none";
   newUl.innerHTML = "";
@@ -83,12 +84,16 @@ const endreH2Tilpass = function () {
     "Klikken trenger ditt samtykke for å kunne behandle persondata for flere formål. Når du klikker “Godta alle” godtar du at Klikken og partnere behandler persondata for formålene under. Du kan håndtere innstillingene nedenfor.";
 
   samtykkeP2.innerHTML = "";
-  samtykkeUl.innerHTML = "Les mer om personvern på vår egen personvern siden.";
+  samtykkeUl.innerHTML = "";
+
+  document.getElementById("tilpassBtn").style.display = "none";
 
   if (newUl.classList.contains("active")) {
   } else {
     newUl.classList.add("active");
   }
+
+  document.getElementById("newUl").style.fontStyle = "italic";
 };
 
 // GDPR end
