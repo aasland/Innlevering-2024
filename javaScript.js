@@ -70,7 +70,8 @@ const endreH2Godta = function () {
   samtykkeP1.innerHTML =
     "Du leste jo nettopp hva slags informasjon vi tar fra deg, eller gjorde du det? Leste du i det hele tatt informasjonen, eller trykket du bare 'Godkjenn alle' av vane?";
   samtykkeP2.innerHTML = "";
-  samtykkeUl.innerHTML = "Les mer om personvern på vår egen personvern siden.";
+  samtykkeUl.innerHTML =
+    "Les mer om personvern på vår egen side om personvern.";
   document.querySelector("#SamtykkeUl").style.fontWeight = "600";
   document.querySelector("#SamtykkeUl").style.fontStyle = "normal";
   btnContainer.innerHTML = "";
