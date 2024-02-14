@@ -154,6 +154,8 @@ header a {
   opacity: 1;
   transform: translateY(0);
   pointer-events: all;
+  /* Fjern senere */
+  grid-column: 2/3;
 }
 
 .gdprContainer img {
@@ -199,6 +201,8 @@ header a {
   overflow: hidden;
   transform: scale(0);
   transition: transform 0.2s ease, height 0.2s ease;
+  /* Fjern senere */
+  grid-column: 2/3;
 }
 
 .wrapper.active-popup {
@@ -388,7 +392,7 @@ html {
 
 /*Instagram side*/
 
-.container{
+.container {
   max-width: 50%;
   margin: 0 auto;
   background-color: #092635;
@@ -396,12 +400,13 @@ html {
 
 /* fake news spill*/
 
-section{
+/* Kan du sette en klasse på sectionen her slik at denne css'en ikke gjelder for alle sections? */
+
+section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
 }
-
 
 /* Forside */
 
@@ -415,4 +420,3 @@ section{
   color: #edf2f4;
   height: 350px;
 }
-
