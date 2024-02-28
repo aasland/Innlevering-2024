@@ -400,8 +400,13 @@ html {
 
 /*Instagram*/
 
+.body-insta {
+  display: flex;
+  justify-content: center;
+}
+
 #saker {
-  margin-top: 200px;
+  padding-top: 90px;
 }
 
 .slider {
