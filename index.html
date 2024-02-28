@@ -25,10 +25,96 @@
           <button class="btnLogin-popup">  <i class="fa-solid fa-right-to-bracket"></i> Logg inn</button>
         </div>
         <div>
-          <img src="moon" alt="Switch to dark/light-mode" / id="moonIcon">
+          <img src="bilder/moon.png" alt="Switch to dark/light-mode" /
+          id="moonIcon">
         </div>
       </div>
     </header>
+
+    <section class="gdpr">
+      <div class="gdprContainer">
+        <h1 class="gdprPopupCloseBtn">
+          <span><ion-icon name="close"></ion-icon></span>
+        </h1>
+        <h2 id="SamtykkeH2">Samtykkeinnstillinger</h2>
+        <br />
+        <img
+          src="bilder/KlikkenLogo.jpg"
+          alt="Klikken Logo"
+          id="samtykkeBilde"
+        />
+        <p id="SamtykkeP1">
+          Når du samtykker, godtar du at Klikken Norge og våre 44 partnere kan
+          samle og bruke persondata, slik som enhets-IDer og informasjon om
+          hvilke sider du har besøkt på Klikken, for disse formålene:
+        </p>
+        <br />
+        <ul id="SamtykkeUl">
+          <li>Lagre og/eller få tilgang til informasjon på en enhet</li>
+          <br />
+          <li>
+            Personlig tilpasset annonsering og innhold, annonsering- og
+            innholdsmåling, publikumsundersøkelser og tjenesteutvikling
+          </li>
+          <br />
+          <li>Klikkens personlig tilpassede annonsering</li>
+          <br />
+        </ul>
+        <p id="SamtykkeP2">
+          Velg “Tilpass” for å justere valg knyttet til bruk av data. Du kan når
+          som helst endre innstillingene dine via lenken “Samtykkeinnstillinger”
+          på tjenestens side. Personvernerklæring
+        </p>
+        <br />
+        <br />
+        <div id="newUl">
+          <ul>
+            <li>
+              <input
+                type="checkbox"
+                id="henteInfo1"
+                name="henteInfo1"
+                value="lagre"
+              />
+              <label for="henteInfo1"
+                >Lagre og/eller få informasjon på en enhet</label
+              >
+            </li>
+            <br />
+            <li>
+              <input
+                type="checkbox"
+                id="henteInfo2"
+                name="henteInfo2"
+                value="lagre"
+              />
+              <label for="henteInfo2"
+                >Personlig tilpasset annonsering og innhold, annonsering- og
+                innholdsmåling, publikumsunderøekelser og
+                tjenesteutvikling</label
+              >
+            </li>
+            <br />
+            <li>
+              <input
+                type="checkbox"
+                id="henteInfo3"
+                name="henteInfo3"
+                value="lagre"
+              />
+              <label for="henteInfo3"
+                >Klikkens personlig tilpassede annonsering</label
+              >
+            </li>
+          </ul>
+          <br />
+        </div>
+        <div id="btnContainer">
+          <button id="tilpassBtn" onclick="endreH2Tilpass()">Tilpass</button>
+          <button class="godtaBtn" onclick="endreH2Godta()">Godta alle</button>
+        </div>
+      </div>
+    </section>
 
     <section id="loginSection">
       <div class="wrapper">
@@ -108,40 +194,23 @@
       </div>
     </section>
 
-
     <div id="flexForsideLayout">
-
-      <section id="venstreForside">
-
-      </section>
-
+      <section id="venstreForside"></section>
 
       <section id="midtForside">
+        <div id="insta"></div>
 
-        <div id="insta">
-        </div>
+        <div id="fakeNewsNyhetssak"></div>
 
-        <div id="fakeNewsNyhetssak">
-        </div>
+        <div id="personvern"></div>
 
-        <div id="personvern">
-        </div>
+        <div id="flipCoin"></div>
 
-        <div id="flipCoin">
-        </div>
-
-        <div id="fakeNewsLek">
-        </div>
-        
+        <div id="fakeNewsLek"></div>
       </section>
 
-
-      <section id="høyreForside">
-        
-      </section>
-
+      <section id="høyreForside"></section>
     </div>
-
 
     <footer id="footer">
       <a href="#" id="backToTopButton"><ion-icon name="arrow-up"></ion-icon></a>
@@ -151,8 +220,6 @@
       <p> <b>©</b> 2024 KLIKKEN | Brukervilkår | Personvernerklæring og informasjonskapsler</p>
 
     </footer>
-    
-
 
     <script
       type="module"
@@ -160,7 +227,5 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-
-    
   </body>
 </html>
