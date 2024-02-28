@@ -401,7 +401,7 @@ html {
 /*Instagram*/
 
 #saker {
- 
+  margin-top: 200px;
 }
 
 .slider {
@@ -641,7 +641,6 @@ html {
   color: #808080;
   font-size: 13px;
 }
-
 
 
 /* fake news spill*/
