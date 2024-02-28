@@ -25,9 +25,65 @@
     </header>
 
     <main>
-        <div class="container">
+        <div id="saker">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
 
+                    <div class="slide first">
+                        <img src="bilder/side1.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="bilder/side2.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="bilder/side3.png" alt="">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                </div>
+
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
         </div>
+
+        <div id="kommentarfelt" class="container">
+            <div class="head"> 
+                <h1>Post en kommentar</h1>
+            </div>
+            <div><span id="comment">0</span> Kommentarer</div>
+            <div class="text"><p>Vi ønsker gjerne å høre fra deg</p></div>
+            <div class="comments"></div>
+            <div class="commentbox">
+                <img src="bilder/user1.png" alt="">
+                <div class="content">
+                    <h2>Kommenter som: </h2>
+                    <input type="text" value="Anonym" class="user">
+
+                    <div class="commentinput">
+                        <input type="text" placeholder="Skriv kommentar" class="usercomment">
+                        <div class="buttons">
+                            <button type="submit" disabled id="publish">Publiser</button>
+                            <div class="notify">
+                                <input type="checkbox" class="notifying"> <span>Gi meg beskjed</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="policy">Denne siden er beskyttet av reCAPTCHA og Google <a href="">privacy policy</a> og <a href="">Terms of Service</a> søknaden</p>
+                </div>
+            </div>
+        </div>
+
     </main>
 
 <script src="javaScript.js"></script>
