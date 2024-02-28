@@ -433,7 +433,7 @@ html {
 
 .slide img {
   width: 800px;
-  height: 560px;
+  height: 500px;
 }
 
 /*css for manuell slide navigation*/
@@ -447,7 +447,7 @@ html {
 }
 
 .manual-btn {
-  border: 2px solid steelblue;
+  border: 2px solid var(--red-light);
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -459,7 +459,7 @@ html {
 }
 
 .manual-btn:hover {
-  background: steelblue;
+  background: var(--red-light);
 }
 
 #radio1:checked~.first {
@@ -485,7 +485,7 @@ html {
 }
 
 .navigation-auto div {
-  border: 2px solid steelblue;
+  border: 2px solid var(--red-light);
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
@@ -497,15 +497,15 @@ html {
 }
 
 #radio1:checked~.navigation-auto .auto-btn1 {
-  background: steelblue;
+  background: var(--red-light);
 }
 
 #radio2:checked~.navigation-auto .auto-btn2 {
-  background: steelblue;
+  background: var(--red-light);
 }
 
 #radio3:checked~.navigation-auto .auto-btn3 {
-  background: steelblue;
+  background: var(--red-light);
 }
 
 /* css for kommentarfeltet*/
