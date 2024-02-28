@@ -10,6 +10,7 @@
   --white: #edf2f4;
   --light-grey: #8d99ae;
   --dark-grey: #2b2d42;
+  --beige-grey-light: #808080;
 }
 
 .darkTheme {
@@ -555,9 +556,10 @@ html {
   border: none;
   outline: none;
   margin: 5px 0;
-  color: #808080;
+  color: var(--beige-grey-light);
   margin-left: 20px;
   padding: 10px;
+  background: none;
 }
 
 .commentinput>input {
@@ -574,13 +576,13 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #808080;
+  color: var(--beige-grey-light);
 }
 
 .buttons button {
   padding: 5px 10px;
   background-color: lightgray;
-  color: #808080;
+  color: var(--beige-grey-light);
   text-transform: uppercase;
   border: none;
   outline: none;
@@ -596,7 +598,7 @@ html {
 .policy {
   margin: 20px 0;
   font-size: 14px;
-  color: #808080;
+  color: var(--beige-grey-light);
 }
 
 .policy a {
@@ -643,7 +645,7 @@ html {
 }
 
 .date {
-  color: #808080;
+  color: var(--beige-grey-light);
   font-size: 13px;
 }
 
