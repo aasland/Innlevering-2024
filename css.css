@@ -43,11 +43,14 @@ button {
 
 header {
   background-color: var(--white);
-  height: 9vh;
+  height: 10vh;
   display: flex;
   justify-content: right;
   align-items: center;
   font-size: 25px;
+  position: fixed;
+  width: 150vh;
+
 }
 
 header a {
@@ -71,7 +74,12 @@ header a {
 /* Night/Light-mode start */
 
 #moonIcon {
-  height: 30px;
+  color: var(--red-light);
+  width: 30px;
+}
+
+#sunIcon {
+  color: var(--dark-grey);
   width: 30px;
 }
 
@@ -429,3 +437,5 @@ section {
   margin: 20px auto;
   height: 200px;
 }
+
+/* Forside */
