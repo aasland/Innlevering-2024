@@ -398,13 +398,251 @@ html {
 }
 /* Back to top button end*/
 
-/*Instagram side*/
+/*Instagram*/
+
+#saker {
+  margin-top: 200px;
+}
+
+.slider {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 800px;
+  height: 560px;
+}
+
+/*css for manuell slide navigation*/
+
+.navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid steelblue;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: steelblue;
+}
+
+#radio1:checked~.first {
+  margin-left: 0;
+}
+
+#radio2:checked~.first {
+  margin-left: -20%;
+}
+
+#radio3:checked~.first {
+  margin-left: -40%;
+}
+
+/* css for automatisk navigasjon*/
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div {
+  border: 2px solid steelblue;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+  background: steelblue;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+  background: steelblue;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+  background: steelblue;
+}
+
+/* css for kommentarfeltet*/
 
 .container {
-  max-width: 50%;
-  margin: 0 auto;
-  background-color: #092635;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  box-shadow: 0 0 5px black;
+  flex-direction: column;
 }
+
+.head {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.text {
+  margin: 10px 0;
+  /*font-family: ;*/
+  font-size: 15px;
+}
+
+.commentbox {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.commentbox>img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: 30px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content {
+  width: 100%;
+}
+
+.user {
+  border: none;
+  outline: none;
+  margin: 5px 0;
+  color: #808080;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.commentinput>input {
+  border: none;
+  padding: 10px;
+  padding-left: 0;
+  outline: none;
+  border-bottom: 2px solid blue;
+  margin-bottom: 10px;
+  width: 95%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #808080;
+}
+
+.buttons button {
+  padding: 5px 10px;
+  background-color: lightgray;
+  color: #808080;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.buttons button.abled {
+  background-color: blue;
+  color: white;
+}
+
+.policy {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #808080;
+}
+
+.policy a {
+  text-decoration: none;
+  color: blue;
+}
+
+.notify {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.notify>input {
+  margin-right: 5px;
+}
+
+.parents {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.parents h1 {
+  font-size: 15px;
+}
+
+.parents p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.parents img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.engagements {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.date {
+  color: #808080;
+  font-size: 13px;
+}
+
+
 
 /* fake news spill*/
 
@@ -427,15 +665,6 @@ section {
   background-color: #092635;
   color: #edf2f4;
   height: 350px;
-}
-
-
-/*Instagam boks*/
-.instaboks{
-  max-width: 50%;
-  background-color: #8d99ae;
-  margin: 20px auto;
-  height: 200px;
 }
 
 /* Forside */
