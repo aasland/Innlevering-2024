@@ -651,21 +651,36 @@ html {
 
 
 /* fake news spill*/
-section{
+.spill {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-/* Kan du sette en klasse på sectionen her slik at denne css'en ikke gjelder for alle sections? */
-
-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-}
 .A{
-  grid-column: 2/4;
+  grid-column: 2/5;
 }
+
+.B{
+  grid-column: 2/5;
+}
+
+.C{
+  grid-column: 2/5;
+}
+
+
+.A div{
+  text-align: center;
+}
+
+.B div{
+  text-align: center;
+}
+
+.C div{
+  text-align: center;
+}
+
 
 
 /* Forside */
