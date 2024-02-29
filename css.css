@@ -79,6 +79,10 @@ header a {
   grid-row: 1/2;
 }
 
+.divSectionFour{
+}
+
+
 .divContainer3 {
   display: flex;
   flex-direction: row;
@@ -124,8 +128,12 @@ header a {
 }
 
 .btnLogin-popup {
-  border: none;
-  font-size: 25px;
+  font-size: 15px;
+  border-radius: 2em;
+  padding: 10px;
+  background-color: var(--dark-grey);
+  color: var(--white);
+  font-weight: 600;
 }
 /* Header end */
 
