@@ -754,7 +754,7 @@ html {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
-
+  padding-top: 40px;
 }
 
 .logofooter{
@@ -765,8 +765,12 @@ html {
   grid-column: 1/4;
 }
 
+.omTeametFooter{
+
+}
+
 .tipsOssFooter{
-  
+  line-height: 52px;
 }
 
 /* Forside */
