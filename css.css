@@ -758,13 +758,18 @@ html {
 @media (max-width: 600px) {
   .mediaQueryHeader {
     display: flex;
-    grid-template-columns: 2/3;
-    grid-template-rows: 1/2;
+    grid-column: 3/4;
+    grid-row: 1/2;
   }
 
   header {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px;
+  }
+
+  .divContainer {
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
 
   .divContainer3,
@@ -773,7 +778,7 @@ html {
   }
 
   .divContainer2 {
-    grid-column: 2/3;
+    grid-column: 1/2;
   }
 }
 
