@@ -752,11 +752,14 @@ html {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
 
 }
 
-#logofooter{
-  width: 100px;
+.logofooter{
+  font-size: 160px;
+  
 }
 
 /* Forside */
