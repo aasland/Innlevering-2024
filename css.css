@@ -65,7 +65,7 @@ header a {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  margin-right: 5%;
+  margin-right: 10%;
   gap: 10px;
   grid-column: 3/5;
 }
@@ -762,11 +762,11 @@ footer {
 
 #bunntekstFooter{
   grid-column: 1/6;
-  margin-bottom: -222px;
+  margin-bottom: -172px;
 }
 
 .logofooter {
-  font-size: 70px;
+  font-size: 100px;
 }
 
 
