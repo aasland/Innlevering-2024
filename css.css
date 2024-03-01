@@ -53,7 +53,7 @@ header {
   font-size: 25px;
   position: fixed;
   width: 100%;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 header a {
@@ -749,9 +749,23 @@ html {
   background-color: #092635;
   color: #edf2f4;
   height: 350px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+#logofooter{
+  width: 100px;
 }
 
 /* Forside */
+
+/* Personvernsiden */
+
+#personvern {
+  padding-top: 60px;
+}
 
 /* Media query start */
 
