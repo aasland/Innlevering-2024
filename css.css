@@ -727,7 +727,10 @@ html {
   justify-content: space-around;
 }
 .spill div{
+  display: flex;
+  flex-direction: column-reverse;
   text-align: center;
+  align-items: center;
   padding: 20px;
   margin: 4px;
   box-shadow: 1px 1px 1px rgba(147, 146, 146, 0.562) ;
@@ -735,9 +738,21 @@ html {
 }
 .bil{
   grid-column: 1/3;
+  grid-row: 1/3;
   font-size: 30px;
-  font-weight: bold;
 }
+.bil img{
+  width: 400px;
+}
+.bil h2{
+  font-weight: bold;
+  padding: 10px;
+}
+.bil p{
+  font: 10px;
+  padding: 10px;
+}
+
 
 
 
