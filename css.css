@@ -749,6 +749,24 @@ html {
   background-color: #092635;
   color: #edf2f4;
   height: 350px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+
+}
+
+.logofooter{
+  font-size: 160px;
+}
+
+#bunntekstFooter{
+  grid-column: 1/4;
+}
+
+.tipsOssFooter{
+  
 }
 
 /* Forside */
@@ -762,6 +780,8 @@ html {
     display: flex;
     grid-column: 3/4;
     grid-row: 1/2;
+    justify-content: flex-end;
+    margin: 30px;
   }
 
   header {
