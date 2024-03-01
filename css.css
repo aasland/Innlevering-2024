@@ -750,7 +750,7 @@ html {
   color: #edf2f4;
   height: 350px;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
@@ -759,6 +759,13 @@ html {
 
 .logofooter{
   font-size: 160px;
+}
+
+#bunntekstFooter{
+  grid-column: 1/4;
+}
+
+.tipsOssFooter{
   
 }
 
