@@ -73,7 +73,7 @@ const endreH2Tilpass = function () {
 
 // GDPR end
 
-<<<<<<< HEAD
+
 //Instagram
 
 // automatisering av bilde karusell
@@ -147,5 +147,4 @@ function addPost() {
 //<img src="${userId.image}">
 
 publishBtn.addEventListener("click", addPost);
-=======
->>>>>>> 46b845b11d9208c900be8816d966fdb4c102c93f
+
