@@ -769,6 +769,11 @@ html {
 
 }
 
+.omTeametFooter h3{
+  line-height: 30px;
+  font-weight: 500;
+}
+
 .tipsOssFooter{
   line-height: 52px;
 }
