@@ -753,26 +753,6 @@ html {
 
 /* Media query start */
 
-@media (max-width: 600px) {
-  .mediaQueryHeader {
-    display: flex;
-    grid-template-columns: 2/3;
-    grid-template-rows: 1/2;
-  }
 
-  header {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px;
-  }
-
-  .divContainer3,
-  .divContainer4 {
-    display: none;
-  }
-
-  .divContainer2 {
-    grid-column: 2/3;
-  }
-}
 
 /* Media query end */
