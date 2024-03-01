@@ -749,6 +749,14 @@ html {
   background-color: #092635;
   color: #edf2f4;
   height: 350px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+#logofooter{
+  width: 100px;
 }
 
 /* Forside */
