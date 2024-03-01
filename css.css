@@ -713,8 +713,21 @@ html {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .spill{
+  grid-column: 2/5; 
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+  background-color: white
+}
+.spill div{
+  text-align: center;
+  
+}
+.bil{
   grid-column: 1/3;
 }
+
 
 
 /* Forside */
