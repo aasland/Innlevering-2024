@@ -16,21 +16,24 @@ icon.onclick = function () {
 // GDPR start
 
 const gdpr = document.querySelector(".gdpr");
-let gdprPopupCloseBtn = document.querySelector(".gdprPopupCloseBtn");
-let godtaBtn = document.querySelector(".godtaBtn");
+if (gdpr) {
+  let gdprPopupCloseBtn = document.querySelector(".gdprPopupCloseBtn");
+  let godtaBtn = document.querySelector(".godtaBtn");
+  
+  window.addEventListener("load", () => {
+    gdpr.classList.add("showGdpr");
+    gdpr.childNodes[1].classList.add("showGdpr");
+  });
+  
+  const closeGdprPopup = function () {
+    if (gdpr.classList.contains("showGdpr")) {
+      gdpr.classList.remove("showGdpr");
+    }
+  };  
 
-window.addEventListener("load", () => {
-  gdpr.classList.add("showGdpr");
-  gdpr.childNodes[1].classList.add("showGdpr");
-});
+  gdprPopupCloseBtn.addEventListener("click", closeGdprPopup);
+}
 
-const closeGdprPopup = function () {
-  if (gdpr.classList.contains("showGdpr")) {
-    gdpr.classList.remove("showGdpr");
-  }
-};
-
-gdprPopupCloseBtn.addEventListener("click", closeGdprPopup);
 
 const samtykkeHeader = document.querySelector("#SamtykkeH2");
 const samtykkeP1 = document.querySelector("#SamtykkeP1");
