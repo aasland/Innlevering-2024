@@ -580,11 +580,11 @@ html {
 
 /* css for kommentarfeltet*/
 
-.container {
+.container-kmt {
   display: flex;
   justify-content: center;
   padding: 20px;
-  max-width: 1000px;
+  width: 70%;
   margin: 20px auto;
   box-shadow: 0 0 5px black;
   flex-direction: column;
@@ -636,7 +636,7 @@ html {
   padding: 10px;
   padding-left: 0;
   outline: none;
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid var(--red-dark);
   margin-bottom: 10px;
   width: 95%;
 }
@@ -660,7 +660,7 @@ html {
 }
 
 .buttons button.abled {
-  background-color: blue;
+  background-color: var(--red-dark);
   color: white;
 }
 
