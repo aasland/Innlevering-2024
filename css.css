@@ -750,25 +750,37 @@ html {
   color: #edf2f4;
   height: 350px;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
-
+  padding-top: 40px;
 }
 
 .logofooter{
   font-size: 160px;
-  
+}
+
+#bunntekstFooter{
+  grid-column: 1/4;
+}
+
+.omTeametFooter{
+
+}
+
+.omTeametFooter h3{
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.tipsOssFooter{
+  line-height: 52px;
 }
 
 /* Forside */
 
-/* Personvernsiden */
 
-#personvern {
-  padding-top: 60px;
-}
 
 /* Media query start */
 
