@@ -41,7 +41,7 @@
                     <input type="radio" name="radio-btn" id="radio2" />
                     <input type="radio" name="radio-btn" id="radio3" />
 
-                    <div class="slide first">
+                    <div data-modal-target="#modal" class="slide first">
                         <img src="bilder/side1.png" alt="" />
                     </div>
                     <div class="slide">
@@ -69,14 +69,14 @@
         <div class="modal" id="modal">
             <div class="modal-header">
                 <h1 class="title">Example Modal</h1>
-                <button class="close-button">&times;</button>
+                <button data-close-button class="close-button">&times;</button>
             </div>
             <div class="modal-body">
                 hei
 
             </div>
         </div>
-        <div id="overlay"></div>
+        <div id="overlay" class="active"></div>
 
         <div id="kommentarfelt" class="container-kmt">
             <div class="head">
@@ -130,6 +130,7 @@
     <script src="instagram.js"></script>
     <script src="javaScript.js"></script>
     <script src="loginBtn.js"></script>
+    <script src="insta-modal.js"></script>
 </body>
 
 </html>
