@@ -1,6 +1,21 @@
 /* Personvernsiden */
 
 #personvern {
-    padding-top: 95px;
-    padding-left: 30px;
+    padding: 95px 30px 30px 30px;
+    font-family: Playfair Display;
   }
+
+#personvern h1 {
+    font-size: 33px;
+}
+
+#DivPersonvernBokser {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+.PersonvernBokser {
+    border: 5px solid var(--beige-grey-light);
+    padding: 15px;
+}
