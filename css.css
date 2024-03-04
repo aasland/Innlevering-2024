@@ -745,7 +745,7 @@ html {
   grid-template-columns: 1fr 4fr 1fr;
 }
 
-#footer {
+footer {
   background-color: #092635;
   color: #edf2f4;
   height: 350px;
@@ -763,10 +763,6 @@ html {
 
 #bunntekstFooter{
   grid-column: 1/4;
-}
-
-.omTeametFooter{
-
 }
 
 .omTeametFooter h3{
