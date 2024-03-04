@@ -967,6 +967,7 @@ button {
 .dropdown-options a:hover {
     color:#2b2d4298;
     transition: 0.6s;
+    background-color: #d0d4d6 ;
 }
 
 
