@@ -23,3 +23,11 @@ iconClose.addEventListener("click", () => {
 });
 
 // Login end
+
+// Change icon start
+
+if (loginLink.onclick) {
+  btnPopup = `<ion-icon name="log-out-outline"></ion-icon> log out`;
+}
+
+// Change icon end
