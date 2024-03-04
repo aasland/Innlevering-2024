@@ -1,7 +1,7 @@
 /* Personvernsiden */
 
 #personvern {
-    padding: 95px 30px 30px 30px;
+    padding: 120px 30px 30px 30px;
     font-family: Playfair Display;
   }
 
@@ -18,4 +18,8 @@
 .PersonvernBokser {
     border: 5px solid var(--beige-grey-light);
     padding: 15px;
+}
+
+.divpersonvern {
+    margin-top: 15px;
 }
