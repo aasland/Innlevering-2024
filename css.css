@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto+Condensed:wght@300&display=swap');
 
 * {
   padding: 0px;
@@ -928,30 +928,30 @@ html {
     display: inline-block;
     position: relative;
     padding-right: 30px;
-}
+  }
 
-.dropdown-options {
+  .dropdown-options {
     display: none;
     position: absolute;
     overflow: auto;
     justify-self: left;
     border-radius: 5px;
-}
+  }
 
-.dropdown:hover .dropdown-options {
+  .dropdown:hover .dropdown-options {
     display: block;
-}
+  }
 
-button {
+  button {
     color: var(--dark-grey);
     border: none;
     font-size: 35px;
     padding-left: 85px;
     text-align: center;
     cursor: pointer;
-}
+  }
 
-.dropdown-options a {
+  .dropdown-options a {
     display: block;
     color: var(--dark-grey);
     background-color: var(--white);
@@ -962,13 +962,13 @@ button {
     text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
-}
+  }
 
-.dropdown-options a:hover {
-    color:#2b2d4298;
+  .dropdown-options a:hover {
+    color: #2b2d4298;
     transition: 0.6s;
-    background-color: #d0d4d6 ;
-}
+    background-color: #d0d4d6;
+  }
 
 
 }
