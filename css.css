@@ -162,6 +162,8 @@ header a {
 #flexForsideLayout {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
+  padding-top: 100px;
+  width: 100%;
 }
 
 #midtForside {
@@ -189,48 +191,45 @@ header a {
   grid-column: 1/3;
   grid-row: 3/4;
   position: relative;
-  background-color: #9ec8b9;
+  width: 400px;
+  height: 200px;
 }
 
-#flipKortet{
+.flipKortet{
   position: absolute;
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
   transition: all 0.5s ease;
-  background-color: #d90429;
 }
 
-#flipKortet:hover{
+.flipKortet:hover{
   transform: rotateY(180deg);
 }
 
-#forranKortet{
+.forranKortet{
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
   background-color: aqua;
   color: #8d99ae;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
-#baksideKortet{
+.baksideKortet{
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
   background-color: rgb(34, 0, 255);
   color: #8d99ae;
-  transform: rotate(180deg); 
 }
 
 #fakeNewsLek {
   grid-column: 1/3;
   grid-row: 4/5;
 }
-
-
-
 
 
 
@@ -941,6 +940,10 @@ html {
   grid-column: 1/4;
 }
 
+#bunntekstFooter p{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+}
+
 .omTeametFooter h3 {
   line-height: 30px;
   font-weight: 500;
@@ -1024,3 +1027,4 @@ html {
   }
 
 /* Media query end */
+
