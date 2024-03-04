@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css.css" />
     <link rel="stylesheet" href="personvern.css" />
-    <link rel="stylesheet" href="css.css"/>
     <script src="javaScript.js" defer></script>
 </head>
 
@@ -17,11 +17,12 @@
     <header>
         <div class="divContainer">
             <div class="divSectionThree">KLIKKEN</div>
-            <!-- Jeg skal endre css på logg inn knappen etter at Maria er ferdig med headeren, eller så kan du endre den selv -->
         </div>
         <div class="divContainer2">
             <div class="divSectionFour">
-                <button class="btnLogin-popup"> <ion-icon name="person-circle"></ion-icon> Logg inn</button>
+                <button class="btnLogin-popup">
+                    <i class="fa-solid fa-circle-user"></i> Logg inn
+                </button>
             </div>
             <div>
                 <img src="bilder/moon.png" alt="Switch to dark/light-mode" id="moonIcon">
@@ -33,14 +34,17 @@
         <div class="divContainer4">
             <div class="divSectionTwo">Om oss</div>
         </div>
+        <div class="mediaQueryHeader"><ion-icon name="menu"></ion-icon></div>
     </header>
 
     <section id="personvern">
         <div>
             <h1>Personvern</h1>
         </div>
-        <div>
+        <div class="divpersonvern">
             <h2>Hva er egentlig personvern?</h2>
+        </div>
+        <div class="divpersonvern">
             <p>
                 Personvern handler om retten til et privatliv og retten til å bestemme over egne personopplysninger.
                 Personvern er altså nært knyttet til enkeltindividers muligheter for privatliv, selvbestemmelse og
@@ -56,28 +60,87 @@
                 taushetsplikt.
             </p>
         </div>
-        <div>
+        <div class="divpersonvern">
             <h2>Hva er et brudd på personopplysningssikkerheten?</h2>
+        </div>
+        <div id="DivPersonvernBokser" class="divpersonvern">
+            <div class="PersonvernBokser">
+                <p>
+                    Et brudd på personopplysningssikkerheten er utilsiktet eller ulovlig tilintetgjøring, tap, endring,
+                    ulovlig spredning av eller tilgang til personopplysninger som er overført, lagret eller på annen
+                    måte
+                    behandlet. <br><br>
+                    I følge datatilsynet er brudd på personopplysningssikkerheten bestående av tre elementer: <br>
+                    1. Et sikkerhetsbrudd <br>
+                    2. Sikkerhetsbruddet fører til utilsiktet eller ulovlig tilintetgjøring, tap, endring, ulovlig
+                    spredning av eller tilgang (årsakssammenheng) <br>
+                    3. Sikkerhetsbruddet berører personopplysninger
+                </p>
+            </div>
+            <div class="PersonvernBokser">
+                <p>
+                    Et sikkerhetsbrudd kan være både angrep utenfra og brudd på sikkerhetsprinsippene som skjer internt
+                    i
+                    virksomheten. Dette kan for eksempel være på grunn av enkle feil som en feilsendt e-post. For at et
+                    sikkerhetsbrudd skal være meldepliktig til datatilsynet må føre til utilsiktet eller ulovlig
+                    tilintetgjøring, tap, endring, ulovlig spredning av eller tilgang til personopplysninger. Det holder
+                    altså ikke sikkerhetsbruddet bare berører andre typer opplysninger.<br><br>
+                    Et brudd på personopplysningssikkerheten kan kategoriseres i: <br>
+                    1. <b>Brudd på konfidensialitet.</b> Dette vil si at det har vært utilsiktet eller ulovlig
+                    utlevering
+                    av, eller tilgang til, personopplysninger. <br>
+                    2. <b>Brudd på integritet.</b> Dette vil si at det har vært en utilsiktet eller ulovlig endring av
+                    personopplysninger. <br>
+                    3. <b>Brudd på tilgjengelighet.</b> Dette vil si at det har vært et utilsiktet eller ulovlig tap av
+                    tilgang til, eller sletting av, personopplysninger.
+                </p>
+            </div>
+        </div>
+        <div class="divpersonvern">
+            <h2>Hvorfor er personvern viktig?</h2>
+        </div>
+        <div class="divpersonvern">
             <p>
-                Et brudd på personopplysningssikkerheten er utilsiktet eller ulovlig tilintetgjøring, tap, endring,
-                ulovlig spredning av eller tilgang til personopplysninger som er overført, lagret eller på annen måte
-                behandlet.
+                Personvern er ikke bare en viktig menneskerettighet som sikrer hensynet til den enkeltes personlige
+                integritet og privatliv. Personvern er også viktig for å sikre felles goder i et demokratisk samfunn.
+                Uten retten til å ha et privatliv vil det ikke være mulig for det enkelte menneske å skape seg et rom
+                til å utvikle refleksjoner og vurderinger på et selvstendig grunnlag, uten å bli forstyrret eller
+                kontrollert av andre. <br> <br>
+                Manglende beskyttelse av personvernet kan true demokratiet ved å begrense borgeres deltakelse i åpen
+                meningsutveksling og politisk aktivitet. Individer kan unngå å delta fullt ut av frykt for at personlige
+                opplysninger blir offentliggjort. Frykten for overvåking av kommunikasjon, bevegelser, interesser eller
+                meningsytringer kan også føre til selvimposede begrensninger.
             </p>
         </div>
 
     </section>
 
     <footer id="footer">
-        <a href="#" id="backToTopButton"><ion-icon name="arrow-up"></ion-icon></a>
-
-
-        <div id="instagram"><i class="fa-brands fa-instagram"></i> 4labber</div>
-        <div id="facebook"><i class="fa-brands fa-facebook"></i>4labberOffesiel</div>
-        <div class="logofooter"><i class="fa-solid fa-paw"></i></div>
-        <div id="mail"><i class="fa-regular fa-envelope"></i> sofiekva@viken.no</div>
-        <div id="tlf"><i class="fa-solid fa-phone"></i> 936 68 308</div>
+        <div class="tipsOssFooter">
+            <div>
+                <h2>Tips oss her:</h2>
+            </div>
+            <div id="mail">
+                <i class="fa-regular fa-envelope"></i> sofiekva@viken.no
+            </div>
+            <div id="tlf"><i class="fa-solid fa-phone"></i> 936 68 308</div>
+        </div>
+        <div class="logofooter">
+            <i class="fa-solid fa-hand-point-right fa-rotate-270"></i>
+        </div>
+        <div class="omTeametFooter">
+            <h2>Møt teamet:</h2>
+            <h3>Hanna Johns</h3>
+            <h3>Sofie Kvadsheim</h3>
+            <h3>Kaia Villabø</h3>
+            <h3>Fredrik .... Føkk you Maria</h3>
+            <h3>Maria Lindheim</h3>
+        </div>
         <div id="bunntekstFooter">
-            <p> <b>©</b> 2024 KLIKKEN | Brukervilkår | Personvernerklæring og informasjonskapsler</p>
+            <p>
+                <b>©</b> 2024 KLIKKEN | Brukervilkår | Personvernerklæring og
+                informasjonskapsler
+            </p>
         </div>
     </footer>
 
