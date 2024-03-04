@@ -188,12 +188,53 @@ header a {
 #flipCoin {
   grid-column: 1/3;
   grid-row: 3/4;
+  position: relative;
+  background-color: #9ec8b9;
+}
+
+#flipKortet{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  background-color: #d90429;
+}
+
+#flipKortet:hover{
+  transform: rotateY(180deg);
+}
+
+#forranKortet{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: aqua;
+  color: #8d99ae;
+}
+
+#baksideKortet{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: rgb(34, 0, 255);
+  color: #8d99ae;
+  transform: rotate(180deg); 
 }
 
 #fakeNewsLek {
   grid-column: 1/3;
   grid-row: 4/5;
 }
+
+
+
+
+
+
+
 
 /* Forside slutt */
 
