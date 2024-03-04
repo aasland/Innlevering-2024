@@ -44,7 +44,7 @@ button {
 
 header {
   background-color: var(--white);
-  height: 10vh;
+  height: 15vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 2fr 1fr;
@@ -231,7 +231,7 @@ header a {
   opacity: 1;
   transform: translateY(0);
   pointer-events: all;
-  /* Fjern senere */
+  z-index: 2;
   grid-column: 2/3;
 }
 
@@ -757,30 +757,32 @@ html {
   padding-top: 40px;
 }
 
-.logofooter{
+.footerLogo {
+  display: grid;
+  z-index: 1;
+}
+
+.logofooter {
   font-size: 160px;
 }
 
-#bunntekstFooter{
+#bunntekstFooter {
   grid-column: 1/4;
 }
 
-.omTeametFooter{
-
+.omTeametFooter {
 }
 
-.omTeametFooter h3{
+.omTeametFooter h3 {
   line-height: 30px;
   font-weight: 500;
 }
 
-.tipsOssFooter{
+.tipsOssFooter {
   line-height: 52px;
 }
 
 /* Forside */
-
-
 
 /* Media query start */
 
