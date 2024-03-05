@@ -1,4 +1,42 @@
 
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --red-dark: #d90429;
+    --red-light: #ef233c;
+    --white: #edf2f4;
+    --light-grey: #8d99ae;
+    --dark-grey: #2b2d42;
+    --beige-grey-light: #808080;
+  }
+  
+  .darkTheme {
+    --red-dark: #9ec8b9;
+    --white: #1b4242;
+    --dark-grey: #092635;
+  }
+  
+  body {
+    background-color: var(--white);
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 42px;
+    letter-spacing: -0.5px;
+    font-family: Playfair Display;
+  }
+  
 .spill{
     margin: 100px auto 0;
     width: 400px;
