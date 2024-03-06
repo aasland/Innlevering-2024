@@ -199,7 +199,7 @@ forranKortet
   height: 400px;
 }
 
-.flipKortet{
+#flipKortet{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -207,7 +207,7 @@ forranKortet
   transition: all 0.5s ease;
 }
 
-.flipKortet:hover{
+.flipped{
   transform: rotateY(180deg);
 }
 
@@ -1043,7 +1043,7 @@ flipKortet
   justify-items: center;
   padding-top: 40px;
 }
-
+flipKortet
 .footerLogo {
   display: grid;
   z-index: 1;
@@ -1100,6 +1100,7 @@ flipKortet
   #bunntekstFooter {
     grid-column: 1/4;
     padding: 15px;
+    padding-top: 45px;
     font-size: 13px;
     text-align: center;
 
