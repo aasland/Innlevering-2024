@@ -1036,7 +1036,6 @@ flipKortet
 #footer {
   background-color: var(--dark-grey);
   color: #edf2f4;
-  height: 350px;
   display: grid;
   grid-template-rows: 2fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1065,6 +1064,7 @@ flipKortet
 .omTeametFooter h3 {
   line-height: 30px;
   font-weight: 500;
+  font-size: 25px;
 }
 
 .tipsOssFooter {
@@ -1087,6 +1087,27 @@ flipKortet
 }
 
 /* Media query start */
+
+
+@media (max-width: 750px) {
+
+  .logofooter {
+    font-size: 160px;
+    padding: 10px;
+
+  }
+  
+  #bunntekstFooter {
+    grid-column: 1/4;
+    padding: 15px;
+
+  }
+
+  #footer {
+  display: flex;
+  flex-direction: column;
+  }
+}
 
 @media (max-width: 650px) {
   .mediaQueryHeader {
@@ -1158,5 +1179,5 @@ flipKortet
   }
 }
 
->>>>>>>2f595fe9de3b30cd669170ecfdc6d82cf865e61d
+
 /* Media query end */
