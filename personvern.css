@@ -1,12 +1,14 @@
 /* Personvernsiden */
 
 #personvern {
-    padding: 120px 30px 30px 30px;
+    padding-top: 120px;
     font-family: Playfair Display;
   }
 
 #personvern h1 {
     font-size: 33px;
+    padding: 0 30px 0 30px;
+
 }
 
 #DivPersonvernBokser {
@@ -21,5 +23,11 @@
 }
 
 .divpersonvern {
-    margin-top: 15px;
+    margin-top: 30px;
+    padding: 0 30px 0 30px;
+}
+
+#informasjonskapsler {
+    background-color: var(--dark-grey);
+    color: var(--white);
 }
