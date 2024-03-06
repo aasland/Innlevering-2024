@@ -1064,7 +1064,7 @@ flipKortet
 .omTeametFooter h3 {
   line-height: 30px;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .tipsOssFooter {
@@ -1100,12 +1100,28 @@ flipKortet
   #bunntekstFooter {
     grid-column: 1/4;
     padding: 15px;
+    font-size: 13px;
+    text-align: center;
 
   }
 
   #footer {
   display: flex;
   flex-direction: column;
+  }
+
+  .omTeametFooter{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .omTeametFooter h3{
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .tipsOssFooter {
+    text-align: center;
   }
 }
 
