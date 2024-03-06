@@ -1,8 +1,62 @@
 
-.spill{
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --red-dark: #d90429;
+    --red-light: #ef233c;
+    --white: #edf2f4;
+    --light-grey: #8d99ae;
+    --dark-grey: #2b2d42;
+    --beige-grey-light: #808080;
+  }
+  
+  .darkTheme {
+    --red-dark: #9ec8b9;
+    --white: #1b4242;
+    --dark-grey: #092635;
+  }
+  
+  body {
+    background-color: var(--white);
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 42px;
+    letter-spacing: -0.5px;
+    font-family: Playfair Display;
+  }
+
+  section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .del{
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 100px auto 0;
-    width: 400px;
-    height: 600px;
+  }
+  .meta{
+    grid-column: 1/3;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+  }
+  .bil{
+    grid-column: 3/4;
+    
   }
   .kort{
     width: 100%;
@@ -31,10 +85,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+   
   }
   .bak{
     background-color: var(--beige-grey-light);
     transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   /*
   .bakgrunnSPILL {
@@ -96,5 +154,5 @@
   .dra{
     grid-column: 3/5;
   }
-  */
+
   
