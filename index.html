@@ -12,9 +12,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css.css" />
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico"> 
   </head>
-
-  <!-- // Favicon // Forside flexForsideLayout // Flip the coin -->
 
   <body>
     <header>
@@ -220,17 +219,25 @@
     </section>
 
     <div id="flexForsideLayout">
-      <section id="venstreForside"></section>
+      <section id="venstreForside">
+        <img src="bilder/paddeltennisreklame.jpeg" alt="Paddle reklame">
+        <img src="bilder/saunareklame.jpeg" alt="reklame">
+        <img src="bilder/rema1000reklame.jpeg" alt="Rema1000 reklame">
+
+
+      </section>
 
       <section id="midtForside">
         <div id="insta"></div>
 
         <div id="fakeNewsNyhetssak"></div>
 
-        <div id="personvern"></div>
+        <div id="personvern">
+
+        </div>
 
         <div id="flipCoin">
-          <div class="flipKortet"> 
+          <div id="flipKortet"> 
             <div class="forranKortet"> 
               <div class="overskriftFlipTheCoin"><h1> <b>Positivt</b> VS Negativt: Sosiale medier <i class="fa-solid fa-masks-theater"></i></h1> </div>
               <div class="forskjelligePNSider"> 
@@ -291,10 +298,16 @@
           </div>
         </div>
 
-        <div id="fakeNewsLek"></div>
+        <div id="fakeNewsLek">
+          <img src="bilder/fakeNewsForside.png" alt="Bilde av fake news" id="fakeNewsBilde">
+        </div>
       </section>
 
-      <section id="høyreForside"></section>
+      <section id="høyreForside">
+        <img src="bilder/therasmusreklame.jpeg" alt="Reklame Band">
+        <img src="bilder/kitesurfingreklame.jpeg" alt="Reklame Kitesurfing">
+        <img src="bilder/verdensbestebandreklame.jpeg" alt="Band reklame">
+      </section>
     </div>
 
     <footer id="footer">
@@ -329,6 +342,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="javaScript.js"></script>
     <script src="loginBtn.js"></script>
+    <script src="kortFlipp.js"></script>
     
   </body>
 </html>

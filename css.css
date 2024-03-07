@@ -160,11 +160,11 @@ header a {
 }
 
 /* Header end */
-forranKortet
+
 /* Forside start */
 
 #flexForsideLayout {
-  display: grid;
+  
   grid-template-columns: 1fr 4fr 1fr;
   padding-top: 100px;
   width: 100%;
@@ -174,6 +174,9 @@ forranKortet
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 2fr;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
 }
 
 #insta {
@@ -191,6 +194,13 @@ forranKortet
   grid-row: 2/3;
 }
 
+#fakeNewsBilde{
+  width: 900px;
+  border-radius: 20px;
+}
+
+
+
 #flipCoin {
   grid-column: 1/3;
   grid-row: 3/4;
@@ -199,7 +209,7 @@ forranKortet
   height: 400px;
 }
 
-.flipKortet{
+#flipKortet{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -207,7 +217,7 @@ forranKortet
   transition: all 0.5s ease;
 }
 
-.flipKortet:hover{
+.flipped{
   transform: rotateY(180deg);
 }
 
@@ -263,16 +273,28 @@ forranKortet
   grid-column: 1/7;
 }
 
-
-
 #fakeNewsLek {
   grid-column: 1/3;
   grid-row: 4/5;
 }
 
+#høyreForside{
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
 
+#høyreForside img{
+  width: 250px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-
+#venstreForside img{
+  width: 250px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 /* Forside slutt */
 
@@ -1036,7 +1058,6 @@ flipKortet
 #footer {
   background-color: var(--dark-grey);
   color: #edf2f4;
-  height: 350px;
   display: grid;
   grid-template-rows: 2fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1044,7 +1065,7 @@ flipKortet
   justify-items: center;
   padding-top: 40px;
 }
-
+flipKortet
 .footerLogo {
   display: grid;
   z-index: 1;
@@ -1065,6 +1086,7 @@ flipKortet
 .omTeametFooter h3 {
   line-height: 30px;
   font-weight: 500;
+  font-size: 20px;
 }
 
 .tipsOssFooter {
@@ -1087,6 +1109,44 @@ flipKortet
 }
 
 /* Media query start */
+
+
+@media (max-width: 750px) {
+
+  .logofooter {
+    font-size: 160px;
+    padding: 10px;
+
+  }
+  
+  #bunntekstFooter {
+    grid-column: 1/4;
+    padding: 15px;
+    padding-top: 45px;
+    font-size: 13px;
+    text-align: center;
+
+  }
+
+  #footer {
+  display: flex;
+  flex-direction: column;
+  }
+
+  .omTeametFooter{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .omTeametFooter h3{
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .tipsOssFooter {
+    text-align: center;
+  }
+}
 
 @media (max-width: 650px) {
   .mediaQueryHeader {
@@ -1157,4 +1217,5 @@ flipKortet
     background-color: #d0d4d6;
   }
 }
+
 /* Media query end */
