@@ -160,11 +160,11 @@ header a {
 }
 
 /* Header end */
-forranKortet
+
 /* Forside start */
 
 #flexForsideLayout {
-  display: grid;
+  
   grid-template-columns: 1fr 4fr 1fr;
   padding-top: 100px;
   width: 100%;
@@ -278,9 +278,23 @@ forranKortet
   grid-row: 4/5;
 }
 
+#høyreForside{
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
 
+#høyreForside img{
+  width: 250px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-
+#venstreForside img{
+  width: 250px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 /* Forside slutt */
 
