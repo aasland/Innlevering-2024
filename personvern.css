@@ -14,6 +14,14 @@
     font-size: 33px;
 }
 
+.divpersonvern p {
+    font-size: larger;
+}
+
+.divpersonvern h2 {
+    font-size: 24px;
+}
+
 #DivPersonvernBokser {
     display: grid;
     grid-template-columns: 1fr 1fr;
