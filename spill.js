@@ -1,5 +1,6 @@
-const kort = document.querySelector(".kort")
+const card = document.querySelector(".kort")
 
-kort.addEventListener("click", function(){
-kort.classList.toggle("snudd")
+card.addEventListener("click", function(){
+    card.classList.toggle("snudd")
+    
 })
