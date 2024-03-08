@@ -930,7 +930,7 @@ flipKortet
 }
 
 #overlay {
-  position: fixed;
+  /*position: fixed;*/
   opacity: 0;
   transition: 200ms ease-in-out;
   top: 0;
@@ -939,7 +939,7 @@ flipKortet
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
-}
+} 
 
 #overlay.active {
   opacity: 1;
