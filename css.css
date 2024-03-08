@@ -930,7 +930,7 @@ flipKortet
 }
 
 #overlay {
-  /*position: fixed;*/
+
   opacity: 0;
   transition: 200ms ease-in-out;
   top: 0;
