@@ -201,6 +201,7 @@ main{
   display: grid;
   grid-template-columns: 2fr 3fr 3fr 2fr;
   padding: 60px 0px 60px 0px;
+  margin-top: 95px;
 }
 
 .sectionFakeNewsInsta {
@@ -209,7 +210,6 @@ main{
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 0px 3px 1px;
   justify-content: space-between;
   margin: 15px;
 }
@@ -221,7 +221,7 @@ main{
 }
 
 .sectionFakeNewsInsta:hover {
-  box-shadow: 0px 0px 8px 0.5px;
+  box-shadow: 0px 0px 4px 1px;
 }
 
 .sectionTing{
@@ -235,7 +235,6 @@ main{
   line-height: 2;
   border-radius: 10px;
   display: flex;
-  box-shadow: 0px 0px 3px 1px;
   justify-content: space-between;
   margin: 15px;
 }
@@ -247,7 +246,7 @@ main{
 }
 
 .indreDiv:hover {
-  box-shadow: 0px 0px 8px 0.5px;
+  box-shadow: 0px 0px 4px 1px;
 }
 
 
@@ -259,7 +258,7 @@ main{
 #flipCoin {
   grid-column: 2/4;
   text-align: center;
-  padding: 75px 0px 60px 0px;
+  padding: 25px 0px 60px 0px;
   position: relative;
   width: 940px;
   height: 400px;
@@ -336,8 +335,7 @@ main{
   grid-column: 2/4;
   width: 100%;
   font-family: Roboto Condensed, Georgia, serif;
-  box-shadow: 0px 0px 3px 1px;
-  margin: 150px 0px 120px 0px;
+  margin: 80px 0px 120px 0px;
   height: 450px;
   font-size: 30px;
   color: var(--dark-grey);
@@ -345,6 +343,10 @@ main{
   font-weight: 500;
   line-height: 1.5;
 
+}
+
+.sectionFakeNewsSpill:hover {
+  box-shadow: 0px 0px 4px 1px;
 }
 
 .test a {
