@@ -19,21 +19,20 @@ const gdpr = document.querySelector(".gdpr");
 if (gdpr) {
   let gdprPopupCloseBtn = document.querySelector(".gdprPopupCloseBtn");
   let godtaBtn = document.querySelector(".godtaBtn");
-  
+
   window.addEventListener("load", () => {
     gdpr.classList.add("showGdpr");
     gdpr.childNodes[1].classList.add("showGdpr");
   });
-  
+
   const closeGdprPopup = function () {
     if (gdpr.classList.contains("showGdpr")) {
       gdpr.classList.remove("showGdpr");
     }
-  };  
+  };
 
   gdprPopupCloseBtn.addEventListener("click", closeGdprPopup);
 }
-
 
 const samtykkeHeader = document.querySelector("#SamtykkeH2");
 const samtykkeP1 = document.querySelector("#SamtykkeP1");
@@ -47,8 +46,6 @@ const endreH2Godta = function () {
   samtykkeP1.innerHTML =
     "Du leste jo nettopp hva slags informasjon vi tar fra deg, eller gjorde du det? Leste du i det hele tatt informasjonen, eller trykket du bare 'Godkjenn alle' av vane?";
   samtykkeP2.innerHTML = "";
-  samtykkeUl.innerHTML =
-    "Les mer om personvern på vår egen side om personvern.";
   document.querySelector("#SamtykkeUl").style.fontWeight = "600";
   document.querySelector("#SamtykkeUl").style.fontStyle = "normal";
   btnContainer.innerHTML = "";
@@ -75,4 +72,3 @@ const endreH2Tilpass = function () {
 };
 
 // GDPR end
-
