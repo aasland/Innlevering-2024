@@ -1051,7 +1051,7 @@ flipKortet
 /* Forside */
 
 #flexForsideLayout {
-  display: flex;
+  display: grid;
   grid-template-columns: 1fr 4fr 1fr;
 }
 
@@ -1084,9 +1084,9 @@ flipKortet
 }
 
 .omTeametFooter h3 {
-  line-height: 30px;
+  line-height: 35px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .tipsOssFooter {
