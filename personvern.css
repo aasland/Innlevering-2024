@@ -7,7 +7,7 @@
 
 .divpersonvern {
     margin-top: 30px;
-    padding: 0 250px 0 250px;
+    padding: 0 275px 0 275px;
 } 
 
 .divpersonvern h1 {
@@ -16,6 +16,8 @@
 
 .divpersonvern p {
     font-size: larger;
+    line-height: 33px;
+
 }
 
 .divpersonvern h2 {
