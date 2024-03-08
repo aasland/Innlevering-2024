@@ -42,12 +42,12 @@
                     <input type="radio" name="radio-btn" id="radio3" />
 
                     <div data-modal-target="#modal" class="slide first">
-                        <img src="bilder/side1.png" alt="" />
+                        <img src="bilder/side1.png" alt="open modal" />
                     </div>
-                    <div class="slide">
+                    <div data-modal-target="#modal2" class="slide">
                         <img src="bilder/side2.png" alt="" />
                     </div>
-                    <div class="slide">
+                    <div data-modal-target="#modal3" class="slide">
                         <img src="bilder/side3.png" alt="" />
                     </div>
 
@@ -67,6 +67,30 @@
         </div>
 
         <div class="modal" id="modal">
+            <div class="modal-header">
+                <h1 class="title">Example Modal</h1>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                hei
+
+            </div>
+        </div>
+        <div id="overlay"></div>
+
+        <div class="modal" id="modal2">
+            <div class="modal-header">
+                <h1 class="title">Example Modal</h1>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                hei
+
+            </div>
+        </div>
+        <div id="overlay" class="active"></div>
+
+        <div class="modal" id="modal3">
             <div class="modal-header">
                 <h1 class="title">Example Modal</h1>
                 <button data-close-button class="close-button">&times;</button>
@@ -129,7 +153,7 @@
 
     <script src="instagram.js"></script>
     <script src="javaScript.js"></script>
-    <script src="loginBtn.js"></script>
+    <!-- script src="loginBtn.js"></script -->
     <script src="insta-modal.js"></script>
 </body>
 
