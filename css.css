@@ -261,7 +261,7 @@ main{
   padding: 25px 0px 60px 0px;
   position: relative;
   width: 940px;
-  height: 400px;
+  height: 500px;
   justify-self: center;
 }
 
@@ -312,12 +312,13 @@ main{
 }
 
 .forskjelligePNSider h1 {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 22px;
+  margin-bottom: 10px;
 }
 
 .forskjelligePNSider p {
-  font-size: 11px;
+  font-size: 15px;
 }
 
 .forskjelligePNSider i {
@@ -358,21 +359,28 @@ main{
   font-size: 25px;
   font-weight: 400;
   border-radius: 5px;
-  background-color: #77787b1f;
+  background-color: #989898;
 }
 
 .test a:hover {
-  background-color: var(--white);
+  background-color: var(--dark-grey);
   transition: 0.5s;
 }
 
 .sectionFakeNewsSpillTekst {
-  margin: 40px;
-  margin-top: 280px;
+  margin: 20px;
+  background-color: #9e9e9ea3;
+  margin-top: 251px;
+  padding: 23px;
+  border-radius: 10px;
+  padding-bottom: 1px;
 }
 
 .sectionFakeNewsSpillTekst p {
-  font-size: 25px;
+  font-size: 28px;
+  line-height: 1.3;
+  color: var(--white);
+  margin-bottom: 21px;
 }
 
 /* Forside slutt */
