@@ -1,25 +1,16 @@
-const card = document.querySelectorAll(".kort")
+const kort = document.querySelectorAll(".kort")
 
-card.addEventListener("click", function(){
-    card.classList.toggle("snudd")
-
-})
-
-const ekteNyhet = document.querySelectorAll("feil")
-
-ekteNyhet.addEventListener("click", function(){
-    ekteNyhet.classList.toggle("farge")
-})
-
-
-const ekteNyhet = document.querySelectorAll("feil")
-for (const feil of ekteNyhet){
-    feil.addEventListener("click", function(evt){
-        const rist = evt.target //får tak i elementet som ble trykket på
-        rist.classList.toggle("rist")
-
+for (const kortSnud of kort) {
+    kortSnud.addEventListener("click", function () { 
+        kortSnud.classList.toggle("snudd")
     }
     )
 }
 
-const rist= document.querySelector
+const ekteNyhet = document.querySelectorAll(".feil")
+
+for(const feil of ekteNyhet)
+feil.addEventListener("click", function () {
+    feil.classList.toggle("shake")
+})
+
