@@ -1,16 +1,16 @@
-const kort = document.querySelectorAll(".kort")
+const riktig = document.querySelectorAll(".riktig")
 
-for (const kortSnud of kort) {
+for (const kortSnud of riktig) {
     kortSnud.addEventListener("click", function () { 
         kortSnud.classList.toggle("snudd")
     }
     )
 }
 
-const ekteNyhet = document.querySelectorAll(".feil")
+const feil = document.querySelectorAll(".feil")
 
-for(const feil of ekteNyhet)
-feil.addEventListener("click", function () {
-    feil.classList.toggle("shake")
+for(const shake of feil)
+shake.addEventListener("click", function () {
+    shake.classList.toggle("shake")
 })
 
