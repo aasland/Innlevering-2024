@@ -11,26 +11,38 @@
 <body>
     <header>
         <div class="divContainer">
-            <div class="divSectionThree">KLIKKEN</div>
-            <!-- Jeg skal endre css på logg inn knappen etter at Maria er ferdig med headeren, eller så kan du endre den selv -->
+          <div class="divSectionThree">KLIKKEN</div>
         </div>
         <div class="divContainer2">
-            <div class="divSectionFour">
-                <button class="btnLogin-popup">
-                    <ion-icon name="person-circle"></ion-icon> Logg inn
-                </button>
-            </div>
-            <div>
-                <img src="bilder/moon.png" alt="Switch to dark/light-mode" / id="moonIcon">
-            </div>
+          <div class="divSectionFour">
+            <button class="btnLogin-popup">
+              <i class="fa-solid fa-circle-user"></i> Logg inn
+            </button>
+          </div>
+          <div class="moonIconContainer">
+            <img src="bilder/moon.png" alt="Switch to dark/light-mode" /
+            id="moonIcon">
+          </div>
         </div>
         <div class="divContainer3">
-            <div class="divSectionOne">Kontakt</div>
+          <div class="divSectionOne">Kontakt</div>
         </div>
         <div class="divContainer4">
-            <div class="divSectionTwo">Om oss</div>
+          <div class="divSectionTwo">Om oss</div>
         </div>
-    </header>
+        <div class="mediaQueryHeader">
+          <div class="dropdown">
+            <button><ion-icon name="menu"></ion-icon></button>
+            <div class="dropdown-options">
+              <a href="hund2.html">Hund</a>
+              <a href="andredyr2.html">Andre kjæledyr</a>
+              <a href="test2.html">Ta testen!</a>
+              <a href="adopter2.html">Adopter</a>
+              <a href="Passerdinlivsstil.html">Hvorfor kjæledyr?</a>
+            </div>
+          </div>
+        </div>
+      </header>
 
     <main class="body-insta">
 
@@ -139,17 +151,33 @@
 
     <footer id="footer">
         <a href="#" id="backToTopButton"><ion-icon name="arrow-up"></ion-icon></a>
-
-
-        <div id="instagram"><i class="fa-brands fa-instagram"></i> 4labber</div>
-        <div id="facebook"><i class="fa-brands fa-facebook"></i>4labberOffesiel</div>
-        <div class="logofooter"><i class="fa-solid fa-paw"></i></div>
-        <div id="mail"><i class="fa-regular fa-envelope"></i> sofiekva@viken.no</div>
-        <div id="tlf"><i class="fa-solid fa-phone"></i> 936 68 308</div>
-        <div id="bunntekstFooter">
-            <p> <b>©</b> 2024 KLIKKEN | Brukervilkår | Personvernerklæring og informasjonskapsler</p>
+  
+        <div class="tipsOssFooter">
+          <div><h2>Tips oss her:</h2></div>
+          <div id="mail">
+            <i class="fa-regular fa-envelope"></i> sofiekva@viken.no
+          </div>
+          <div id="tlf"><i class="fa-solid fa-phone"></i> 936 68 308</div>
         </div>
-    </footer>
+        <div class="logofooter">
+          <i class="fa-solid fa-hand-point-right fa-rotate-270 footerLogo"></i>
+        </div>
+        <div class="omTeametFooter">
+          <h2>Møt teamet:</h2>
+          <h3>Hanna Johns</h3>
+          <h3>Sofie Kvadsheim</h3>
+          <h3>Kaia Villabø</h3>
+          <h3>Fredrik Åslaand</h3>
+          <h3>Maria Lindheim</h3>
+        </div>
+        <div id="bunntekstFooter">
+          <p>
+            <b>©</b> 2024 KLIKKEN | Brukervilkår | Personvernerklæring og
+            informasjonskapsler
+          </p>
+        </div>
+      </footer>
+  
 
     <script src="instagram.js"></script>
     <script src="nightMode.js"></script>
