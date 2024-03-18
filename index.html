@@ -58,11 +58,12 @@
         </h1>
         <h2 id="SamtykkeH2">Samtykkeinnstillinger</h2>
         <br />
-        <img
-          src="bilder/KlikkenLogo.jpg"
-          alt="Klikken Logo"
+
+        <i
+          class="fa-solid fa-hand-point-right fa-rotate-270 footerLogo"
           id="samtykkeBilde"
-        />
+        ></i>
+
         <p id="SamtykkeP1">
           Når du samtykker, godtar du at Klikken Norge og våre 44 partnere kan
           samle og bruke persondata, slik som enhets-IDer og informasjon om
@@ -162,7 +163,11 @@
               <a href="#">Forgot Password?</a>
             </div>
 
-            <button type="submit" class="btn" onclick="switchLoginString()">
+            <button
+              type="submit"
+              class="btn"
+              onclick="switchLoginString(), PressCount()"
+            >
               Login
             </button>
 
@@ -228,180 +233,225 @@
       </p>
     </section>
 
-    <div id="flexForsideLayout">
-      <!--<section id="venstreForside">
-        <img src="bilder/paddeltennisreklame.jpeg" alt="Paddle reklame">
-        <img src="bilder/saunareklame.jpeg" alt="reklame">
-        <img src="bilder/rema1000reklame.jpeg" alt="Rema1000 reklame">
+    <main>
+      <section class="section1">
+        <h1>Velkommen til 4 LABBER</h1>
+        <p class="linje"></p>
+        <h2>Din Ultimate Ressurs for Kjæledyr</h2>
+        <p class="linje"></p>
+        <br />
+        <p>
+          Å ha et kjæledyr i livet ditt er en kilde til glede, kjærlighet og
+          uendelige minner. Enten du er stolt hundeeier, katteelsker,
+          hesteentusiast eller leter etter fremtidige kjæledyr, har du kommet
+          til rett sted! 4Labber er ditt komplette online destinasjon for alt
+          som omhandler kjæledyr! Her vil du finne en skattkiste av informasjon,
+          råd og ressurser som vil hjelpe deg med å ta vare på dine pelskledde
+          familiemedlemmer på best mulig måte.
+          <br />
+          Utforsk våre artikler om alt fra hunder og undulater, til tester for å
+          finne ditt perfektekjæledyr!
+        </p>
+      </section>
 
-
-      </section> -->
-      <section id="midtForside">
-        <div id="insta"></div>
-
-        <div id="fakeNewsNyhetssak"></div>
-
-        <div id="personvern"></div>
-
-        <div id="flipCoin">
-          <div id="flipKortet">
-            <div class="forranKortet">
-              <div class="overskriftFlipTheCoin">
-                <h1>
-                  <b>Positivt</b> VS Negativt: Sosiale medier
-                  <i class="fa-solid fa-masks-theater"></i>
-                </h1>
-              </div>
-              <div class="forskjelligePNSider">
-                <i class="fa-solid fa-users"></i>
-                <h1>Bygge relasjoner og holde kontakt</h1>
-                <p>
-                  Sosiale medier kan gjøre det enkelt å finne grupper med
-                  likesinnede eller få nye venner. Å finne et nært fellesskap
-                  kan hjelpe oss til å føle oss verdsatt og akseptert. Sosiale
-                  medier er også en enkel måte å pleie eksisterende forhold til
-                  familie og venner som har flyttet.
-                </p>
-              </div>
-              <div class="forskjelligePNSider">
-                <i class="fa-solid fa-palette"></i>
-                <h1>Selvuttrykk og kreativitet</h1>
-                <p>
-                  Sosiale medier gir en arena for selvuttrykk og kreativitet.
-                  Folk kan dele sine interesser, hobbyer og kreative prosjekter
-                  med et globalt publikum. Dette har ført til en økning i
-                  deltakelse i kunst, musikk, skriving og andre kreative
-                  uttrykksformer.
-                </p>
-              </div>
-              <div class="forskjelligePNSider">
-                <i class="fa-regular fa-newspaper"></i>
-                <h1>Nyheter</h1>
-                <p>
-                  Nyheter fra omtrent hvilken som helst del av verden kan spre
-                  seg som ild i tørt gress på sosiale medier. Selv om dette kan
-                  være overveldende til tider, kan det også holde oss i harmoni
-                  med viktige hendelser. Dette kan være en enestående fordel
-                  hvis du trenger å få beskjed raskt om noe.
-                </p>
-              </div>
-              <div class="forskjelligePNSider">
-                <i class="fa-solid fa-briefcase"></i>
-                <h1>Forretningsmuligheter og markedsføring</h1>
-                <p>
-                  Sosiale medier gir en plattform for bedrifter og entreprenører
-                  å markedsføre sine produkter og tjenester. Det å ha en
-                  tilstedeværelse på sosiale medier gir også små bedrifter og
-                  enkeltpersoner muligheten til å bygge sitt eget merke og nå ut
-                  til et bredere publikum.
-                </p>
-              </div>
-              <div class="forskjelligePNSider">
-                <i class="fa-solid fa-comments"></i>
-                <h1>Sosial fellesskap</h1>
-                <p>
-                  Sosiale medier gir muligheten til å bygge og opprettholde
-                  sosiale bånd på tvers av store avstander. I tillegg gir
-                  sosiale medier støttegrupper for mennesker som deler lignende
-                  interesser, utfordringer eller opplevelser. På sosiale medier
-                  kan mennesker som har det tøft møte andre like og føle på et
-                  felleskap og tilhørighet.
-                </p>
-              </div>
+      <div id="flipCoin">
+        <div id="flipKortet">
+          <div class="forranKortet">
+            <div class="overskriftFlipTheCoin">
+              <h1>
+                <b>Positivt</b> VS Negativt: Sosiale medier
+                <i class="fa-solid fa-masks-theater"></i>
+              </h1>
             </div>
+            <div class="forskjelligePNSider">
+              <i class="fa-solid fa-users"></i>
+              <h1>Bygge relasjoner og holde kontakt</h1>
+              <p>
+                Sosiale medier kan gjøre det enkelt å finne grupper med
+                likesinnede eller få nye venner. Å finne et nært fellesskap kan
+                hjelpe oss til å føle oss verdsatt og akseptert. Sosiale medier
+                er også en enkel måte å pleie eksisterende forhold til familie
+                og venner som har flyttet.
+              </p>
+            </div>
+            <div class="forskjelligePNSider">
+              <i class="fa-solid fa-palette"></i>
+              <h1>Selvuttrykk og kreativitet</h1>
+              <p>
+                Sosiale medier gir en arena for selvuttrykk og kreativitet. Folk
+                kan dele sine interesser, hobbyer og kreative prosjekter med et
+                globalt publikum. Dette har ført til en økning i deltakelse i
+                kunst, musikk, skriving og andre kreative uttrykksformer.
+              </p>
+            </div>
+            <div class="forskjelligePNSider">
+              <i class="fa-regular fa-newspaper"></i>
+              <h1>Nyheter</h1>
+              <p>
+                Nyheter fra omtrent hvilken som helst del av verden kan spre seg
+                som ild i tørt gress på sosiale medier. Selv om dette kan være
+                overveldende til tider, kan det også holde oss i harmoni med
+                viktige hendelser. Dette kan være en enestående fordel hvis du
+                trenger å få beskjed raskt om noe.
+              </p>
+            </div>
+            <div class="forskjelligePNSider">
+              <i class="fa-solid fa-briefcase"></i>
+              <h1>Forretningsmuligheter og markedsføring</h1>
+              <p>
+                Sosiale medier gir en plattform for bedrifter og entreprenører å
+                markedsføre sine produkter og tjenester. Det å ha en
+                tilstedeværelse på sosiale medier gir også små bedrifter og
+                enkeltpersoner muligheten til å bygge sitt eget merke og nå ut
+                til et bredere publikum.
+              </p>
+            </div>
+            <div class="forskjelligePNSider">
+              <i class="fa-solid fa-comments"></i>
+              <h1>Sosial fellesskap</h1>
+              <p>
+                Sosiale medier gir muligheten til å bygge og opprettholde
+                sosiale bånd på tvers av store avstander. I tillegg gir sosiale
+                medier støttegrupper for mennesker som deler lignende
+                interesser, utfordringer eller opplevelser. På sosiale medier
+                kan mennesker som har det tøft møte andre like og føle på et
+                felleskap og tilhørighet.
+              </p>
+            </div>
+          </div>
 
-            <div class="baksideKortet">
-              <div class="overskriftFlipTheCoin">
-                <h1>
-                  Positivt VS <b>Negativt</b>: Sosiale medier
-                  <i class="fa-solid fa-masks-theater"></i>
-                </h1>
-              </div>
-              <div class="forskjelligePNSider">
-                <i class="fa-solid fa-user-shield"></i>
-                <h1>Sosial Isolasjon</h1>
-                <p>
-                  Overdreven bruk av sosiale medier kan føre til sosial
-                  isolasjon. Noen mennesker blir for opptatt med virtuelle
-                  relasjoner, som kan påvirke den virkelige sosiale kompetansen.
-                  Ved hjelp av algoritmene som styrer innholdet på sosiale
-                  medier, kan isololasjon føre til polarisering, radikalisme og
-                  ekstremisme i samfunnet.
-                </p>
-              </div>
-              <div class="forskjelligePNSider">
-                <i class="fa-solid fa-user-ninja"></i>
-                <h1>Personvern</h1>
-                <p>
-                  Sosiale medier innebærer ofte deling av personlig informasjon,
-                  med eller uten brukerens sammtykke. Dette kan føre til
-                  personvernsutfordringer, inkludert datahacking,
-                  identitetstyveri og misbruk av personlige opplysninger. Økende
-                  anntall mennesker opplever identitetstyveri hvor man kan miste
-                  store pengesummer.
-                </p>
-              </div>
-              <div class="forskjelligePNSider">
-                <i class="fa-solid fa-radio"></i>
-                <h1>Fake news</h1>
-                <p>
-                  Sosiale medier har blitt en plattform for rask spredning av
-                  falske nyheter og desinformasjon. Dette kan føre til
-                  misforståelser og feilinformasjon. Fake news kan ha større
-                  konsekvenser enn mange tror og kan til og med påvirke
-                  offentlige meninger og politiske beslutninger.
-                </p>
-              </div>
-              <div class="forskjelligePNSider">
-                <i class="fa-solid fa-thumbs-down"></i>
-                <h1>Sosialt Press og Lav Selvfølelse</h1>
-                <p>
-                  Sosiale medier kan skape et klima av sosialt press til å
-                  opprettholde et visst bilde eller leve opp til visse
-                  standarder. Dette kan føre til lav selvfølelse,
-                  sammenligningsangst, kroppspress og stress for å oppnå ideelle
-                  livsstiler som presenteres på plattformene.
-                </p>
-              </div>
-              <div class="forskjelligePNSider">
-                <i class="fa-solid fa-person-harassing"></i>
-                <h1>Cybermobbing</h1>
-                <p>
-                  Sosiale medier gir en plattform for cybermobbing, hvor
-                  enkeltpersoner blir utsatt for trakassering, mobbing og
-                  negative kommentarer som kan ha alvorlige psykologiske
-                  konsekvenser for ofrene. Spesielt unge som er i en sårbar fase
-                  i livet kan bli sterkt påvirket av dette.
-                </p>
-              </div>
+          <div class="baksideKortet">
+            <div class="overskriftFlipTheCoin">
+              <h1>
+                Positivt VS <b>Negativt</b>: Sosiale medier
+                <i class="fa-solid fa-masks-theater"></i>
+              </h1>
+            </div>
+            <div class="forskjelligePNSider">
+              <i class="fa-solid fa-user-shield"></i>
+              <h1>Sosial Isolasjon</h1>
+              <p>
+                Overdreven bruk av sosiale medier kan føre til sosial isolasjon.
+                Noen mennesker blir for opptatt med virtuelle relasjoner, som
+                kan påvirke den virkelige sosiale kompetansen. Ved hjelp av
+                algoritmene som styrer innholdet på sosiale medier, kan
+                isololasjon føre til polarisering, radikalisme og ekstremisme i
+                samfunnet.
+              </p>
+            </div>
+            <div class="forskjelligePNSider">
+              <i class="fa-solid fa-user-ninja"></i>
+              <h1>Personvern</h1>
+              <p>
+                Sosiale medier innebærer ofte deling av personlig informasjon,
+                med eller uten brukerens sammtykke. Dette kan føre til
+                personvernsutfordringer, inkludert datahacking, identitetstyveri
+                og misbruk av personlige opplysninger. Økende anntall mennesker
+                opplever identitetstyveri hvor man kan miste store pengesummer.
+              </p>
+            </div>
+            <div class="forskjelligePNSider">
+              <i class="fa-solid fa-radio"></i>
+              <h1>Fake news</h1>
+              <p>
+                Sosiale medier har blitt en plattform for rask spredning av
+                falske nyheter og desinformasjon. Dette kan føre til
+                misforståelser og feilinformasjon. Fake news kan ha større
+                konsekvenser enn mange tror og kan til og med påvirke offentlige
+                meninger og politiske beslutninger.
+              </p>
+            </div>
+            <div class="forskjelligePNSider">
+              <i class="fa-solid fa-thumbs-down"></i>
+              <h1>Sosialt Press og Lav Selvfølelse</h1>
+              <p>
+                Sosiale medier kan skape et klima av sosialt press til å
+                opprettholde et visst bilde eller leve opp til visse standarder.
+                Dette kan føre til lav selvfølelse, sammenligningsangst,
+                kroppspress og stress for å oppnå ideelle livsstiler som
+                presenteres på plattformene.
+              </p>
+            </div>
+            <div class="forskjelligePNSider">
+              <i class="fa-solid fa-person-harassing"></i>
+              <h1>Cybermobbing</h1>
+              <p>
+                Sosiale medier gir en plattform for cybermobbing, hvor
+                enkeltpersoner blir utsatt for trakassering, mobbing og negative
+                kommentarer som kan ha alvorlige psykologiske konsekvenser for
+                ofrene. Spesielt unge som er i en sårbar fase i livet kan bli
+                sterkt påvirket av dette.
+              </p>
             </div>
           </div>
         </div>
-
-        <div id="fakeNewsLek"></div>
-      </section>
-
-      <!--
-      <section id="høyreForside">
-        <img src="bilder/therasmusreklame.jpeg" alt="Reklame Band" />
-        <img src="bilder/kitesurfingreklame.jpeg" alt="Reklame Kitesurfing" />
-        <img src="bilder/verdensbestebandreklame.jpeg" alt="Band reklame" />
-      </section>
-        !-->
-    </div>
-
-    <div class="ratingBox">
-      <h1>Rate oss!</h1>
-      <h2>Hvordan var din opplevelse?</h2>
-      <div class="stars">
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
       </div>
-      <button class="generellButton">Submit</button>
-    </div>
+
+      <div class="sectionbakgrunn">
+        <section class="sectionFakeNewsInsta">
+          <div>
+            <a href="instagram.html"
+              ><i
+                ><img
+                  src="bilder/instagramForside.png"
+                  alt="Instagrams mørke side" /></i
+            ></a>
+          </div>
+          <div class="fakeNewsTeksForside">
+            <a href="instagram.html"
+              ><h1>Fake news</h1>
+              <p>Lær mer om den mørke siden ved Fake news</p></a
+            >
+          </div>
+        </section>
+        <section class="sectionTing">
+          <div class="indreDiv">
+            <div>
+              <a href="instagram.html"
+                ><i
+                  ><img
+                    src="bilder/instagramForside.png"
+                    alt="Instagrams mørke side" /></i
+              ></a>
+            </div>
+            <div class="fakeNewsTeksForside">
+              <div class="boksIFakeNews"><i class="fa-solid fa-plus"></i></div>
+              <a href="instagram.html"
+                ><h1>??????</h1>
+                <p>Lær mer om ???????????</p></a
+              >
+            </div>
+          </div>
+          <div class="indreDiv">
+            <div>
+              <a href="personvern.html"
+                ><i
+                  ><img
+                    src="bilder/instagramForside.png"
+                    alt="Instagrams mørke side" /></i
+              ></a>
+            </div>
+            <div class="fakeNewsTeksForside">
+              <a href="instagram.html"
+                ><h1>Personvern</h1>
+                <p>Lær mer om personvern, gdpr, ??????</p></a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="sectionFakeNewsSpill">
+        <div class="sectionFakeNewsSpillTekst">
+          <p>
+            Sliter du med å finne ut hvillken type kjæledyr som passer deg og
+            din livsstil? Vi har lagd en skreddersydd test som vil matche deg
+            med et dyr!
+          </p>
+          <p class="test"><a href="test2.html"> Ta testen </a></p>
+        </div>
+      </section>
+    </main>
 
     <footer id="footer">
       <a href="#" id="backToTopButton"><ion-icon name="arrow-up"></ion-icon></a>
@@ -438,8 +488,9 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="javaScript.js"></script>
+    <script src="nightMode.js"></script>
     <script src="loginBtn.js"></script>
+    <script src="gdpr.js"></script>
     <script src="kortFlipp.js"></script>
     <script src="rateOss.js" defer></script>
   </body>

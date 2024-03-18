@@ -37,3 +37,19 @@ switchLoginString = function () {
 };
 
 // Change icon end
+
+// Change function start
+
+let btnPressCount = 0;
+
+let PressCount = function () {
+  btnPressCount = btnPressCount + 1;
+};
+
+if (btnPressCount == 1) {
+  document.body.style.color = "red";
+}
+
+console.log(btnPressCount);
+
+// Change function end
