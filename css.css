@@ -990,8 +990,10 @@ html {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  font-size: 20px;
 }
-flipKortet .date {
+
+.date {
   color: var(--beige-grey-light);
   font-size: 13px;
 }
