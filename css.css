@@ -265,7 +265,6 @@ main {
   padding: 25px;
 }
 
-
 #flipCoin {
   grid-column: 2/4;
   text-align: center;
@@ -1074,8 +1073,6 @@ html {
   /* display: block; */
   opacity: 0.8;
 }
-
-
 
 /* Rate oss start */
 
