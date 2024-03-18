@@ -6,15 +6,15 @@
 }
 
 #bildePersonvern {
-    background-image: url(bilder/kode.tiff);
-	background-position-y: center;
-    background-size: cover;
-    min-height: 200px;
+  background-image: url(bilder/kode.tiff);
+  background-position-y: center;
+  background-size: cover;
+  min-height: 200px;
 }
 
 .divpersonvern {
   margin-top: 30px;
-  padding: 0 275px 0 275px;
+  padding: 0 375px 0 375px;
 }
 
 .divpersonvern h1 {
@@ -24,6 +24,7 @@
 .divpersonvern p {
   font-size: larger;
   line-height: 33px;
+  margin-bottom: 100px;
 }
 
 .divpersonvern h2 {
@@ -37,12 +38,14 @@
 }
 
 .PersonvernBokser {
-  background-color: #80808075;
   padding: 15px;
+  border: 2px solid var(--dark-grey);
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px;
 }
 
 #informasjonskapsler {
-  background-color: #80808075;
+  background-color: #c7c6c43b;
   padding: 1px 0 35px 0;
   margin-top: 30px;
 }
