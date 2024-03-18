@@ -68,7 +68,7 @@ header {
 
 header a {
   text-decoration: none;
-  color: var(--red-light);
+  color: var(--dark-grey);
 }
 
 .divContainer {
@@ -178,9 +178,7 @@ main {
   padding-bottom: 15px;
   font-weight: 300;
 }
-.fakeNewsTeksForside
-
-.section1 h2 {
+.fakeNewsTeksForside .section1 h2 {
   color: var(--dark-grey);
   font-size: 25px;
 }
@@ -188,6 +186,16 @@ main {
 .linje {
   border-bottom: 2px solid var(--dark-grey);
   line-height: 0.1px;
+}
+
+#flipKortet {
+  position: absolute;
+  width: 100%;
+}
+
+#flipCoin {
+  grid-column: 2/4;
+  justify-self: center;
 }
 
 .section1 p {
@@ -265,9 +273,7 @@ main {
   align-self: center;
   padding: 25px;
 }
-.sectionFakeNewsInsta
-
-#flipCoin {
+.sectionFakeNewsInsta #flipCoin {
   grid-column: 2/4;
   text-align: center;
   padding: 25px 0px 60px 0px;
@@ -277,7 +283,7 @@ main {
   justify-self: center;
 }
 
-.fakeNewsTeksForside a{
+.fakeNewsTeksForside a {
   color: var(--dark-grey);
 }
 
@@ -1042,7 +1048,7 @@ html {
   font-weight: bold;
 }
 
-.modal-body{
+.modal-body {
   font-family: Playfair Display;
 }
 
@@ -1250,7 +1256,7 @@ html {
   justify-items: center;
   padding-top: 40px;
 }
-flipKortet .footerLogo {
+#flipKortet .footerLogo {
   display: grid;
   z-index: 1;
 }
