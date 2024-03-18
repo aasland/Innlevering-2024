@@ -68,7 +68,7 @@ header {
 
 header a {
   text-decoration: none;
-  color: var(--red-light);
+  color: var(--dark-grey);
 }
 
 .divContainer {
@@ -188,12 +188,12 @@ main {
   line-height: 0.1px;
 }
 
-#flipKortet{
+#flipKortet {
   position: absolute;
   width: 100%;
 }
 
-#flipCoin{
+#flipCoin {
   grid-column: 2/4;
   justify-self: center;
 }
