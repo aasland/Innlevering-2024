@@ -159,14 +159,12 @@ header a {
 
 /* Forside start */
 
-main{
-  
+main {
   display: grid;
   grid-template-columns: 2fr 3fr 4fr 2fr;
   padding-top: 60px;
   width: 100%;
 }
-
 
 .section1 {
   grid-column: 2/4;
@@ -224,7 +222,7 @@ main{
   box-shadow: 0px 0px 4px 1px;
 }
 
-.sectionTing{
+.sectionTing {
   grid-column: 3/4;
   display: flex;
   flex-direction: column;
@@ -249,23 +247,21 @@ main{
   box-shadow: 0px 0px 4px 1px;
 }
 
-
-.boksIFakeNews{
+.boksIFakeNews {
   margin-top: -82px;
-    font-size: 23px;
-    color: var(--white);
-    background-color: var(--dark-grey);
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    margin-bottom: 51px;
-    margin-left: 72px;
+  font-size: 23px;
+  color: var(--white);
+  background-color: var(--dark-grey);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin-bottom: 51px;
+  margin-left: 72px;
 }
 
-
-.fakeNewsTeksForside{
+.fakeNewsTeksForside {
   align-self: center;
-    padding: 25px;
+  padding: 25px;
 }
 
 #flipCoin {
@@ -356,7 +352,6 @@ main{
   padding: 10px;
   font-weight: 500;
   line-height: 1.5;
-
 }
 
 .sectionFakeNewsSpill:hover {
@@ -510,6 +505,17 @@ main{
 
 #SamtykkeUl {
   font-style: italic;
+}
+
+#samtykkeBilde {
+  border: 2px solid var(--dark-grey);
+  border-radius: 30px;
+  padding: 7px;
+  position: absolute;
+  right: 110px;
+  top: 37px;
+  font-size: 30px;
+  transform: rotate(253deg);
 }
 
 #newUl ul {
@@ -1030,20 +1036,20 @@ flipKortet .date {
 
 #overlay {
   position: unset;
- /* display: none; */
+  /* display: none; */
   opacity: 0;
   transition: 200ms ease-in-out;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  /*background-color: rgba(0, 0, 0, 0.5);*/
   pointer-events: none;
 }
 
- #overlay.active {
+#overlay.active {
   position: fixed;
- /* display: block; */
+  /* display: block; */
   opacity: 0.8;
 }
 
@@ -1224,7 +1230,7 @@ flipKortet .footerLogo {
 #bunntekstFooter p {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI";
 }
-.omTeametFooter{
+.omTeametFooter {
   margin-top: 10px;
 }
 
