@@ -52,7 +52,7 @@ button {
 
 header {
   background-color: var(--white);
-  height: 91px;
+  height: 110px;
   display: grid;
   grid-template-columns: 170px 1fr 1fr 1fr 1fr 170px;
   grid-template-rows: 4fr 2fr 1fr;
@@ -68,7 +68,7 @@ header {
 
 header a {
   text-decoration: none;
-  color: var(--red-light);
+  color: var(--dark-grey);
 }
 
 .divContainer {
@@ -264,7 +264,7 @@ main {
   align-self: center;
   padding: 25px;
 }
-
+.sectionFakeNewsInsta
 
 #flipCoin {
   grid-column: 2/4;
@@ -276,7 +276,7 @@ main {
   justify-self: center;
 }
 
-.fakeNewsTeksForside a{
+.fakeNewsTeksForside a {
   color: var(--dark-grey);
   text-decoration: none;
 }
@@ -871,8 +871,10 @@ html {
   display: flex;
   justify-content: center;
   padding: 20px;
-  width: 70%;
-  margin: 20px auto;
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: -5px;
   box-shadow: 0 0 5px black;
   flex-direction: column;
 }
@@ -1042,7 +1044,7 @@ html {
   font-weight: bold;
 }
 
-.modal-body{
+.modal-body {
   font-family: Playfair Display;
 }
 
@@ -1250,7 +1252,7 @@ html {
   justify-items: center;
   padding-top: 40px;
 }
-flipKortet .footerLogo {
+#flipKortet .footerLogo {
   display: grid;
   z-index: 1;
 }

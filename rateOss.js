@@ -12,10 +12,11 @@ stars.forEach((star, index1) => {
   });
 });
 
+let nyP = document.createElement("p");
+nyP.textContent = "Tusen Takk!";
+
 rateBtn.addEventListener("click", () => {
-  let nyP = document.createElement("p");
   myDiv.appendChild(nyP);
-  nyP.textContent = "Tusen Takk!";
 
   nyP.style.display = "flex";
   nyP.style.justifyContent = "center";
