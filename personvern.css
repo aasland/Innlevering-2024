@@ -1,8 +1,8 @@
 /* Personvernsiden */
 
 #personvern {
-    padding-top: 120px;
-    font-family: Playfair Display;
+  padding-top: 120px;
+  font-family: Playfair Display;
 }
 
 #bildePersonvern {
@@ -13,55 +13,55 @@
 }
 
 .divpersonvern {
-    margin-top: 30px;
-    padding: 0 275px 0 275px;
+  margin-top: 30px;
+  padding: 0 275px 0 275px;
 }
 
 .divpersonvern h1 {
-    font-size: 33px;
+  font-size: 33px;
 }
 
 .divpersonvern p {
-    font-size: larger;
-    line-height: 33px;
-
+  font-size: larger;
+  line-height: 33px;
 }
 
 .divpersonvern h2 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 #DivPersonvernBokser {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
 }
 
 .PersonvernBokser {
-    background-color: #80808075;
-    padding: 15px;
+  background-color: #80808075;
+  padding: 15px;
 }
 
 #informasjonskapsler {
-    background-color: #80808075;
-    padding: 1px 0 35px 0;
-    margin-top: 30px;
+  background-color: #80808075;
+  padding: 1px 0 35px 0;
+  margin-top: 30px;
 }
 
 .popup {
-    position: fixed;
-    background-color: #fff;
-    border: 1px solid #000;
-    padding: 10px;
-    display: none;
-    z-index: 1;
+  position: fixed;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 10px;
+  display: none;
+  z-index: 1;
 }
 
 .wrapper {
-    position: relative;
+  position: relative;
 }
 
 .hover-text {
-    text-decoration: underline;
-    cursor: pointer;
+  text-decoration: underline;
+  cursor: pointer;
+  font-style: italic;
 }
