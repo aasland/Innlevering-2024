@@ -34,22 +34,8 @@ loginBtn.addEventListener("click", (event) => {
 
 switchLoginString = function () {
   btnPopup.innerHTML = `<ion-icon name="log-out"></ion-icon> Log out`;
+  btnPopup.style.display = "flex";
+  btnPopup.style.alignItems = "center";
 };
 
 // Change icon end
-
-// Change function start
-
-let btnPressCount = 0;
-
-let PressCount = function () {
-  btnPressCount = btnPressCount + 1;
-};
-
-if (btnPressCount == 1) {
-  document.body.style.color = "red";
-}
-
-console.log(btnPressCount);
-
-// Change function end

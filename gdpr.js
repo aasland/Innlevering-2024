@@ -31,8 +31,10 @@ const endreH2Godta = function () {
   samtykkeP1.innerHTML =
     "Du leste jo nettopp hva slags informasjon vi tar fra deg, eller gjorde du det? Leste du i det hele tatt informasjonen, eller trykket du bare 'Godkjenn alle' av vane?";
   samtykkeP2.innerHTML = "";
+  samtykkeUl.innerHTML = "";
   document.querySelector("#SamtykkeUl").style.fontWeight = "600";
   document.querySelector("#SamtykkeUl").style.fontStyle = "normal";
+  samtykkeP1.style.marginBottom = "-50px;";
   btnContainer.innerHTML = "";
   document.getElementById("samtykkeBilde").style.display = "none";
   newUl.innerHTML = "";
