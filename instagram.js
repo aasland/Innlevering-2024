@@ -70,6 +70,11 @@ function addPost() {
     let commentsNum = document.querySelectorAll(".parents").length
     document.getElementById("comment").textContent = commentsNum
 
+    if (!userComment.value.trim()) {
+        publishBtn.setAttribute("disabled", "disabled");
+        publishBtn.classList.remove("abled");
+    }
+
 }
 
 //<img src="${userId.image}"> 
