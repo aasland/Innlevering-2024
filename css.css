@@ -890,6 +890,14 @@ html {
   font-size: 15px;
 }
 
+.kmt-som-div {
+  display: flex;
+}
+
+#kmt-som-h2 {
+  font-size: 20px;
+}
+
 .commentbox {
   display: flex;
   justify-content: space-around;
