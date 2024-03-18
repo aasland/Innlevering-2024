@@ -159,14 +159,12 @@ header a {
 
 /* Forside start */
 
-main{
-  
+main {
   display: grid;
   grid-template-columns: 2fr 3fr 4fr 2fr;
   padding-top: 60px;
   width: 100%;
 }
-
 
 .section1 {
   grid-column: 2/4;
@@ -182,12 +180,12 @@ main{
 }
 
 .section1 h2 {
-  color: var(--dark-green);
+  color: var(--dark-grey);
   font-size: 25px;
 }
 
 .linje {
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid var(--dark-grey);
   line-height: 0.1px;
 }
 
@@ -224,7 +222,7 @@ main{
   box-shadow: 0px 0px 4px 1px;
 }
 
-.sectionTing{
+.sectionTing {
   grid-column: 3/4;
   display: flex;
   flex-direction: column;
@@ -249,10 +247,21 @@ main{
   box-shadow: 0px 0px 4px 1px;
 }
 
+.boksIFakeNews {
+  margin-top: -82px;
+  font-size: 23px;
+  color: var(--white);
+  background-color: var(--dark-grey);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin-bottom: 51px;
+  margin-left: 72px;
+}
 
-.fakeNewsTeksForside{
+.fakeNewsTeksForside {
   align-self: center;
-    padding: 25px;
+  padding: 25px;
 }
 
 #flipCoin {
@@ -261,7 +270,7 @@ main{
   padding: 25px 0px 60px 0px;
   position: relative;
   width: 940px;
-  height: 400px;
+  height: 500px;
   justify-self: center;
 }
 
@@ -312,12 +321,13 @@ main{
 }
 
 .forskjelligePNSider h1 {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 22px;
+  margin-bottom: 10px;
 }
 
 .forskjelligePNSider p {
-  font-size: 11px;
+  font-size: 15px;
 }
 
 .forskjelligePNSider i {
@@ -342,7 +352,6 @@ main{
   padding: 10px;
   font-weight: 500;
   line-height: 1.5;
-
 }
 
 .sectionFakeNewsSpill:hover {
@@ -358,21 +367,28 @@ main{
   font-size: 25px;
   font-weight: 400;
   border-radius: 5px;
-  background-color: #77787b1f;
+  background-color: #989898;
 }
 
 .test a:hover {
-  background-color: var(--white);
+  background-color: var(--dark-grey);
   transition: 0.5s;
 }
 
 .sectionFakeNewsSpillTekst {
-  margin: 40px;
-  margin-top: 280px;
+  margin: 20px;
+  background-color: #9e9e9ea3;
+  margin-top: 251px;
+  padding: 23px;
+  border-radius: 10px;
+  padding-bottom: 1px;
 }
 
 .sectionFakeNewsSpillTekst p {
-  font-size: 25px;
+  font-size: 28px;
+  line-height: 1.3;
+  color: var(--white);
+  margin-bottom: 21px;
 }
 
 /* Forside slutt */
@@ -489,6 +505,17 @@ main{
 
 #SamtykkeUl {
   font-style: italic;
+}
+
+#samtykkeBilde {
+  border: 2px solid var(--dark-grey);
+  border-radius: 30px;
+  padding: 7px;
+  position: absolute;
+  right: 110px;
+  top: 37px;
+  font-size: 30px;
+  transform: rotate(253deg);
 }
 
 #newUl ul {
@@ -879,7 +906,6 @@ html {
   outline: none;
   margin: 5px 0;
   color: var(--beige-grey-light);
-  margin-left: 20px;
   padding: 10px;
   background: none;
 }
@@ -1007,22 +1033,26 @@ flipKortet .date {
   font-weight: bold;
 }
 
+.modal-body{
+  font-family: Playfair Display;
+}
+
 #overlay {
   position: unset;
- /* display: none; */
+  /* display: none; */
   opacity: 0;
   transition: 200ms ease-in-out;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  /*background-color: rgba(0, 0, 0, 0.5);*/
   pointer-events: none;
 }
 
- #overlay.active {
+#overlay.active {
   position: fixed;
- /* display: block; */
+  /* display: block; */
   opacity: 0.8;
 }
 
@@ -1203,7 +1233,7 @@ flipKortet .footerLogo {
 #bunntekstFooter p {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI";
 }
-.omTeametFooter{
+.omTeametFooter {
   margin-top: 10px;
 }
 
