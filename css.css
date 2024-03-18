@@ -877,8 +877,10 @@ html {
   display: flex;
   justify-content: center;
   padding: 20px;
-  width: 70%;
-  margin: 20px auto;
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: -5px;
   box-shadow: 0 0 5px black;
   flex-direction: column;
 }
