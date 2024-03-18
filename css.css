@@ -178,6 +178,7 @@ main {
   padding-bottom: 15px;
   font-weight: 300;
 }
+.fakeNewsTeksForside
 
 .section1 h2 {
   color: var(--dark-grey);
@@ -210,6 +211,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   margin: 15px;
+  background-color: #d1cdcd;
 }
 
 .sectionFakeNewsInsta img {
@@ -263,6 +265,7 @@ main {
   align-self: center;
   padding: 25px;
 }
+.sectionFakeNewsInsta
 
 #flipCoin {
   grid-column: 2/4;
@@ -272,6 +275,10 @@ main {
   width: 940px;
   height: 500px;
   justify-self: center;
+}
+
+.fakeNewsTeksForside a{
+  color: var(--dark-grey);
 }
 
 #flipKortet {
@@ -378,7 +385,7 @@ main {
 .sectionFakeNewsSpillTekst {
   margin: 20px;
   background-color: #9e9e9ea3;
-  margin-top: 251px;
+  margin-top: 227px;
   padding: 23px;
   border-radius: 10px;
   padding-bottom: 1px;
