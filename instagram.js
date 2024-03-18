@@ -59,7 +59,7 @@ function addPost() {
             <div> 
                 <h1>${userId.name}</h1>
                 <p>${userId.message}</p>
-                <div class="engagements"> <img src="bilder/like.png"><img src="bilder/share.png"></div> 
+                <div class="engagements"> <i class="fa-regular fa-thumbs-up"></i><i class="fa-regular fa-thumbs-down"></i></div> 
                 <span class="date">${userId.date}</span>
             </div> 
         </div>`
