@@ -52,7 +52,7 @@ button {
 
 header {
   background-color: var(--white);
-  height: 91px;
+  height: 110px;
   display: grid;
   grid-template-columns: 170px 1fr 1fr 1fr 1fr 170px;
   grid-template-rows: 4fr 2fr 1fr;
