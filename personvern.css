@@ -5,6 +5,13 @@
   font-family: Playfair Display;
 }
 
+#bildePersonvern {
+    background-image: url(bilder/kode.tiff);
+	background-position-y: center;
+    background-size: cover;
+    min-height: 200px;
+}
+
 .divpersonvern {
   margin-top: 30px;
   padding: 0 275px 0 275px;
