@@ -97,10 +97,6 @@ header a {
   align-items: center;
 }
 
-.divSectionThree a {
-  font-weight: 500;
-}
-
 .divContainer3 {
   display: flex;
   flex-direction: row;
