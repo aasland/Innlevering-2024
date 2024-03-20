@@ -1097,13 +1097,13 @@ html {
   gap: 25px;
   justify-content: center;
 }
-.stars i {
+.stars ion-icon {
   color: var(--dark-white);
   font-size: 35px;
   cursor: pointer;
   transition: color 0.2s ease;
 }
-.stars i.active {
+.stars ion-icon.active {
   color: #ff9c1a;
 }
 
