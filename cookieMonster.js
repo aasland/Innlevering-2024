@@ -5,10 +5,8 @@ const object = document.getElementById("objekt");
 const scoreDisplay = document.getElementById("score");
 const startGameBtn = document.querySelector("button");
 const startScreenContainer = document.querySelector("#startScreenContainer");
-const lostPopup = document.getElementById("lostPopup");
 
 let score = 0;
-let previousScore = 0;
 
 function moveCatcher(event) {
   const gameArea = document.getElementById("game-area");
