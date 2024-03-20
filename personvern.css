@@ -1,24 +1,23 @@
 /* Personvernsiden */
 
 #personvern {
-    padding-top: 120px;
-    font-family: Playfair Display;
+  padding-top: 120px;
 }
 
 #bildePersonvern {
-    background-image: url(bilder/kode.jpeg);
-    background-position-y: center;
-    background-size: cover;
-    min-height: 200px;
+  background-image: url(bilder/kode.tiff);
+  background-position-y: center;
+  background-size: cover;
+  min-height: 200px;
+}
+
+.divSectionThree {
+  font-weight: bold;
 }
 
 .divpersonvern {
-    margin-top: 30px;
-    padding: 0 275px 0 275px;
-}
-
-.divpersonvern img {
-    max-height: 200px;
+  margin-top: 30px;
+  padding: 0 375px 0 375px;
 }
 
 .divpersonvern h1 {
@@ -26,8 +25,9 @@
 }
 
 .divpersonvern p {
-    font-size: larger;
-    line-height: 33px;
+  font-size: larger;
+  line-height: 33px;
+  margin-bottom: 100px;
 }
 
 .divpersonvern h2 {
@@ -41,14 +41,16 @@
 }
 
 .PersonvernBokser {
-    background-color: #c7c6c43b;
-    padding: 15px;
+  padding: 15px;
+  border: 2px solid var(--dark-grey);
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px;
 }
 
 #informasjonskapsler {
-    background-color: #c7c6c43b;
-    padding: 1px 0 35px 0;
-    margin-top: 30px;
+  background-color: #c7c6c43b;
+  padding: 1px 0 35px 0;
+  margin-top: 30px;
 }
 
 .popup {
