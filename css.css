@@ -73,6 +73,23 @@ header a {
   color: var(--dark-grey);
 }
 
+.divSectionOne,
+.divSectionTwo,
+.divSectionThree,
+.divSectionFour {
+  font-weight: 400;
+}
+.divSectionOne:hover,
+.divSectionTwo:hover,
+.divSectionThree:hover,
+.divSectionFour:hover {
+  font-weight: bold;
+}
+
+.divSectionHeader {
+  font-weight: bold;
+}
+
 .divContainer {
   display: flex;
   justify-content: space-around;
