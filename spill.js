@@ -5,12 +5,26 @@ for (const kortSnud of riktig) {
         kortSnud.classList.toggle("snudd")
     })
 }
+/*
+const gratulerer = document.querySelectorAll("[feil-target]")
+const lukkKnapp = document.querySelector(".lukkKnapp")
 
+gratulerer.addEventListener("click", function(){
+    gratulerer.classList.add("aktiv")
+})
 
+*/
+
+ 
+ 
 const feil = document.querySelectorAll(".feil")
 for(const shake of feil)
 shake.addEventListener("click", function () {
     shake.classList.add("shake")
     setTimeout(function() {
-        shake.classList.remove("shake") }, 2000)
+        shake.classList.remove("shake") }, 1000)
 })
+
+   
+
+// popup boks forklarer spillets regler i steden  også bare flipp på riktig 

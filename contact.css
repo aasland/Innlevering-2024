@@ -158,3 +158,9 @@
     width: 100%;
   }
 }
+
+@media (max-width: 1650px) {
+  .content {
+    margin-top: 100px;
+  }
+}
