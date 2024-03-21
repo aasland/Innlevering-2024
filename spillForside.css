@@ -1,3 +1,7 @@
+.spillForside{
+    height: 100vh;
+}
+
 .spillOverskrift {
     padding-top: 170px;
     font-size: 40px;
@@ -17,7 +21,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--red-dark);
+    background-color: var(--dark-grey);
+    color: var(--white);
     border-radius: 30px;
     width: 450px;
     height: 450px;
@@ -39,4 +44,9 @@
     margin: 30px;
     font-size: 20px;
     box-shadow: 1px 1px 8px gray;
+}
+
+.spill1 button:hover{
+    background-color: var(--red-dark);
+    transition: 0.5s;
 }
