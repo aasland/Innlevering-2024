@@ -12,7 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css.css" />
-    <link rel="stylesheet" href="instagram.css" />
+    <link rel="stylesheet" href="contact.css" />
     <link rel="icon" type="image/x-icon" href="favicon/favicon.ico" />
   </head>
 
@@ -147,108 +147,63 @@
         </div>
       </div>
     </section>
-
-    <main class="body-insta">
-      <div id="saker">
-        <div class="slider">
-          <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1" />
-            <input type="radio" name="radio-btn" id="radio2" />
-            <input type="radio" name="radio-btn" id="radio3" />
-
-            <div data-modal-target="#modal" class="slide first">
-              <img src="bilder/side1.png" alt="open modal" />
-            </div>
-            <div data-modal-target="#modal2" class="slide">
-              <img src="bilder/side2.png" alt="" />
-            </div>
-            <div data-modal-target="#modal3" class="slide">
-              <img src="bilder/side3.png" alt="" />
-            </div>
-
-            <div class="navigation-auto">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
+    <section class="contact">
+      <div class="content">
+        <h2>Kontakt Oss</h2>
+        <p>
+          Har du spørsmål, tilbakemeldinger eller ønsker å samarbeide med oss?
+          Ikke nøl med å kontakte oss! Vår dedikerte kundeservice er her for å
+          hjelpe deg med hva enn du måtte trenge. Du kan nå oss via e-post,
+          telefon eller ved å fylle ut skjemaet nedenfor. Vi ser frem til å høre
+          fra deg!
+        </p>
+      </div>
+      <div class="container">
+        <div class="contactInfo">
+          <div class="box">
+            <div class="icon"><ion-icon name="pin"></ion-icon></div>
+            <div class="text">
+              <h3>Adresse</h3>
+              <p>Gjønnesjordet 30, 1357 Bekkestua, Nadderud VGS</p>
             </div>
           </div>
-
-          <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
+          <div class="box">
+            <div class="icon"><ion-icon name="call"></ion-icon></div>
+            <div class="text">
+              <h3>Telefon</h3>
+              <p>936 68 308</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><ion-icon name="mail"></ion-icon></div>
+            <div class="text">
+              <h3>Mail</h3>
+              <p>sofiekva@viken.no</p>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="modal" id="modal">
-        <div class="modal-header">
-          <h1 class="title">Example Modal</h1>
-          <button data-close-button class="close-button">&times;</button>
-        </div>
-        <div class="modal-body">hei</div>
-      </div>
-      <div id="overlay"></div>
-
-      <div class="modal" id="modal2">
-        <div class="modal-header">
-          <h1 class="title">Example Modal</h1>
-          <button data-close-button class="close-button">&times;</button>
-        </div>
-        <div class="modal-body">hei</div>
-      </div>
-      <div id="overlay" class="active"></div>
-
-      <div class="modal" id="modal3">
-        <div class="modal-header">
-          <h1 class="title">Example Modal</h1>
-          <button data-close-button class="close-button">&times;</button>
-        </div>
-        <div class="modal-body">hei</div>
-      </div>
-      <div id="overlay" class="active"></div>
-
-      <div id="kommentarfelt" class="container-kmt">
-        <div class="head">
-          <h1>Del din mening</h1>
-        </div>
-        <div><span id="comment">0</span> Kommentarer</div>
-        <div class="text">
-         <!-- <p>Vi ønsker gjerne å høre fra deg</p>
-        </div> -->
-        <div class="comments"></div>
-        <div class="commentbox">
-          <!--<img src="bilder/user1.png" alt="" />-->
-          <div class="content">
-            <div class="kmt-som-div">
-              <h2 id="kmt-som-h2">Kommenter som:</h2>
-              <input type="text" value="Anonym" class="user" />
+        <div class="contactForm">
+          <form>
+            <h2>Send oss en melding!</h2>
+            <div class="inputBox">
+              <input type="text" required="required" />
+              <span>Fullt Navn</span>
             </div>
-
-            <div class="commentinput">
-              <input
-                type="text"
-                placeholder="Skriv kommentar"
-                class="usercomment"
-              />
-              <div class="buttons">
-                <button type="submit" disabled id="publish">Publiser</button>
-                <div class="notify">
-                  <input type="checkbox" class="notifying" />
-                  <span>Gi meg beskjed</span>
-                </div>
-              </div>
+            <div class="inputBox">
+              <input type="text" required="required" />
+              <span>Email</span>
             </div>
-            <p class="policy">
-              Denne siden er beskyttet av reCAPTCHA og Google
-              <a href="">privacy policy</a> og
-              <a href="">Terms of Service</a> søknaden
-            </p>
-          </div>
+            <div class="inputBox">
+              <textarea required="required"></textarea>
+              <span>Skriv en melding...</span>
+            </div>
+            <div class="inputBox">
+              <button id="contactBtn">Send</button>
+            </div>
+          </form>
         </div>
       </div>
-    </main>
-
+    </section>
     <footer id="footer">
       <a href="#" id="backToTopButton"><ion-icon name="arrow-up"></ion-icon></a>
 
@@ -277,19 +232,14 @@
         </p>
       </div>
     </footer>
-
-    <script src="instagram.js"></script>
-    <script src="nightMode.js"></script>
-    <script src="loginBtn.js"></script>
-    <script src="insta-modal.js"></script>
-
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="loginBtn.js"></script>
+    <script src="nightMode.js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>

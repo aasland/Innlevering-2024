@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kilder</title>
+    <title>KLIKKEN | Hjem</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -12,15 +12,16 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css.css" />
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico" />
   </head>
 
   <body>
     <header>
       <div class="divContainer">
-        <div class="divSectionThree">KLIKKEN</div>
+        <div class="divSectionHeader"><a href="index.html">KLIKKEN</a></div>
       </div>
       <div class="divContainer2">
-        <div class="divSectionFour">
+        <div class="divSectionLogin">
           <button class="btnLogin-popup">
             <i class="fa-solid fa-circle-user"></i> Logg inn
           </button>
@@ -31,11 +32,24 @@
         </div>
       </div>
       <div class="divContainer3">
-        <div class="divSectionOne">Kontakt</div>
+        <div class="divSectionOne">
+          <a href="contact.html">Kontakt oss</a>
+        </div>
       </div>
       <div class="divContainer4">
-        <div class="divSectionTwo">Om oss</div>
+        <div class="divSectionTwo"><a href="omOss.html">Om oss</a></div>
       </div>
+      <div class="divContainer5">
+        <div class="divSectionThree">
+          <a href="personvern.html">Les mer om personvern</a>
+        </div>
+      </div>
+      <div class="divContainer6">
+        <div class="divSectionFour">
+          <a href="instagram.html">Instagram</a>
+        </div>
+      </div>
+
       <div class="mediaQueryHeader">
         <div class="dropdown">
           <button><ion-icon name="menu"></ion-icon></button>
@@ -49,6 +63,89 @@
         </div>
       </div>
     </header>
+    <section id="loginSection">
+      <div class="wrapper">
+        <span class="icon-close"
+          ><ion-icon name="close-outline"></ion-icon
+        ></span>
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required /> <label>Email</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="lock-closed"></ion-icon>
+              </span>
+              <input type="password" required />
+              <label>Password</label>
+            </div>
+
+            <div class="remember-forgot">
+              <label><input type="checkbox" /> Remember me</label>
+              <a href="#">Forgot Password?</a>
+            </div>
+
+            <button
+              type="submit"
+              class="btn"
+              onclick="switchLoginString(), PressCount()"
+            >
+              Login
+            </button>
+
+            <div class="login-register">
+              <p>
+                Don't have an account?
+                <a href="#" class="register-link">Register</a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-box register">
+          <h2>Registration</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="person"></ion-icon></span>
+              <input type="text" required /> <label>Username</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required /> <label>Email</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="lock-closed"></ion-icon>
+              </span>
+              <input type="password" required />
+              <label>Password</label>
+            </div>
+
+            <div class="remember-forgot">
+              <label
+                ><input type="checkbox" /> I agree to the terms &
+                conditions</label
+              >
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+
+            <div class="login-register">
+              <p>
+                Already have an account?
+                <a href="#" class="login-link">Login</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <section id="sectionkilder">
       <h1>Kilder</h1>
