@@ -13,8 +13,22 @@ gratulerer.addEventListener("click", function(){
     gratulerer.classList.add("aktiv")
 })
 
+
+const howTo= document.querySelector(".gratulerer")
+window.addEventListener("load", function(){
+    window.classList
+})
+
 */
 
+
+window.onload = function() {
+    document.querySelector(".gratulerer").style.display = "block";
+  };
+
+  function closePopup() {
+    document.querySelector(".gratulerer").style.display = "none";
+  }
  
  
 const feil = document.querySelectorAll(".feil")
