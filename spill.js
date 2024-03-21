@@ -5,25 +5,14 @@ for (const kortSnud of riktig) {
         kortSnud.classList.toggle("snudd")
     })
 }
-/*
-const gratulerer = document.querySelectorAll("[feil-target]")
-const lukkKnapp = document.querySelector(".lukkKnapp")
-
-gratulerer.addEventListener("click", function(){
-    gratulerer.classList.add("aktiv")
-})
 
 
-const howTo= document.querySelector(".gratulerer")
-window.addEventListener("load", function(){
-    window.classList
-})
-
-*/
 window.addEventListener("load", function(){
     const popup = document.querySelector(".gratulerer");
     popup.classList.add("aktiv");
 });
+
+
  
 const feil = document.querySelectorAll(".feil")
 for(const shake of feil)
