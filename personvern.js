@@ -102,3 +102,37 @@ popup2.addEventListener("mouseout", function (evt) {
         }
     }, 200);
 });
+
+const hoverText3 = document.getElementById("hoverKonfidensialitet");
+const popup3 = document.getElementById("popup3");
+let popup3Visible = false;
+
+hoverText3.addEventListener("mouseover", function (evt) {
+    popup3.style.display = "block";
+    const hoverRect = hoverText3.getBoundingClientRect();
+    popup3.style.top = (hoverRect.top + hoverRect.height) + "px"; 
+    popup3.style.left = hoverRect.left + "px"; 
+    popup3Visible = true;
+});
+
+hoverText3.addEventListener("mouseout", function (evt) {
+    popup3Visible = false;
+    setTimeout(() => {
+        if (!popup3Visible) {
+            popup3.style.display = "none";
+        }
+    }, 200); 
+});
+
+popup3.addEventListener("mouseover", function (evt) {
+    popup3Visible = true;
+});
+
+popup3.addEventListener("mouseout", function (evt) {
+    popup3Visible = false;
+    setTimeout(() => {
+        if (!popup3Visible) {
+            popup3.style.display = "none";
+        }
+    }, 200);
+});

@@ -4,46 +4,51 @@
 <head>
     <title>Popup-boks på hover</title>
     <style>
-        .popup {
-            position: absolute;
-            background-color: #fff;
-            border: 1px solid #000;
-            padding: 10px;
-            display: none;
-            z-index: 1;
-        }
-
-        .wrapper {
-            position: relative;
-        }
-
-        .hover-text {
-            font-weight: bold;
-            color: blue;
+        #toggle-button {
+            background-color: #cd4883d9;
+            color: #fed9f6;
+            border: none;
+            padding: 10px 20px;
             cursor: pointer;
+            border-radius: 30px;
+            font-family: 'Comfortaa', sans-serif;
+        }
+
+        #toggle-button:hover {
+            background-color: #fed9f6;
+            color: #ba407d;
+        }
+
+        #kilder {
+            margin-top: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div class="wrapper">
+
+    <button id="toggle-button">Vis mer info</button>
+
+    <div id="kilder" style="display: none;">
+
         <p>
-            Dette er en tekst hvor det <span class="hover-text" onmouseover="showPopup()" onmouseout="hidePopup()">poper
-                opp</span> en tekstboks når du holder musen over et ord.
+            HER KOMMER ALLE KILDENE
         </p>
-        <div class="popup" id="popup">
-            Dette er popup-boksen som vises når du holder musen over ordet.
-        </div>
+
     </div>
 
     <script>
-        function showPopup() {
-            document.getElementById("popup").style.display = "block";
-        }
 
-        function hidePopup() {
-            document.getElementById("popup").style.display = "none";
-        }
+        document.getElementById('toggle-button').addEventListener('click', function () {
+            const extraInfo = document.getElementById('kilder');
+            if (kilder.style.display === 'none') {
+                kilder.style.display = 'block';
+                document.getElementById('toggle-button').textContent = 'Skjul';
+            } else {
+                extraInfo.style.display = 'none';
+                document.getElementById('toggle-button').textContent = 'Kilder';
+            }
+        });
     </script>
 </body>
 

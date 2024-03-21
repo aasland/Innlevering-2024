@@ -1,85 +1,112 @@
 /* Personvernsiden */
 
+:root {
+    --red-dark: #d90429;
+    --red-light: #ef233c;
+    --white: #edf2f4;
+    --light-grey: #8d99ae;
+    --dark-grey: #2b2d42;
+    --beige-grey-light: #808080;
+    --dark-white: rgb(215, 216, 217);
+  }
+  
 #personvern {
-  padding-top: 120px;
-}
-
-#bildePersonvern {
-  background-image: url(bilder/kode.tiff);
-  background-position-y: center;
-  background-size: cover;
-  min-height: 200px;
+    padding-top: 120px;
 }
 
 .divSectionThree {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .divpersonvern {
-  margin-top: 30px;
-  padding: 0 375px 0 375px;
+    margin-top: 30px;
+    padding: 0 375px 0 375px;
 }
 
 .divpersonvern h1 {
-  font-size: 33px;
+    font-size: 33px;
 }
 
 .divpersonvern p {
-  font-size: larger;
-  line-height: 33px;
-  margin-bottom: 100px;
+    font-size: larger;
+    line-height: 33px;
+    margin-bottom: 100px;
 }
 
 .divpersonvern h2 {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 #DivPersonvernBokser {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
 }
 
 .PersonvernBokser {
-  padding: 15px;
-  background-color: white;
-  border-radius: 0.5em;
-  box-shadow: 0px 4px 10px lightgray;
+    padding: 15px;
+    background-color: white;
+    border-radius: 0.5em;
+    box-shadow: 0px 4px 10px lightgray;
 }
 
 #informasjonskapsler {
-  background-color: #c7c6c43b;
-  padding: 1px 0 35px 0;
-  margin-top: 30px;
+    background-color: #c7c6c43b;
+    padding: 20px 0 1px 0;
+    margin-top: 30px;
 }
 
 .popup {
-  position: fixed;
-  background-color: #fff;
-  border: 1px solid #000;
-  padding: 10px;
-  display: none;
-  z-index: 1;
+    position: fixed;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 10px;
+    display: none;
+    z-index: 1;
 }
 
 .wrapper {
-  position: relative;
+    position: relative;
 }
 
 .hover-text {
-  cursor: pointer;
-  font-style: italic;
+    cursor: pointer;
+    font-style: italic;
 }
 
 .divSectionLogin {
-  display: none;
-  height: 41px;
-}
-
-.moonIconContainer {
-  display: none;
+    display: block; 
+    height: 41px;
 }
 
 .divContainer2 {
-  height: 41px;
+    height: 41px;
+}
+
+#toggle-button {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+#toggle-button:hover {
+    background-color: #c7c6c465;
+    color: var(--dark-grey);
+}
+
+#kilder {
+    margin-top: 10px;
+}
+
+.classKilder {
+    margin-top: 30px;
+    padding: 0 375px 0 375px;
+}
+
+.classKilder #toggle-button {
+    display: flex;
+    justify-content: center;
 }
