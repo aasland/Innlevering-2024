@@ -43,8 +43,8 @@
 .PersonvernBokser {
   padding: 15px;
   border: 2px solid var(--dark-grey);
-  border-radius: 15px;
-  box-shadow: 0px 5px 5px;
+  background-color: #c7c6c43b;
+
 }
 
 #informasjonskapsler {
