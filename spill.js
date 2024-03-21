@@ -13,6 +13,13 @@ window.addEventListener("load", function(){
 });
 
 
+
+const lukk = document.getElementById("lukkKnapp");
+lukk.addEventListener("click", function(){
+    const gratulerer = lukk.gratulerer
+    gratulerer.classList.remove("aktiv");
+});
+
  
 const feil = document.querySelectorAll(".feil")
 for(const shake of feil)
