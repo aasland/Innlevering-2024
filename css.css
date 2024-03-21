@@ -1033,7 +1033,21 @@ html {
 }
 /* tommlene endrer farge */
 
+#up {
+  display: block;
+}
 
+#up-trykket {
+  display: none;
+}
+
+#ned {
+  display: block;
+}
+
+#ned-trykket {
+  display: none;
+}
 
 /*Pop up modul*/
 
