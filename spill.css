@@ -33,13 +33,17 @@
 }
 
 .bak {
-  background-color: var(--beige-grey-light);
+  background-color: var(--red-dark);
+  color: var(--white);
   transform: rotateY(180deg);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
+.kort:hover{
+  box-shadow: 2px 4px 10px gray;
+}
 
 .meta {
   grid-column: 1/3;
@@ -81,6 +85,11 @@
 
 .idTyveriBilde {
   width: 100%;
+}
+
+.idTyveri .bak p{
+  text-align: center;
+  padding: 10px 30px 10px ;
 }
 
 .hus {
@@ -131,7 +140,9 @@
   background: none;
   font-size: 25px;
   font-weight: 400;
-
+}
+#lukkKnapp:hover{
+  color: gray;
 }
 
 .intro p {
