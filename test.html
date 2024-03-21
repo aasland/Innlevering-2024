@@ -1,55 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Popup-boks på hover</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fem Bokser</title>
     <style>
-        #toggle-button {
-            background-color: #cd4883d9;
-            color: #fed9f6;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 30px;
-            font-family: 'Comfortaa', sans-serif;
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
         }
 
-        #toggle-button:hover {
-            background-color: #fed9f6;
-            color: #ba407d;
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
-        #kilder {
-            margin-top: 10px;
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            text-align: center;
+            padding: 15px;
+            background-color: white;
+            border-radius: 0.5em;
+            box-shadow: 0px 4px 10px lightgray;
+        }
+
+        .box img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 
 <body>
 
-    <button id="toggle-button">Vis mer info</button>
-
-    <div id="kilder" style="display: none;">
-
-        <p>
-            HER KOMMER ALLE KILDENE
-        </p>
-
+    <div class="container">
+        <div class="box">
+            <img src="https://via.placeholder.com/150" alt="Bilde 1">
+            <p>Noen tekst her</p>
+        </div>
+        <div class="box">
+            <img src="https://via.placeholder.com/150" alt="Bilde 2">
+            <p>Noen tekst her</p>
+        </div>
+        <div class="box">
+            <img src="https://via.placeholder.com/150" alt="Bilde 3">
+            <p>Noen tekst her</p>
+        </div>
+        <div class="box">
+            <img src="https://via.placeholder.com/150" alt="Bilde 4">
+            <p>Noen tekst her</p>
+        </div>
+        <div class="box">
+            <img src="https://via.placeholder.com/150" alt="Bilde 5">
+            <p>Noen tekst her</p>
+        </div>
     </div>
 
-    <script>
-
-        document.getElementById('toggle-button').addEventListener('click', function () {
-            const extraInfo = document.getElementById('kilder');
-            if (kilder.style.display === 'none') {
-                kilder.style.display = 'block';
-                document.getElementById('toggle-button').textContent = 'Skjul';
-            } else {
-                extraInfo.style.display = 'none';
-                document.getElementById('toggle-button').textContent = 'Kilder';
-            }
-        });
-    </script>
 </body>
 
 </html>
