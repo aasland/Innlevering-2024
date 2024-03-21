@@ -20,16 +20,10 @@ window.addEventListener("load", function(){
 })
 
 */
-
-
-window.onload = function() {
-    document.querySelector(".gratulerer").style.display = "block";
-  };
-
-  function closePopup() {
-    document.querySelector(".gratulerer").style.display = "none";
-  }
- 
+window.addEventListener("load", function(){
+    const popup = document.querySelector(".gratulerer");
+    popup.classList.add("aktiv");
+});
  
 const feil = document.querySelectorAll(".feil")
 for(const shake of feil)
