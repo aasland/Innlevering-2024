@@ -1,69 +1,18 @@
 
- 
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-  }
-  
-  :root {
-    --red-dark: #d90429;
-    --red-light: #ef233c;
-    --white: #edf2f4;
-    --light-grey: #8d99ae;
-    --dark-grey: #2b2d42;
-    --beige-grey-light: #808080;
-    --dark-white: rgb(215, 216, 217);
-  }
-  
-  .darkTheme {
-    --red-dark: #9ec8b9;
-    --white: #1b4242;
-    --dark-grey: #092635;
-  }
-  
-  body {
-    background-color: var(--white);
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    line-height: 42px;
-    letter-spacing: -0.5px;
-    font-family: Roboto;
-  }
-  
-  p,
-  li,
-  ul,
-  a {
-    line-height: 22px;
-    letter-spacing: -0.5px;
-    font-family: Roboto;
-  }
-  button {
-    font-weight: 700;
-    font-family: Roboto;
+
+.spillOverskrift{
+    padding-top: 170px;
+    font-size: 40px;
+    text-align: center;
   }
 
-.spillForside{
-    
-}
 .spillHer{
-    margin-top: 200px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
   }
-  .spillOverskrift{
-    font-size: 40px;
-    text-align: center;
-  }
+  
   .spill1{
     background-color: var(--red-dark);
     border-radius: 20px;
