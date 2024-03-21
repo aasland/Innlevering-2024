@@ -161,6 +161,20 @@
   text-align: center;
   padding: 10px 0 10px;
 }
+#startSpill{
+  position: fixed;
+  right: 215px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: var(--red-dark);
+  font-size: 20px;
+  padding: 7px 17px 7px;
+  border-radius: 15px;
+  margin-top: 14px;
+
+}
 
 
 .intro .dusBakgrunn {
