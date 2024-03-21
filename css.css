@@ -894,11 +894,13 @@ html {
   margin-top: -5px;
   box-shadow: 0 0 5px black;
   flex-direction: column;
+  border-radius: 10px;
 }
 
 .head {
   text-transform: uppercase;
   margin-bottom: 20px;
+  color: var(--dark-grey);
 }
 
 .text {
@@ -986,7 +988,7 @@ html {
 
 .policy a {
   text-decoration: none;
-  color: blue;
+  color: var(--dark-grey);
 }
 
 .notify {
