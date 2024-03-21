@@ -950,6 +950,7 @@ html {
   border-bottom: 2px solid var(--red-dark);
   margin-bottom: 10px;
   width: 95%;
+  background-color: var(--white);
 }
 
 .buttons {
