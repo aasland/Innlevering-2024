@@ -96,6 +96,7 @@ header a {
   flex-direction: row;
   margin-right: 10%;
   gap: 10px;
+  padding-bottom: 10px;
   grid-column: 3/5;
 }
 
@@ -252,6 +253,7 @@ main {
   display: flex;
   justify-content: space-between;
   margin: 15px;
+  background-color: #cdcfd1;
 }
 
 .indreDiv img {
@@ -278,7 +280,7 @@ main {
 
 .fakeNewsTeksForside {
   align-self: center;
-  padding: 25px;
+  padding: 30px;
 }
 
 #flipCoin {
@@ -362,7 +364,7 @@ main {
 }
 
 .sectionFakeNewsSpill {
-  background-image: url(bilder/fakeNewsForside.png);
+  background-image: url(bilder/mangekort.jpg);
   border-radius: 10px;
   grid-column: 2/4;
   width: 100%;
@@ -1192,6 +1194,7 @@ html {
   align-items: center;
   justify-items: center;
   padding-top: 40px;
+  margin-top: 40px ;
 }
 #flipKortet .footerLogo {
   display: grid;
@@ -1274,7 +1277,7 @@ html {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   .mediaQueryHeader {
     display: flex;
     grid-column: 1/2;
@@ -1283,7 +1286,7 @@ html {
   }
 
   header {
-    grid-template-columns: 1fr 1fr 170px;
+    grid-template-columns: 1fr 1fr 1fr;
     height: 80px;
   }
 
@@ -1297,7 +1300,9 @@ html {
   }
 
   .divContainer3,
-  .divContainer4 {
+  .divContainer4,
+  .divContainer5,
+  .divContainer6 {
     display: none;
   }
 
@@ -1344,6 +1349,19 @@ html {
   }
 }
 
+@media (max-width: 1350px) {
+  #loginSection {
+    position: relative;
+    right: 60px;
+  }
+}
+@media (max-width: 1000px) {
+  #loginSection {
+    position: relative;
+    right: 100px;
+  }
+}
+
 /* Media query end */
 
 .hero {
@@ -1384,4 +1402,20 @@ html {
 
 .hero i {
   font-size: 25px;
+}
+
+
+/* spillforside */
+.spillHer{
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.spill1{
+  background-color: var(--red-dark);
+  border-radius: 20px;
+  width: 450px;
+  height: 450px;
 }
