@@ -104,7 +104,7 @@
   transform: rotateY(180deg);
 }
 
-.gratulerer .instuksjoner {
+.intro .instuksjoner {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -117,7 +117,7 @@
   max-width: 80%;
 }
 
-.gratulerer.aktiv .instuksjoner {
+.intro.aktiv .instuksjoner {
   transform: translate(-50%, -50%) scale(1);
 }
 
@@ -133,16 +133,16 @@
 
 }
 
-.gratulerer p {
+.intro p {
   text-align: center;
 }
 
-.gratulerer h1 {
+.intro h1 {
   text-align: center;
 }
 
 
-.gratulerer .dusBakgrunn {
+.intro .dusBakgrunn {
   position: fixed;
   display: none;
   opacity: 1;
@@ -157,7 +157,7 @@
   pointer-events: none;
 }
 
-.gratulerer.aktiv .dusBakgrunn {
+.intro.aktiv .dusBakgrunn {
  display: block;
 }
 

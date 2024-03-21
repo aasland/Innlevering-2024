@@ -1,27 +1,31 @@
 
 const riktig = document.querySelectorAll(".riktig")
+
 for (const kortSnud of riktig) {
     kortSnud.addEventListener("click", function () { 
         kortSnud.classList.toggle("snudd")
     })
 }
 
+const popup = document.querySelector(".intro")
 
 window.addEventListener("load", function(){
-    const popup = document.querySelector(".gratulerer");
-    popup.classList.add("aktiv");
-});
+    popup.classList.add("aktiv")
+})
 
 
 
-const lukk = document.getElementById("lukkKnapp");
+const lukk = document.getElementById("lukkKnapp")
+
 lukk.addEventListener("click", function(){
-    const gratulerer = lukk.gratulerer
-    gratulerer.classList.remove("aktiv");
-});
+    if (popup.classList.contains("aktiv")) {
+        popup.classList.remove("aktiv")
+      }
+})
 
  
 const feil = document.querySelectorAll(".feil")
+
 for(const shake of feil)
 shake.addEventListener("click", function () {
     shake.classList.add("shake")
@@ -31,4 +35,4 @@ shake.addEventListener("click", function () {
 
    
 
-// popup boks forklarer spillets regler i steden  også bare flipp på riktig 
+ 
