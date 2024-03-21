@@ -38,6 +38,13 @@ userComment.addEventListener("input", (e) => {
   }
 });
 
+userComment.addEventListener("keydown", (e) => {
+  if (e.keyCode === 13){
+    addPost()
+    e.preventDefault() // stopper den vanlige funskjonaliteten til enter tasten
+  }
+})
+
 function addPost() {
   console.log("Knappen fungerer");
   //if (userComment.value) return
@@ -77,3 +84,6 @@ function addPost() {
 //<img src="${userId.image}">
 
 publishBtn.addEventListener("click", addPost);
+
+//endrer tommel opp og end knapp
+

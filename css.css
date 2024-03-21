@@ -950,6 +950,7 @@ html {
   border-bottom: 2px solid var(--red-dark);
   margin-bottom: 10px;
   width: 95%;
+  background-color: var(--white);
 }
 
 .buttons {
@@ -1023,12 +1024,16 @@ html {
   align-items: center;
   margin-bottom: 10px;
   font-size: 20px;
+  gap: 5px;
 }
 
 .date {
   color: var(--beige-grey-light);
   font-size: 13px;
 }
+/* tommlene endrer farge */
+
+
 
 /*Pop up modul*/
 
