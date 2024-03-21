@@ -1024,12 +1024,16 @@ html {
   align-items: center;
   margin-bottom: 10px;
   font-size: 20px;
+  gap: 5px;
 }
 
 .date {
   color: var(--beige-grey-light);
   font-size: 13px;
 }
+/* tommlene endrer farge */
+
+
 
 /*Pop up modul*/
 
