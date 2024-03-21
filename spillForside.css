@@ -1,24 +1,41 @@
-
-
-.spillOverskrift{
+.spillOverskrift {
     padding-top: 170px;
     font-size: 40px;
     text-align: center;
-  }
+}
 
-.spillHer{
+.spillHer {
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-  }
-  
-  .spill1{
+}
+
+.spill1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: var(--red-dark);
-    border-radius: 20px;
+    border-radius: 30px;
     width: 450px;
     height: 450px;
-  }
-  .spill1 p{
-    text-align: center; 
-  }
+}
+
+.spill1 p {
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.4;
+}
+
+.spill1 button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: var(--white);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 30px;
+    font-size: 20px;
+}
