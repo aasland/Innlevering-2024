@@ -57,3 +57,18 @@ section {
   background-color: transparent;
   color: var(--dark-grey);
 }
+
+@media (max-width: 1400px) {
+  section h1 {
+    width: fit-content;
+  }
+
+  section p {
+    padding: 0 275px 0 275px;
+  }
+}
+@media (max-width: 1050px) {
+  section p {
+    padding: 0 40px 0 40px;
+  }
+}
