@@ -1353,3 +1353,20 @@ html {
 .hero i {
   font-size: 25px;
 }
+
+
+/* spillforside */
+.spillHer{
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.spill1{
+  background-color: var(--red-dark);
+  border-radius: 20px;
+  width: 450px;
+  height: 450px;
+
+}
