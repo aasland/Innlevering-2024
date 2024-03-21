@@ -84,3 +84,6 @@ function addPost() {
 //<img src="${userId.image}">
 
 publishBtn.addEventListener("click", addPost);
+
+//endrer tommel opp og end knapp
+
