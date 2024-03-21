@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Noto+Sans:wght@300;400;500;600;700;900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap");
 
 * {
   padding: 0px;
@@ -34,18 +34,20 @@ h5,
 h6 {
   line-height: 42px;
   letter-spacing: -0.5px;
-  font-family: Playfair Display;
+  font-family: Roboto;
 }
 
 p,
 li,
+ul,
 a {
   line-height: 22px;
   letter-spacing: -0.5px;
-  font-family: Playfair Display;
+  font-family: Roboto;
 }
 button {
   font-weight: 700;
+  font-family: Roboto;
 }
 
 /* Header start */
@@ -69,6 +71,23 @@ header {
 header a {
   text-decoration: none;
   color: var(--dark-grey);
+}
+
+.divSectionOne,
+.divSectionTwo,
+.divSectionThree,
+.divSectionFour {
+  font-weight: 400;
+}
+.divSectionOne:hover,
+.divSectionTwo:hover,
+.divSectionThree:hover,
+.divSectionFour:hover {
+  font-weight: bold;
+}
+
+.divSectionHeader {
+  font-weight: bold;
 }
 
 .divContainer {
@@ -95,9 +114,6 @@ header a {
   justify-content: center;
   align-items: center;
 }
-
-/* .divSectionFour {
-} */
 
 .divContainer3 {
   display: flex;
@@ -936,6 +952,7 @@ html {
   border-bottom: 2px solid var(--red-dark);
   margin-bottom: 10px;
   width: 95%;
+  background-color: var(--white);
 }
 
 .buttons {
@@ -1009,12 +1026,16 @@ html {
   align-items: center;
   margin-bottom: 10px;
   font-size: 20px;
+  gap: 5px;
 }
 
 .date {
   color: var(--beige-grey-light);
   font-size: 13px;
 }
+/* tommlene endrer farge */
+
+
 
 /*Pop up modul*/
 
@@ -1076,8 +1097,6 @@ html {
   opacity: 0.8;
 }
 
-
-
 /* Rate oss start */
 
 .ratingBox {
@@ -1102,13 +1121,13 @@ html {
   gap: 25px;
   justify-content: center;
 }
-.stars i {
+.stars ion-icon {
   color: var(--dark-white);
   font-size: 35px;
   cursor: pointer;
   transition: color 0.2s ease;
 }
-.stars i.active {
+.stars ion-icon.active {
   color: #ff9c1a;
 }
 
@@ -1244,7 +1263,7 @@ html {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   .mediaQueryHeader {
     display: flex;
     grid-column: 1/2;
@@ -1253,7 +1272,7 @@ html {
   }
 
   header {
-    grid-template-columns: 1fr 1fr 170px;
+    grid-template-columns: 1fr 1fr 1fr;
     height: 80px;
   }
 
@@ -1267,7 +1286,9 @@ html {
   }
 
   .divContainer3,
-  .divContainer4 {
+  .divContainer4,
+  .divContainer5,
+  .divContainer6 {
     display: none;
   }
 
@@ -1314,6 +1335,19 @@ html {
   }
 }
 
+@media (max-width: 1350px) {
+  #loginSection {
+    position: relative;
+    right: 60px;
+  }
+}
+@media (max-width: 1000px) {
+  #loginSection {
+    position: relative;
+    right: 100px;
+  }
+}
+
 /* Media query end */
 
 .hero {
@@ -1354,4 +1388,20 @@ html {
 
 .hero i {
   font-size: 25px;
+}
+
+
+/* spillforside */
+.spillHer{
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.spill1{
+  background-color: var(--red-dark);
+  border-radius: 20px;
+  width: 450px;
+  height: 450px;
 }

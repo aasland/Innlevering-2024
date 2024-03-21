@@ -1,4 +1,4 @@
-const stars = document.querySelectorAll(".stars i");
+const stars = document.querySelectorAll(".stars ion-icon");
 const rateBtn = document.getElementById("ratingBtn");
 const myDiv = document.querySelector(".ratingBox");
 
