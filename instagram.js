@@ -39,7 +39,7 @@ userComment.addEventListener("input", (e) => {
 });
 
 userComment.addEventListener("keydown", (e) => {
-  if (e.keyCode === 13){
+  if (e.keyCode === 13) {
     addPost()
     e.preventDefault() // stopper den vanlige funskjonaliteten til enter tasten
   }
@@ -64,12 +64,20 @@ function addPost() {
             <div> 
                 <h1>${userId.name}</h1>
                 <p>${userId.message}</p>
-                <div class="engagements"> <i class="fa-regular fa-thumbs-up"></i><i class="fa-regular fa-thumbs-down"></i></div> 
+                <div class="engagements">
+                   <i class="fa-regular fa-thumbs-up">
+                     <i class="fa-solid fa-thumbs-up">  </i> 
+                   </i>
+                   <i class="fa-regular fa-thumbs-down"> <i class="fa-solid fa-thumbs-down ned-trykket"></i></i>
+                </div> 
                 <span class="date">${userId.date}</span>
             </div> 
         </div>`;
 
   comments.innerHTML += published;
+
+  addListenersToThumbs()
+
   userComment.value = "";
 
   let commentsNum = document.querySelectorAll(".parents").length;
@@ -83,7 +91,48 @@ function addPost() {
 
 //<img src="${userId.image}">
 
-publishBtn.addEventListener("click", addPost);
+//publishBtn.addEventListener("click", addPost);
 
 //endrer tommel opp og end knapp
+
+function addListenersToThumbs() {
+  //  let up = getElementById("up")
+  //  let upTrykket = getElementById("up-trykket")
+  //  let ned = getElementById("ned")
+  //  let nedTrykket = getElementById("ned-trykket")
+
+  //  up.onclick = function endre(){
+  //    up.style.display = "none"
+  //    upTrykket.style.display = "block"
+  //  }
+
+
+  allThumbsUp = document.querySelectorAll(".fa-thumbs-up")
+  for (thumbsUp of allThumbsUp) {
+    thumbsUp.addEventListener("click", 
+      function (evt) {
+        console.log("Tommel OPP trykket")
+        const tommel = evt.target
+        console.log(tommel)      }
+    )
+  }
+
+
+
+  allThumbsDown = document.querySelectorAll(".fa-thumbs-down")
+  for (thumbsDown of allThumbsDown) {
+    thumbsDown.addEventListener("click", 
+      function (evt) {
+        console.log("Tommel ned trykket")
+        const tommel = evt.target
+        console.log(tommel)
+      }
+    )
+  }
+
+
+
+
+
+}
 
