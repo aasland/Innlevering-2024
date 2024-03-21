@@ -75,7 +75,7 @@
 }
 
 .divSectionLogin {
-    display: none;
+    display: block; 
     height: 41px;
 }
 
