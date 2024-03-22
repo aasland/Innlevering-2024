@@ -33,9 +33,9 @@ for (const shake of feil)
     }, 1000);
   });
 
+
 let i = 3;
-const spill = document.querySelectorAll(".kort");
-for (const liv of spill) {
+for (const liv of feil) {
   liv.addEventListener("click", function () {
     i--;
     console.log(i);
