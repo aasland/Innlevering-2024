@@ -1,5 +1,7 @@
 #sectionOmOss {
-    padding: 120px 120px 30px 120px;
+    padding: 120px 0px 30px 0px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
 .containerOmOss {
@@ -7,6 +9,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
 }
 
 .boxOmOss {
@@ -31,4 +34,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
+}
+
+.divOmOss p {
+    text-align: center;
+}
+
+.divOmOss img {
+    height: 300px;
+}
+
+#sectionOmOss .divOmOss {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#divBegynnelsen {
+    background-color: #c7c6c43b;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 10px lightgray;
 }
