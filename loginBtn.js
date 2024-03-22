@@ -6,6 +6,7 @@ const registerLink = document.querySelector(".register-link");
 const btnPopup = document.querySelector(".btnLogin-popup");
 const iconClose = document.querySelector(".icon-close");
 const loginBtn = document.querySelector(".btn");
+const klikkenPlussBtn = document.querySelector("#klikkenPluss");
 
 registerLink.addEventListener("click", () => {
   wrapper.classList.add("active");
@@ -26,6 +27,11 @@ iconClose.addEventListener("click", () => {
 loginBtn.addEventListener("click", (event) => {
   event.preventDefault();
   wrapper.classList.remove("active-popup");
+});
+
+klikkenPlussBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  wrapper.classList.add("active-popup");
 });
 
 // Login end

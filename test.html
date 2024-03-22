@@ -1,50 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Popup-boks på hover</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fem Bokser</title>
     <style>
-        .popup {
-            position: absolute;
-            background-color: #fff;
-            border: 1px solid #000;
-            padding: 10px;
-            display: none;
-            z-index: 1;
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
         }
 
-        .wrapper {
-            position: relative;
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
-        .hover-text {
-            font-weight: bold;
-            color: blue;
-            cursor: pointer;
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            text-align: center;
+            padding: 15px;
+            background-color: white;
+            border-radius: 0.5em;
+            box-shadow: 0px 4px 10px lightgray;
+        }
+
+        .box img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <p>
-            Dette er en tekst hvor det <span class="hover-text" onmouseover="showPopup()" onmouseout="hidePopup()">poper
-                opp</span> en tekstboks når du holder musen over et ord.
-        </p>
-        <div class="popup" id="popup">
-            Dette er popup-boksen som vises når du holder musen over ordet.
+
+    <div class="container">
+        <div class="box">
+            <img src="https://via.placeholder.com/150" alt="Bilde 1">
+            <p>Noen tekst her</p>
+        </div>
+        <div class="box">
+            <img src="https://via.placeholder.com/150" alt="Bilde 2">
+            <p>Noen tekst her</p>
+        </div>
+        <div class="box">
+            <img src="https://via.placeholder.com/150" alt="Bilde 3">
+            <p>Noen tekst her</p>
+        </div>
+        <div class="box">
+            <img src="https://via.placeholder.com/150" alt="Bilde 4">
+            <p>Noen tekst her</p>
+        </div>
+        <div class="box">
+            <img src="https://via.placeholder.com/150" alt="Bilde 5">
+            <p>Noen tekst her</p>
         </div>
     </div>
 
-    <script>
-        function showPopup() {
-            document.getElementById("popup").style.display = "block";
-        }
-
-        function hidePopup() {
-            document.getElementById("popup").style.display = "none";
-        }
-    </script>
 </body>
 
 </html>
