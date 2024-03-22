@@ -384,6 +384,9 @@ main {
   padding: 10px;
   font-weight: 500;
   line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sectionFakeNewsSpill:hover {
@@ -403,24 +406,24 @@ main {
 }
 
 .test a:hover {
-  background-color: var(--dark-grey);
+  background-color: black;
   transition: 0.5s;
+  color: var(--white);
 }
 
 .sectionFakeNewsSpillTekst {
   margin: 20px;
-  background-color: #9e9e9ea3;
-  margin-top: 227px;
-  padding: 23px;
-  border-radius: 10px;
-  padding-bottom: 1px;
+  background-color: #c9caccbf;
+  padding: 20px;
+
 }
 
 .sectionFakeNewsSpillTekst p {
   font-size: 28px;
   line-height: 1.3;
-  color: var(--white);
+  color: black;
   margin-bottom: 21px;
+  text-align: center;
 }
 
 /* Forside slutt */
@@ -1380,7 +1383,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0px -363px 181px -38px #667b5dff;
+  box-shadow: inset 0px -363px 181px -38px #415769;
   display: flex;
   flex-direction: column;
   align-items: center;
