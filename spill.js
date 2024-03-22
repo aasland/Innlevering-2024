@@ -36,7 +36,7 @@ shake.addEventListener("click", function () {
    
 
 let i = 3;
-const spill = document.querySelectorAll(".kort")
+const spill = document.querySelectorAll(".feil")
 for (const liv of spill) {
     liv.addEventListener("click", function(){
         i--
