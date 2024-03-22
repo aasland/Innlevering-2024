@@ -372,7 +372,6 @@ main {
 }
 
 .sectionFakeNewsSpill {
-  background-image: url(bilder/mangekort.jpg);
   border-radius: 10px;
   grid-column: 2/4;
   width: 100%;
@@ -387,6 +386,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(bilder/frederik.jpg);
 }
 
 .sectionFakeNewsSpill:hover {
@@ -789,17 +789,10 @@ html {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding-top: 130px;
-}
-
-#h1-insta {
-  color: var(--dark-grey);
-  text-transform: uppercase;
-  font-size: 20px;
 }
 
 #saker {
-  padding-top: 30px;
+  padding-top: 130px;
 }
 
 .slider {
@@ -912,13 +905,11 @@ html {
   margin-top: -5px;
   box-shadow: 0 0 5px black;
   flex-direction: column;
-  border-radius: 10px;
 }
 
 .head {
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: var(--dark-grey);
 }
 
 .text {
@@ -1006,7 +997,7 @@ html {
 
 .policy a {
   text-decoration: none;
-  color: var(--dark-grey);
+  color: blue;
 }
 
 .notify {
@@ -1410,6 +1401,8 @@ html {
 #pilNedHero{
   font-size: 30px;
 }
+
+
 
 .knappPersonvern a {
   color: var(--white);
