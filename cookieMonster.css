@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Noto+Sans:wght@300;400;500;600;700;900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --red-dark: #d90429;
+  --red-light: #ef233c;
+  --white: #edf2f4;
+  --light-grey: #8d99ae;
+  --dark-grey: #2b2d42;
+  --beige-grey-light: #808080;
+  --dark-white: rgb(215, 216, 217);
+}
+
+.darkTheme {
+  --red-dark: #9ec8b9;
+  --white: #1b4242;
+  --dark-grey: #092635;
+}
+
+body {
+  background-color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 42px;
+  letter-spacing: -0.5px;
+  font-family: Roboto;
+}
+
+p,
+li,
+ul,
+a {
+  line-height: 22px;
+  letter-spacing: -0.5px;
+  font-family: Roboto;
+}
+button {
+  font-size: 15px;
+  border-radius: 0.2em;
+  padding: 10px;
+  background-color: var(--dark-grey);
+  color: var(--white);
+  border: 2px solid var(--light-grey);
+  font-weight: 600;
+  margin: 20px;
+}
+
+button:hover {
+  background-color: transparent;
+  color: var(--dark-grey);
+}
+
+#hastighet {
+  font-size: 15px;
+  border-radius: 0.2em;
+  padding: 5px;
+  font-weight: 600;
+  margin: 15px;
+}
+
+#game-area {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+#fanger {
+  width: 20px;
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+  padding-right: 100px;
+}
+
+#cookieMonsterImg {
+  width: 200px;
+}
+
+#objekt {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+}
+
+#cookieImg {
+  width: 80px;
+}
+
+#startScreenContainer {
+  display: flex;
+  position: absolute;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  left: 27%;
+  top: 15%;
+  width: 650px;
+  height: 410px;
+  background-color: white;
+  border-radius: 0.5em;
+  box-shadow: 0px 4px 10px lightgray;
+  gap: 10px;
+}
+h4 {
+  padding-inline: 25px;
+}
+
+#startH1Coockie{
+  padding-top:30px;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+}
+
+#score {
+  font-size: 25px;
+  font-family: Roboto;
+  padding: 10px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+  font-weight: 600;
+}
+
+#gameOverContainer {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  left: 33%;
+  top: 27%;
+  width: 450px;
+  height: 310px;
+  background-color: white;
+  border-radius: 0.5em;
+  box-shadow: 0px 4px 10px lightgray;
+  gap: 10px;
+}
+
+#gameOverMessage {
+  font-size: 30px;
+  font-family: Roboto;
+  margin: 20px;
+}
+
+#lives {
+  display: flex;
+  gap: 10px; 
+  align-items: center; 
+  padding: 10px; 
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+.life {
+  font-size: 24px;
+  color: red;
+
+}
+
+#knappTlbakeTilNettside{
+  background-color: var(--dark-grey);
+  color: var(--white);
+  font-size: 20px;
+  padding: 10px;
+}
+
+#knappTlbakeTilNettside a{
+  text-decoration: none;
+  color: var(--white);
+}
