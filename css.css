@@ -1402,6 +1402,10 @@ html {
   font-size: 30px;
 }
 
+#heroTekstPersornvern{
+  
+}
+
 .knappPersonvern a {
   color: var(--white);
   text-decoration: none;
