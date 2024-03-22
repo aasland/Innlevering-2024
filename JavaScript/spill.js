@@ -1,4 +1,3 @@
-
 const popup = document.querySelector(".intro");
 window.addEventListener("load", function () {
   popup.classList.add("aktiv");
