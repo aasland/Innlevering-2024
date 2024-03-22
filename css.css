@@ -372,7 +372,6 @@ main {
 }
 
 .sectionFakeNewsSpill {
-  background-image: url(bilder/gruppebilde.jpg);
   border-radius: 10px;
   grid-column: 2/4;
   width: 100%;
@@ -387,6 +386,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(bilder/frederik.jpg);
 }
 
 .sectionFakeNewsSpill:hover {
