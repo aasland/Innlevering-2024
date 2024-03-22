@@ -35,4 +35,16 @@ shake.addEventListener("click", function () {
 
    
 
- 
+let i = 3;
+const spill = document.querySelectorAll(".kort")
+for (const liv of spill) {
+    liv.addEventListener("click", function(){
+        i--
+        console.log(i)
+
+        if (i === 0) {
+            const melding = document.querySelector(".gameOver")
+            melding.classList.add("paa")
+        }
+    });
+}

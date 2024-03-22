@@ -196,8 +196,19 @@
 .intro.aktiv .dusBakgrunn {
  display: block;
 }
+.gameOver{
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 9;
+  background-color: blueviolet;
+  color: white;
+  padding: 40px;
+  width: 300px;
+}
 
-
+.gameOver.paa{
+  transform: translate(-50%, -50%) scale(1);
+}
 .shake {
   animation: shake 0.5s ease-in-out;
 }
