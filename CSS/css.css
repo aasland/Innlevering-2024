@@ -789,10 +789,17 @@ html {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding-top: 130px;
+}
+
+#h1-insta {
+  color: var(--dark-grey);
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 #saker {
-  padding-top: 130px;
+  padding-top: 30px;
 }
 
 .slider {
