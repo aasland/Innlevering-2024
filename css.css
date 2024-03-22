@@ -372,7 +372,7 @@ main {
 }
 
 .sectionFakeNewsSpill {
-  background-image: url(bilder/mangekort.jpg);
+  background-image: url(bilder/gruppebilde.jpg);
   border-radius: 10px;
   grid-column: 2/4;
   width: 100%;
@@ -1402,9 +1402,7 @@ html {
   font-size: 30px;
 }
 
-#heroTekstPersornvern{
-  
-}
+
 
 .knappPersonvern a {
   color: var(--white);
