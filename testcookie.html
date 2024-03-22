@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="cookieMonster.css" />
+    <link rel="stylesheet" href="css.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   </head>
   <body>
 
-    <!-- tre linjer under -->
+    <div id="lives">
+      <div class="life"> <i class="fa-solid fa-heart"></i></div>
+      <div class="life"> <i class="fa-solid fa-heart"></i></div>
+      <div class="life"> <i class="fa-solid fa-heart"></i></div>
+    </div>
+
+    <div id="score">Score 0</div>
+
     <div id="gameOverContainer">
       <h1 id="gameOverMessage">Game Over! Try again.</h1>
     </div>
 
     <div id="startScreenContainer">
-      <h1>Velkommen til CookieCatcher!</h1>
+      <h1 id="startH1Coockie">Velkommen til CookieCatcher!</h1>
       <p>
         Spillet er enkelt... prøv å fang så mange cookies du klarer sammen med
         cookie monsteret. <br />
@@ -28,9 +37,9 @@
       <div>
         <h4>Velg hastighet</h4>
         <select id="hastighet">
-          <option value="1">1(Pro)</option>
-          <option value="5">5(Average)</option>
-          <option value="10">10(Noob)</option>
+          <option value="1">1 (Pro)</option>
+          <option value="5">5 (Average)</option>
+          <option value="10">10 (Noob)</option>
         </select>
       </div>
       <button id="startSpillBtn">Start Spill</button>
@@ -48,15 +57,9 @@
         <img src="bilder/cookie.jpg" alt="Cookie" id="cookieImg" />
       </div>
     </div>
-    <div id="score">Score: 0</div>
-    <div id="lives">
-        <div class="life"> <i class="fa-solid fa-heart"></i></div>
-        <div class="life"> <i class="fa-solid fa-heart"></i></div>
-        <div class="life"> <i class="fa-solid fa-heart"></i></div>
-    </div>
+
+    <div id="knappTlbakeTilNettside"><a href="spillForside.html"> <i class="fa-solid fa-arrow-left"></i> Tilbake </a></div>
       
-
-
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
