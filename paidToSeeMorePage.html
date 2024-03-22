@@ -171,7 +171,7 @@
         <h1>Ønsker du å lese mer?</h1>
         <h2>Bli klikken+ medlem!</h2>
         <button id="klikkenPluss">Ligg foran de andre! Bli medlem</button>
-        <h3>Hva er foredelene av å være Klikken+ medlem?</h3>
+        <h3>Hva er fordelene av å være Klikken+ medlem?</h3>
         <h4>Du får:</h4>
         <br />
         <ul>
@@ -181,6 +181,41 @@
           <li>Prioritert kundeservice.</li>
           <li>Kvitt alle reklamene</li>
         </ul>
+      </div>
+    </section>
+
+    <section>
+      <div id="klikkenPlussPopup">
+        <h1 id="popupH1">Skriv inn din kortinformasjon:</h1>
+
+        <div>
+          <div id="labels">
+            <label for="kortNummer">Kortnummer</label>
+            <label for="fornavn">Fornavn</label>
+            <label for="etternavn">Etternavn</label>
+            <label for="dato">Dato</label>
+            <label for="cvc">CVC</label>
+          </div>
+
+          <div id="inputs">
+            <input
+              type="number"
+              name="kortNummer"
+              id="kortNummer"
+              placeholder="xxxx-xxxx-xxxx-xxxx"
+            />
+            <input type="text" name="fornavn" id="fornavn" placeholder="Ola" />
+            <input
+              type="text"
+              name="etternavn"
+              id="etternavn"
+              placeholder="Nordmann"
+            />
+            <input type="date" name="dato" id="dato" />
+            <input type="number" name="cvc" id="cvc" placeholder="420" />
+          </div>
+        </div>
+        <button id="paymentBtn">Send inn</button>
       </div>
     </section>
 
@@ -219,8 +254,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="JavaScript/nightMode.js"></script>
-    <script src="JavaScript/loginBtn.js"></script>
     <script src="JavaScript/paidTooSeeMorePage.js"></script>
   </body>
 </html>
