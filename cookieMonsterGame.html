@@ -3,23 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="cookieMonster.css" />
-    <link rel="stylesheet" href="css.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>CookieCatcher</title>
+    <link rel="stylesheet" href="CSS/cookieMonster.css" />
+    <link rel="stylesheet" href="CSS/css.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-
     <div id="lives">
-      <div class="life"> <i class="fa-solid fa-heart"></i></div>
-      <div class="life"> <i class="fa-solid fa-heart"></i></div>
-      <div class="life"> <i class="fa-solid fa-heart"></i></div>
+      <div class="life"><i class="fa-solid fa-heart"></i></div>
+      <div class="life"><i class="fa-solid fa-heart"></i></div>
+      <div class="life"><i class="fa-solid fa-heart"></i></div>
     </div>
 
     <div id="score">Score 0</div>
 
     <div id="gameOverContainer">
-      <h1 id="gameOverMessage">Game Over! Try again.</h1>
+      <h1 id="gameOverMessage">Game Over!</h1>
+      <a href="cookieMonsterGame.html">Prøv igjen!</a>
+      <a href="spillForside.html">
+        <i class="fa-solid fa-arrow-left"></i> Tilbake</a
+      >
     </div>
 
     <div id="startScreenContainer">
@@ -58,14 +67,18 @@
       </div>
     </div>
 
-    <div id="knappTlbakeTilNettside"><a href="spillForside.html"> <i class="fa-solid fa-arrow-left"></i> Tilbake </a></div>
-      
+    <!-- <div id="knappTlbakeTilNettside">
+      <a href="spillForside.html">
+        <i class="fa-solid fa-arrow-left"></i> Tilbake
+      </a>
+    </div> -->
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="testcookie.js"></script>
+    <script src="JavaScript/cookieMonsterGame.js"></script>
   </body>
 </html>
