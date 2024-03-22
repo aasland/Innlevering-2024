@@ -1033,6 +1033,7 @@ html {
 }
 /* tommlene endrer farge */
 
+<<<<<<< Updated upstream
 #up {
   display: block;
 }
@@ -1049,6 +1050,8 @@ html {
   display: none;
 }
 
+=======
+>>>>>>> Stashed changes
 /*Pop up modul*/
 
 .modal {
@@ -1192,7 +1195,7 @@ html {
   align-items: center;
   justify-items: center;
   padding-top: 40px;
-  margin-top: 40px ;
+  margin-top: 40px;
 }
 #flipKortet .footerLogo {
   display: grid;
@@ -1402,16 +1405,15 @@ html {
   font-size: 25px;
 }
 
-
 /* spillforside */
-.spillHer{
+.spillHer {
   margin-top: 200px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
-.spill1{
+.spill1 {
   background-color: var(--red-dark);
   border-radius: 20px;
   width: 450px;
