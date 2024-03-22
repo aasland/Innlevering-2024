@@ -278,7 +278,12 @@ main {
 
 .fakeNewsTeksForside {
   align-self: center;
-  padding: 30px;
+  padding-right: 22px;
+}
+
+.fakeNewsTeksForside2 {
+  align-self: center;
+  padding: 32px;
 }
 
 #flipCoin {
@@ -292,6 +297,11 @@ main {
 }
 
 .fakeNewsTeksForside a {
+  color: var(--dark-grey);
+  text-decoration: none;
+}
+
+.fakeNewsTeksForside2 a {
   color: var(--dark-grey);
   text-decoration: none;
 }
@@ -367,7 +377,7 @@ main {
   grid-column: 2/4;
   width: 100%;
   font-family: Roboto Condensed, Georgia, serif;
-  margin: 80px 0px 120px 0px;
+  margin: 80px 0px 80px 0px;
   height: 450px;
   font-size: 30px;
   color: var(--dark-grey);
@@ -1275,7 +1285,7 @@ html {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 760px) {
   .mediaQueryHeader {
     display: flex;
     grid-column: 1/2;
@@ -1363,7 +1373,7 @@ html {
 /* Media query end */
 
 .hero {
-  padding: 130px 0px 10px 0px;
+  padding: 320px 0px 10px 0px;
   background-image: url(bilder/tohunder.jpg);
   background-color: #a49e94ff;
   height: 100vh;
@@ -1371,8 +1381,9 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0px -363px 181px -38px #667b5dff;
-  display: grid;
-  grid-template-rows: 4fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero p {
@@ -1380,26 +1391,29 @@ html {
   text-align: center;
   font-size: 36px;
   font-weight: 500;
-  color: #d9d4d0;
+  color: var(--white);
   padding: 0px 20px 20px 20px;
 }
 
-.hero a {
-  color: #d9d4d0;
+#pilNedHero{
+  font-size: 30px;
+}
+
+.knappPersonvern a {
+  color: var(--white);
   text-decoration: none;
-  border: 3px solid #d9d4d0;
-  margin: 10px;
-  font-size: 26px;
-  font-weight: 500;
-}
-
-.hero a:hover {
-  background-color: var(--dark-grey);
-  transition: 0.6s;
-}
-
-.hero i {
+  border: 3px solid var(--white);
+  padding: 9px;
+  margin: 25px;
   font-size: 25px;
+  font-weight: 400;
+  border-radius: 5px;
+  background-color: #c1c1c200;
+}
+
+.knappPersonvern a:hover {
+  background-color: var(--dark-grey);
+  transition: 0.5s;
 }
 
 
