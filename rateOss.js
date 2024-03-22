@@ -16,12 +16,11 @@ let nyP = document.createElement("p");
 nyP.textContent = "Tusen Takk!";
 
 rateBtn.addEventListener("click", () => {
-  rateBtn.style.display = "none"
+  rateBtn.style.display = "none";
   myDiv.appendChild(nyP);
 
   nyP.style.display = "flex";
   nyP.style.justifyContent = "center";
   nyP.style.marginTop = "20px";
   nyP.style.fontSize = "19px";
-
 });

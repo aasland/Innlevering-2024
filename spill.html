@@ -144,15 +144,31 @@
 
     <section>
         <div class="del">
+
+
+            <div class="intro">
+                <div class="instuksjoner">
+                    <button id="lukkKnapp"> &times;</button>
+                    <h1>hvordan du spiller</h1>
+                    <h2>klarer du å finne den falske nyheten?</h2>
+                    <p> disse nyhetsforsidene er det gjemt en falsk nyhet.
+                        ved å trykke på nyhetsaken du tror er falsk vinner du spillet. du har to liv ellers game over og
+                        spill igjen
+                        ingenting om du vinner annet en kunskap </p>
+                        <button id="startSpill">spill</button>
+                </div>
+                <div class="dusBakgrunn"> </div>
+            </div>
+
+
+
+
             <div class="meta">
                 <div class="kort feil">
                     <div class="fjes front">
                         <img class="metaBilde" src="bilder/meta-kopi.jpg" alt="" />
                         <h2>Forbrukerrådet klager inn Meta</h2>
                         <p>Katt- og mus-lek med europeiske myndigheter.</p>
-                    </div>
-                    <div class="fjes bak">
-                        <h2>bak</h2>
                     </div>
                 </div>
             </div>
@@ -166,18 +182,14 @@
                                 Tyveri skjer oftest i forbindelse med <br />
                                 netthandel og i sosiale medier.
                             </p>
-                            <h2>70.000 nordmenn har opplevd ID-tyveri</h2>
+                            <h2>43.000 nordmenn har opplevd ID-tyveri</h2>
                         </div>
                         <div class="fjes bak">
-                            <h2>denne saken inneholder falsk informasjon</h2>
-                            <p>
-                                i 2020 og 2021 har 150.000 nordmenn opplevd identitestyveri
-                            </p>
+                            <div><h2>Fake News</h2></div>
+                            <div> <p> i 2020 og 2021 opplevde <b>150.000</b> nordmenn identitestyveri</p></div>
                         </div>
                     </div>
                 </div>
-
-
 
                 <div class="hus">
                     <div class="kort feil">
@@ -186,13 +198,8 @@
                             <p> Katt- og mus-lek med europeiske myndigheter.</p>
                             <h2>Forbrukerrådet klager inn Meta</h2>
                         </div>
-                        <div class="fjes bak">
-                            <h2>bak</h2>
-                        </div>
                     </div>
                 </div>
-
-
             </div>
 
             <div class="bil">
@@ -201,10 +208,6 @@
                         <img class="metaBilde" src="bilder/meta-kopi.jpg" alt="">
                         <h2>Forbrukerrådet klager inn Meta</h2>
                         <p> Katt- og mus-lek med europeiske myndigheter.</p>
-
-                    </div>
-                    <div class="fjes bak">
-                        <h2>bak</h2>
                     </div>
                 </div>
             </div>
@@ -213,35 +216,54 @@
             <div class="båt">
                 <div class="kort feil">
                     <div class="fjes front">
-
                         <h2>Forbrukerrådet klager inn Meta</h2>
                         <p> Katt- og mus-lek med europeiske myndigheter.</p>
-
-                    </div>
-                    <div class="fjes bak">
-                        <h2>bak</h2>
                     </div>
                 </div>
             </div>
-
-
-            <div class="gratulerer">
-                <button class="lukkKnapp"> &times;</button>
-                <div>
-                    <h1>riktig!</h1>
-                    <p>du klarte å finne den falske nyheten</p>
-                    <p>vet du hvilken efekt falske nyeheter kan ha</p>
-                </div>
-            </div>
-            <!-- 
-    <div class="paa" id="dusBakgrunn"></div>
-  hva med å ha sånn en av to  og når begge to er funnet  gratulerer nå har du lært... 
--->
-
-
         </div>
 
+        <div class="gameOver">
+            <a href="spillForside.html"><button id="lukkKnapp"> &times;</button></a>
+            
+            <div>
+            <h1>game over</h1> 
+            <p>du hadde nok blitt lurt</p>
+        </div>
+        <a href="spill.html"> <button id="spillIgjen"> prøv igjen</button></a>
+        
+     </div>
     </section>
+
+    <footer id="footer">
+        <a href="#" id="backToTopButton"><ion-icon name="arrow-up"></ion-icon></a>
+  
+        <div class="tipsOssFooter">
+          <div><h2>Tips oss her:</h2></div>
+          <div id="mail">
+            <i class="fa-regular fa-envelope"></i> sofiekva@viken.no
+          </div>
+          <div id="tlf"><i class="fa-solid fa-phone"></i> 936 68 308</div>
+        </div>
+        <div class="logofooter">
+          <i class="fa-solid fa-hand-point-right fa-rotate-270 footerLogo"></i>
+        </div>
+        <div class="omTeametFooter">
+          <h2>Møt teamet:</h2>
+          <h3>Hanna Johns</h3>
+          <h3>Sofie Kvadsheim</h3>
+          <h3>Kaia Villabø</h3>
+          <h3>Fredrik Åslaand</h3>
+          <h3>Maria Lindheim</h3>
+        </div>
+        <div id="bunntekstFooter">
+          <p>
+            <b>©</b> 2024 KLIKKEN | Brukervilkår | Personvernerklæring og
+            informasjonskapsler
+          </p>
+        </div>
+      </footer>
+  
 
     <script src="spill.js"></script>
 </body>
