@@ -29,10 +29,10 @@ loginBtn.addEventListener("click", (event) => {
   wrapper.classList.remove("active-popup");
 });
 
-klikkenPlussBtn.addEventListener("click", (event) => {
-  event.preventDefault();
-  wrapper.classList.add("active-popup");
-});
+// klikkenPlussBtn.addEventListener("click", (event) => {
+//   event.preventDefault();
+//   wrapper.classList.add("active-popup");
+// });
 
 // Login end
 
