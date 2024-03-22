@@ -175,7 +175,6 @@
   padding: 8px 18px 8px;
   border-radius: 15px;
   margin-top: 14px;
-
 }
 
 .intro .dusBakgrunn {
@@ -192,22 +191,32 @@
   background-color: rgba(0, 0, 0, .6);
   pointer-events: none;
 }
-
 .intro.aktiv .dusBakgrunn {
  display: block;
 }
 .gameOver{
   position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%) scale(0);
   z-index: 9;
-  background-color: blueviolet;
-  color: white;
-  padding: 40px;
-  width: 300px;
+  background-color: var(--red-dark);
+  padding: 30px;
+  border-radius: 30px;
+  width: 500px;
+  max-width: 80%;
+  height: 400px;
 }
-
 .gameOver.paa{
   transform: translate(-50%, -50%) scale(1);
+}
+.gameOver h1{
+  text-align: center;
+  font-size: 50px;
+}
+.gameOver p{
+  text-align: center;
+  font-size: 30px;
 }
 .shake {
   animation: shake 0.5s ease-in-out;
