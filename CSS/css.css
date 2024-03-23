@@ -1079,7 +1079,9 @@ html {
   z-index: 9;
   background-color: white;
   max-width: 80%;
-  width: 500px;
+  width: 700px;
+  background-color: var(--white);
+  color: var(--dark-grey);
 }
 
 .modal.active {
@@ -1104,7 +1106,12 @@ html {
 }
 
 .modal-body {
-  font-family: Playfair Display;
+  padding: 10px;
+}
+
+.a-modal {
+  text-decoration: none;
+  color: var(--red-dark);
 }
 
 #overlay {

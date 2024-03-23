@@ -1,3 +1,31 @@
 .divSectionFour {
   font-weight: bold;
 }
+
+#toggle-button {
+  background-color: var(--dark-grey);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+#toggle-button:hover {
+  background-color: #c7c6c465;
+  color: var(--dark-grey);
+}
+
+#kilder {
+  margin-top: 10px;
+}
+
+.classKilder {
+  margin-top: 30px;
+  padding: 0 375px 0 375px;
+}
+
+.classKilder #toggle-button {
+  display: flex;
+  justify-content: center;
+}
