@@ -64,10 +64,6 @@ function addPost() {
             <div> 
                 <h1>${userId.name}</h1>
                 <p>${userId.message}</p>
-                <div class="engagements">
-                   <i class="fa-regular fa-thumbs-up"></i>
-                   <i class="fa-solid fa-thumbs-up">  </i> 
-                </div> 
                 <span class="date">${userId.date}</span>
             </div> 
         </div>`;
