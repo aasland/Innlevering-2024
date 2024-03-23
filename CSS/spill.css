@@ -2,7 +2,7 @@
   width: 900px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 175px;
+  padding-top: 160px;
   padding-bottom: 35px;
   margin: 0 auto 0;
 }
@@ -103,15 +103,24 @@
   padding-top: 8px;
 }
 
-.bil {
+.redit {
   grid-column: 1/2;
-  height: 200px;
+  
   margin: 5px;
+}
+.reditArtikkel{
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+
+}
+.reditBilde{
+  width: 150px;
 }
 
 .båt {
   grid-column: 2/4;
-  height: 200px;
+  height: 250px;
   margin: 5px;
 }
 
