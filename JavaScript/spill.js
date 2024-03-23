@@ -20,7 +20,7 @@ start.addEventListener("click", function () {
 const riktig = document.querySelectorAll(".riktig");
 for (const kortSnud of riktig) {
   kortSnud.addEventListener("click", function () {
-    kortSnud.classList.toggle("snudd");
+    kortSnud.classList.add("snudd");
   });
 }
 
@@ -45,4 +45,20 @@ for (const liv of feil) {
       melding.classList.add("paa");
     }
   });
+}
+
+/*
+const duVant= document.querySelector(".snudd")
+duVant.addEventListener("click", function(){
+  window.open("paidToSeeMorePage.html")
+})
+
+
+const duVant = document.querySelector(".snudd")
+if (duVant) {
+    duVant.addEventListener("click", function(){
+        window.open("paidToSeeMorePage.html")
+    })
+} else {
+    console.error("Fant ikke elementet med klassen '.snudd")
 }
