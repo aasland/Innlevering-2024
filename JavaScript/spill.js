@@ -47,18 +47,8 @@ for (const liv of feil) {
   });
 }
 
-/*
-const duVant= document.querySelector(".snudd")
-duVant.addEventListener("click", function(){
-  window.open("paidToSeeMorePage.html")
-})
+const duVant = document.querySelector(".bak");
+duVant.addEventListener("click", function () {
+  window.open("instagram.html")
+});
 
-
-const duVant = document.querySelector(".snudd")
-if (duVant) {
-    duVant.addEventListener("click", function(){
-        window.open("paidToSeeMorePage.html")
-    })
-} else {
-    console.error("Fant ikke elementet med klassen '.snudd")
-}
