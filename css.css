@@ -270,7 +270,7 @@ main {
   font-size: 23px;
   color: var(--white);
   background-color: var(--dark-grey);
-  width: 80px;
+  width: 100px;
   height: 50px;
   text-align: center;
   
@@ -371,7 +371,11 @@ main {
   grid-column: 1/7;
 }
 
-
+.gåTilSpillSide{
+  background: url(bilder/mangekort.jpg);
+  width: 100%;
+  
+}
 
 
 
