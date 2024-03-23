@@ -58,6 +58,95 @@ section {
   color: var(--dark-grey);
 }
 
+#klikkenPlussPopup {
+  display: none;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  top: 180px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 0.5em;
+  box-shadow: 0px 4px 10px lightgray;
+}
+
+#klikkenPlussPopup h1 {
+  position: relative;
+  top: -140px;
+}
+
+#labels {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  left: 30px;
+  bottom: 142px;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 130px;
+  bottom: 130px;
+}
+
+input {
+  padding: 5px;
+  background-color: transparent;
+  color: var(--dark-grey);
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+label {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#paymentBtn {
+  font-size: 15px;
+  border-radius: 0.2em;
+  padding: 10px;
+  background-color: var(--dark-grey);
+  color: var(--white);
+  border: 2px solid var(--light-grey);
+  font-weight: 600;
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+}
+
+#paymentBtn:hover {
+  background-color: transparent;
+  color: var(--dark-grey);
+}
+
+.pressToNext {
+  font-size: 15px;
+  border-radius: 0.2em;
+  padding: 10px;
+  background-color: var(--dark-grey);
+  color: var(--white);
+  border: 2px solid var(--light-grey);
+  font-weight: 600;
+  position: absolute;
+}
+
+.pressToNext:hover {
+  background-color: transparent;
+  color: var(--dark-grey);
+}
+
+#klikkenPlussPopup.active {
+  display: block;
+  position: fixed;
+  z-index: 100;
+}
+
 @media (max-width: 1400px) {
   section h1 {
     width: fit-content;

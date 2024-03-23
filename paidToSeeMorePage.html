@@ -21,17 +21,7 @@
       <div class="divContainer">
         <div class="divSectionHeader"><a href="index.html">KLIKKEN</a></div>
       </div>
-      <div class="divContainer2">
-        <div class="divSectionLogin">
-          <button class="btnLogin-popup">
-            <i class="fa-solid fa-circle-user"></i> Logg inn
-          </button>
-        </div>
-        <div class="moonIconContainer">
-          <img src="bilder/moon.png" alt="Switch to dark/light-mode" /
-          id="moonIcon">
-        </div>
-      </div>
+      <div class="divContainer2"></div>
       <div class="divContainer3">
         <div class="divSectionOne">
           <a href="contact.html">Kontakt oss</a>
@@ -55,11 +45,11 @@
         <div class="dropdown">
           <button><ion-icon name="menu"></ion-icon></button>
           <div class="dropdown-options">
-            <a href="hund2.html">Hund</a>
-            <a href="andredyr2.html">Andre kjæledyr</a>
-            <a href="test2.html">Ta testen!</a>
-            <a href="adopter2.html">Adopter</a>
-            <a href="Passerdinlivsstil.html">Hvorfor kjæledyr?</a>
+            <a href="instagram.html">Instagram</a>
+            <a href="personvern.html">Les mer om personvern</a>
+            <a href="omOss.html">Om oss</a>
+            <a href="contact.html">Kontakt oss</a>
+            <a href="spillForside.html">Spill</a>
           </div>
         </div>
       </div>
@@ -173,9 +163,9 @@
       <div id="box"></div>
       <div id="paidTooContainer">
         <h1>Ønsker du å lese mer?</h1>
-        <h2>Bli klikken+ medlem!</h2>
+        <h2>Bli Klikken+ medlem!</h2>
         <button id="klikkenPluss">Ligg foran de andre! Bli medlem</button>
-        <h3>Hva er foredelene av å være Klikken+ medlem?</h3>
+        <h3>Hva er fordelene av å være Klikken+ medlem?</h3>
         <h4>Du får:</h4>
         <br />
         <ul>
@@ -185,6 +175,41 @@
           <li>Prioritert kundeservice.</li>
           <li>Kvitt alle reklamene</li>
         </ul>
+      </div>
+    </section>
+
+    <section>
+      <div id="klikkenPlussPopup">
+        <h1 id="popupH1">Skriv inn din kortinformasjon:</h1>
+
+        <div>
+          <div id="labels">
+            <label for="kortNummer">Kortnummer</label>
+            <label for="fornavn">Fornavn</label>
+            <label for="etternavn">Etternavn</label>
+            <label for="dato">Dato</label>
+            <label for="cvc">CVC</label>
+          </div>
+
+          <div id="inputs">
+            <input
+              type="number"
+              name="kortNummer"
+              id="kortNummer"
+              placeholder="xxxx-xxxx-xxxx-xxxx"
+            />
+            <input type="text" name="fornavn" id="fornavn" placeholder="Ola" />
+            <input
+              type="text"
+              name="etternavn"
+              id="etternavn"
+              placeholder="Nordmann"
+            />
+            <input type="date" name="dato" id="dato" />
+            <input type="number" name="cvc" id="cvc" placeholder="420" />
+          </div>
+        </div>
+        <button id="paymentBtn">Send inn</button>
       </div>
     </section>
 
@@ -223,8 +248,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="JavaScript/nightMode.js"></script>
-    <script src="JavaScript/loginBtn.js"></script>
     <script src="JavaScript/paidTooSeeMorePage.js"></script>
   </body>
 </html>
