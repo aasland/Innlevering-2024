@@ -49,6 +49,6 @@ for (const liv of feil) {
 
 const duVant = document.querySelector(".bak");
 duVant.addEventListener("click", function () {
-  window.open("instagram.html")
+  window.open("instagram.html", "_parent")
 });
 
