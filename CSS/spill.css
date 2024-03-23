@@ -51,16 +51,16 @@
   margin: 5px;
   height: 350px;
 }
-
 .metaBilde {
   width: 100%;
 }
-
 .meta p {
   margin: 0 auto 6px;
+  font-size: 18px;
 }
-
 .meta h2 {
+  padding-top: 15px;
+  font-size: 30px;
   margin: 3px;
 }
 
@@ -69,33 +69,38 @@
   display: flex;
   flex-direction: column;
 }
-
 .idTyveri {
-  height: 225px;
+  height: 240px;
   margin: 5px;
 }
-
 .idTyveri p {
   font-size: 15px;
 }
-
 .idTyveri h2 {
   text-align: center;
   font-size: 20px;
+  line-height: 1.2;
 }
-
 .idTyveriBilde {
   width: 100%;
 }
-
 .idTyveri .bak p{
   text-align: center;
   padding: 10px 30px 10px ;
 }
 
-.hus {
-  height: 115px;
+.YouTube {
+  height: 100px;
   margin: 5px;
+}
+.YouTube h2{
+  padding: 10px 2px 0;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.YouTube p{
+  padding-top: 8px;
 }
 
 .bil {
