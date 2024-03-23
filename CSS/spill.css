@@ -103,25 +103,28 @@
   padding-top: 8px;
 }
 
-.redit {
-  grid-column: 1/2;
-  
-  margin: 5px;
-}
-.reditArtikkel{
-  height: 250px;
-  display: flex;
-  flex-direction: row;
 
-}
-.reditBilde{
-  width: 150px;
+.redit{
+  grid-column: 1/2;
+  margin: 5px;
 }
 
 .båt {
   grid-column: 2/4;
   height: 250px;
   margin: 5px;
+}
+.reditArtikkel{
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+}
+.reditBilde{
+  width: 135px;
+}
+.reditArtikkel p{
+  font-size: 20px;
+  line-height: 1.3;
 }
 
 .kort.snudd {
