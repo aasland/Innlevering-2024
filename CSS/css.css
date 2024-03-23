@@ -1112,6 +1112,11 @@ html {
   padding: 10px;
 }
 
+.a-modal {
+  text-decoration: none;
+  color: var(--red-dark);
+}
+
 #overlay {
   position: unset;
   /* display: none; */
