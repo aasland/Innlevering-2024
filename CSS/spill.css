@@ -104,12 +104,12 @@
 }
 
 
-.redit{
+.båt{
   grid-column: 1/2;
   margin: 5px;
 }
 
-.båt {
+.redit {
   grid-column: 2/4;
   height: 250px;
   margin: 5px;
@@ -120,11 +120,18 @@
   flex-direction: row;
 }
 .reditBilde{
-  width: 135px;
+  width: 200px;
+}
+.reditArtikkel h2{
+  padding-top: 25px;
+  text-align: center;
+  font-size: 25px;
 }
 .reditArtikkel p{
-  font-size: 20px;
-  line-height: 1.3;
+  font-size: 21px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 10px 10px 0;
 }
 
 .kort.snudd {
