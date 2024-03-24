@@ -1450,6 +1450,9 @@ html {
     transition: 0.6s;
     background-color: #d0d4d6;
   }
+  .buttons button {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 1350px) {
