@@ -82,30 +82,38 @@ userComment.addEventListener("keydown", (e) => {
     addPost();
     e.preventDefault(); // stopper den vanlige funskjonaliteten til enter tasten
   }
-}); 
+});
 
-//endrer tommel opp og end knapp
+//endrer tommel opp og ned knapp
 
 function addListenersToThumbs() {
-
   const up = document.getElementById("up");
   const upTrykket = document.getElementById("up-trykket");
   const ned = document.getElementById("ned");
   const nedTrykket = document.getElementById("ned-trykket");
 
   function upButtonClicked() {
-      up.style.display = "none";
-      upTrykket.style.display = "block";
+      //if (!isShown(nedTrykket)) {
+          up.style.display = "none"
+          upTrykket.style.display = "block"
+     // }
   }
 
   function nedButtonClicked() {
-      ned.style.display = "none";
-      nedTrykket.style.display = "block";
+      //if (!isShown(upTrykket)) {
+          ned.style.display = "none"
+          nedTrykket.style.display = "block"
+      //}
   }
 
-  up.onclick = upButtonClicked;
-  ned.onclick = nedButtonClicked;
+  up.onclick = upButtonClicked
+  ned.onclick = nedButtonClicked
+
+ /* // Check if an element is shown or not
+  function isShown(element) {
+      return element.style.display !== 'none';
+  } */
 }
 
-addListenersToThumbs();
+addListenersToThumbs()
 

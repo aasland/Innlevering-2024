@@ -1,263 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KLIKKEN | Hjem</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="CSS/css.css" />
-    <link rel="stylesheet" href="CSS/paidTooSeeMorePage.css" />
-    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico" />
-  </head>
 
-  <body>
-    <header>
-      <div class="divContainer">
-        <div class="divSectionHeader"><a href="index.html">KLIKKEN</a></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KLIKKEN | Hjem</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="CSS/css.css" />
+  <link rel="stylesheet" href="CSS/paidTooSeeMorePage.css" />
+  <link rel="icon" type="image/x-icon" href="favicon/favicon.ico" />
+</head>
+
+<body>
+  <header>
+    <div class="divContainer">
+      <div class="divSectionHeader"><a href="index.html">KLIKKEN</a></div>
+    </div>
+    <div class="divContainer2">
+      <div class="divSectionLogin">
+        <button class="btnLogin-popup">
+          <i class="fa-solid fa-circle-user"></i> Logg inn
+        </button>
       </div>
-      <div class="divContainer2">
-        <div class="divSectionLogin">
-          <button class="btnLogin-popup">
-            <i class="fa-solid fa-circle-user"></i> Logg inn
-          </button>
-        </div>
+    </div>
+    <div class="divContainer3">
+      <div class="divSectionOne">
+        <a href="personvern.html">Personvern</a>
       </div>
-      <div class="divContainer3">
-        <div class="divSectionOne">
-          <a href="personvern.html">Personvern</a>
-        </div>
+    </div>
+    <div class="divContainer4">
+      <div class="divSectionTwo">
+        <a href="paidToSeeMorePage.html">Fake news</a>
       </div>
-      <div class="divContainer4">
-        <div class="divSectionTwo">
+    </div>
+    <div class="divContainer5">
+      <div class="divSectionThree">
+        <a href="omOss.html">Om oss</a>
+      </div>
+    </div>
+    <div class="divContainer6">
+      <div class="divSectionFour">
+        <a href="contact.html">Kontakt oss</a>
+      </div>
+    </div>
+
+    <div class="mediaQueryHeader">
+      <div class="dropdown">
+        <button><ion-icon name="menu"></ion-icon></button>
+        <div class="dropdown-options">
           <a href="paidToSeeMorePage.html">Fake news</a>
-        </div>
-      </div>
-      <div class="divContainer5">
-        <div class="divSectionThree">
+          <a href="personvern.html">Personvern</a>
+          <a href="instagram.html">Instagram</a>
+          <a href="spillForside.html">Spill</a>
           <a href="omOss.html">Om oss</a>
-        </div>
-      </div>
-      <div class="divContainer6">
-        <div class="divSectionFour">
           <a href="contact.html">Kontakt oss</a>
         </div>
       </div>
+    </div>
+  </header>
 
-      <div class="mediaQueryHeader">
-        <div class="dropdown">
-          <button><ion-icon name="menu"></ion-icon></button>
-          <div class="dropdown-options">
-            <a href="paidToSeeMorePage.html">Fake news</a>
-            <a href="personvern.html">Personvern</a>
-            <a href="instagram.html">Instagram</a>
-            <a href="spillForside.html">Spill</a>
-            <a href="omOss.html">Om oss</a>
-            <a href="contact.html">Kontakt oss</a>
+  <section id="loginSection">
+    <div class="wrapper">
+      <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required /> <label>Email</label>
           </div>
+
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="lock-closed"></ion-icon>
+            </span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+
+          <div class="remember-forgot">
+            <label><input type="checkbox" /> Remember me</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="btn" onclick="switchLoginString()">
+            Login
+          </button>
+
+          <div class="login-register">
+            <p>
+              Don't have an account?
+              <a href="#" class="register-link">Register</a>
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="person"></ion-icon></span>
+            <input type="text" required /> <label>Username</label>
+          </div>
+
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required /> <label>Email</label>
+          </div>
+
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="lock-closed"></ion-icon>
+            </span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+
+          <div class="remember-forgot">
+            <label><input type="checkbox" /> I agree to the terms &
+              conditions</label>
+          </div>
+
+          <button type="submit" class="btn">Register</button>
+
+          <div class="login-register">
+            <p>
+              Already have an account?
+              <a href="#" class="login-link">Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h1>Hva er så farlig med falske nyheter?</h1>
+    <br />
+    <br />
+    <p>
+      Falske nyheter har blitt en økende bekymring i dagens samfunn, og deres konsekvenser kan være betydelige, både på
+      individnivå og samfunnsnivå. På norsk jord er ikke denne utfordringen fremmed, da falske nyheter har potensial til
+      å forvrenge sannheten, manipulere offentlig oppfatning og skade tilliten til informasjonskilder. Konsekvensene
+      strekker seg fra personlig forvirring og mistillit til samfunnsmessige spenninger og politisk polarisering.
+      <br>
+      <br>
+      For det første kan falske nyheter føre til personlig forvirring og misforståelser. Når enkeltpersoner blir utsatt
+      for desinformasjon, kan de ta avgjørelser basert på feilaktige opplysninger som kan ha negative konsekvenser for
+      dem selv eller deres samfunn. Dette kan omfatte alt fra helsemessige avgjørelser til politiske valg.
+      <br>
+      <br>
+      På samfunnsnivå kan konsekvensene av falske nyheter være enda mer alvorlige. For det første kan det skape
+      splittelser og konflikter mellom ulike grupper i samfunnet. Når mennesker blir eksponert for falske nyheter som er
+      ment å skape fiendtlighet mot bestemte grupper basert på falske påstander eller stereotyper, kan dette føre til
+      økt polarisering og til og med voldelige konfrontasjoner.
+      <br>
+      <br>
+      Videre kan falske nyheter undergrave tilliten til viktige institusjoner, som media, regjeringen og vitenskapelige
+      organisasjoner. Tillit er avgjørende for et velfungerende samfunn, og når folk ikke lenger stoler på
+      informasjonskilder, kan dette føre til en ødeleggende nedgang i samfunnets stabilitet og samarbeid.
+      <br>
+      <br>
+      På et politisk nivå kan falske nyheter manipulere valg og politiske prosesser. Ved å spre desinformasjon om
+      kandidater eller politiske spørsmål, kan falske nyheter påvirke velgeres oppfatninger og dermed utfallet av valg.
+      Dette underminerer selve grunnlaget for demokratiske prosesser og kan føre til at folk mister troen på
+      rettferdigheten i sine politiske systemer.
+      <br>
+      <br>
+      For å bekjempe konsekvensene av falske nyheter, er det viktig med et samarbeid mellom myndigheter, medier,
+      akademikere og samfunnet generelt. Dette kan innebære å styrke mediekompetanse, fremme kritisk tenkning og
+      kildekritikk blant befolkningen, samt implementere tiltak for å straffe spredere av desinformasjon. På denne måten
+      kan samfunnet bedre ruste seg mot trusselen som falske nyheter utgjør, og bevare sannhet, tillit og stabilitet i
+      offentlig informasjonsflyt.
+    </p>
+  </section>
+  <section id="paidTooSeeMorePage">
+    <div id="box"></div>
+    <div id="paidTooContainer">
+      <h1>Ønsker du å lese mer?</h1>
+      <h2>Bli Klikken+ medlem!</h2>
+      <button id="klikkenPluss">Ligg foran de andre! Bli medlem</button>
+      <h3>Hva er fordelene av å være Klikken+ medlem?</h3>
+      <h4>Du får:</h4>
+      <br />
+      <ul>
+        <li>Tilgang til eksluksive nyheter.</li>
+        <li>Varslinger når vi kommer med en ny nyhet.</li>
+        <li>Nyheter en time før alle andre.</li>
+        <li>Prioritert kundeservice.</li>
+        <li>Kvitt alle reklamene</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div id="klikkenPlussPopup">
+      <h1 id="popupH1">Skriv inn din kortinformasjon:</h1>
+
+      <div>
+        <div id="labels">
+          <label for="kortNummer">Kortnummer</label>
+          <label for="fornavn">Fornavn</label>
+          <label for="etternavn">Etternavn</label>
+          <label for="dato">Dato</label>
+          <label for="cvc">CVC</label>
+        </div>
+
+        <div id="inputs">
+          <input type="number" name="kortNummer" id="kortNummer" placeholder="xxxx-xxxx-xxxx-xxxx" />
+          <input type="text" name="fornavn" id="fornavn" placeholder="Ola" />
+          <input type="text" name="etternavn" id="etternavn" placeholder="Nordmann" />
+          <input type="date" name="dato" id="dato" />
+          <input type="number" name="cvc" id="cvc" placeholder="420" />
         </div>
       </div>
-    </header>
+      <button id="paymentBtn">Send inn</button>
+    </div>
+  </section>
 
-    <section id="loginSection">
-      <div class="wrapper">
-        <span class="icon-close"
-          ><ion-icon name="close-outline"></ion-icon
-        ></span>
-        <div class="form-box login">
-          <h2>Login</h2>
-          <form action="#">
-            <div class="input-box">
-              <span class="icon"><ion-icon name="mail"></ion-icon></span>
-              <input type="email" required /> <label>Email</label>
-            </div>
+  <footer id="footer">
+    <a href="#" id="backToTopButton"><ion-icon name="arrow-up"></ion-icon></a>
 
-            <div class="input-box">
-              <span class="icon">
-                <ion-icon name="lock-closed"></ion-icon>
-              </span>
-              <input type="password" required />
-              <label>Password</label>
-            </div>
-
-            <div class="remember-forgot">
-              <label><input type="checkbox" /> Remember me</label>
-              <a href="#">Forgot Password?</a>
-            </div>
-
-            <button type="submit" class="btn" onclick="switchLoginString()">
-              Login
-            </button>
-
-            <div class="login-register">
-              <p>
-                Don't have an account?
-                <a href="#" class="register-link">Register</a>
-              </p>
-            </div>
-          </form>
-        </div>
-
-        <div class="form-box register">
-          <h2>Registration</h2>
-          <form action="#">
-            <div class="input-box">
-              <span class="icon"><ion-icon name="person"></ion-icon></span>
-              <input type="text" required /> <label>Username</label>
-            </div>
-
-            <div class="input-box">
-              <span class="icon"><ion-icon name="mail"></ion-icon></span>
-              <input type="email" required /> <label>Email</label>
-            </div>
-
-            <div class="input-box">
-              <span class="icon">
-                <ion-icon name="lock-closed"></ion-icon>
-              </span>
-              <input type="password" required />
-              <label>Password</label>
-            </div>
-
-            <div class="remember-forgot">
-              <label
-                ><input type="checkbox" /> I agree to the terms &
-                conditions</label
-              >
-            </div>
-
-            <button type="submit" class="btn">Register</button>
-
-            <div class="login-register">
-              <p>
-                Already have an account?
-                <a href="#" class="login-link">Login</a>
-              </p>
-            </div>
-          </form>
-        </div>
+    <div class="tipsOssFooter">
+      <div>
+        <h2>Tips oss her:</h2>
       </div>
-    </section>
-    <section>
-      <h1>Lorem</h1>
-      <br />
-      <br />
+      <div id="mail">
+        <i class="fa-regular fa-envelope"></i> sofiekva@viken.no
+      </div>
+      <div id="tlf"><i class="fa-solid fa-phone"></i> 936 68 308</div>
+    </div>
+    <div class="logofooter">
+      <i class="fa-solid fa-hand-point-right fa-rotate-270 footerLogo"></i>
+    </div>
+    <div class="omTeametFooter">
+      <h2>Møt teamet:</h2>
+      <h3>Hanna Johns</h3>
+      <h3>Sofie Kvadsheim</h3>
+      <h3>Kaia Villabø</h3>
+      <h3>Fredrik Åslaand</h3>
+      <h3>Maria Lindheim</h3>
+    </div>
+    <div id="bunntekstFooter">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab
-        aliquam doloremque voluptas deleniti et quaerat dignissimos voluptate
-        quae ratione asperiores ipsa reiciendis repellendus adipisci natus nisi
-        aspernatur sequi necessitatibus, quisquam velit porro Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Dignissimos esse numquam
-        doloremque temporibus deleniti, fuga recusandae nisi culpa iste quas
-        eius quisquam, deserunt quis sequi quasi magnam voluptates nobis quia.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
-        nulla adipisci officia et esse voluptates debitis provident praesentium
-        accusamus illo, autem labore sint tempore voluptatum, iure veniam nemo
-        reiciendis omnis? Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Assumenda quisquam voluptatem dolore ducimus corporis tenetur,
-        minus aut quasi, autem placeat necessitatibus esse odit temporibus
-        mollitia harum minima eaque, fuga obcaecati. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Natus neque officia mollitia tenetur nulla
-        consectetur corrupti rem perferendis nostrum adipisci maxime porro,
-        magni iure qui temporibus quae dolorem ad corporis. Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Quia, pariatur sed, quisquam
-        dolorum quasi odio beatae, eum quae accusamus voluptatem dignissimos
+        <b>©</b> 2024 KLIKKEN | Brukervilkår | Personvernerklæring og
+        informasjonskapsler
       </p>
-    </section>
-    <section id="paidTooSeeMorePage">
-      <div id="box"></div>
-      <div id="paidTooContainer">
-        <h1>Ønsker du å lese mer?</h1>
-        <h2>Bli Klikken+ medlem!</h2>
-        <button id="klikkenPluss">Ligg foran de andre! Bli medlem</button>
-        <h3>Hva er fordelene av å være Klikken+ medlem?</h3>
-        <h4>Du får:</h4>
-        <br />
-        <ul>
-          <li>Tilgang til eksluksive nyheter.</li>
-          <li>Varslinger når vi kommer med en ny nyhet.</li>
-          <li>Nyheter en time før alle andre.</li>
-          <li>Prioritert kundeservice.</li>
-          <li>Kvitt alle reklamene</li>
-        </ul>
-      </div>
-    </section>
+    </div>
+  </footer>
 
-    <section>
-      <div id="klikkenPlussPopup">
-        <h1 id="popupH1">Skriv inn din kortinformasjon:</h1>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="JavaScript/paidTooSeeMorePage.js"></script>
+</body>
 
-        <div>
-          <div id="labels">
-            <label for="kortNummer">Kortnummer</label>
-            <label for="fornavn">Fornavn</label>
-            <label for="etternavn">Etternavn</label>
-            <label for="dato">Dato</label>
-            <label for="cvc">CVC</label>
-          </div>
-
-          <div id="inputs">
-            <input
-              type="number"
-              name="kortNummer"
-              id="kortNummer"
-              placeholder="xxxx-xxxx-xxxx-xxxx"
-            />
-            <input type="text" name="fornavn" id="fornavn" placeholder="Ola" />
-            <input
-              type="text"
-              name="etternavn"
-              id="etternavn"
-              placeholder="Nordmann"
-            />
-            <input type="date" name="dato" id="dato" />
-            <input type="number" name="cvc" id="cvc" placeholder="420" />
-          </div>
-        </div>
-        <button id="paymentBtn">Send inn</button>
-      </div>
-    </section>
-
-    <footer id="footer">
-      <a href="#" id="backToTopButton"><ion-icon name="arrow-up"></ion-icon></a>
-
-      <div class="tipsOssFooter">
-        <div><h2>Tips oss her:</h2></div>
-        <div id="mail">
-          <i class="fa-regular fa-envelope"></i> sofiekva@viken.no
-        </div>
-        <div id="tlf"><i class="fa-solid fa-phone"></i> 936 68 308</div>
-      </div>
-      <div class="logofooter">
-        <i class="fa-solid fa-hand-point-right fa-rotate-270 footerLogo"></i>
-      </div>
-      <div class="omTeametFooter">
-        <h2>Møt teamet:</h2>
-        <h3>Hanna Johns</h3>
-        <h3>Sofie Kvadsheim</h3>
-        <h3>Kaia Villabø</h3>
-        <h3>Fredrik Åslaand</h3>
-        <h3>Maria Lindheim</h3>
-      </div>
-      <div id="bunntekstFooter">
-        <p>
-          <b>©</b> 2024 KLIKKEN | Brukervilkår | Personvernerklæring og
-          informasjonskapsler
-        </p>
-      </div>
-    </footer>
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="JavaScript/paidTooSeeMorePage.js"></script>
-  </body>
 </html>
