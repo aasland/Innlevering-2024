@@ -1264,6 +1264,7 @@ html {
   font-weight: 400;
 }
 
+/* hero*/
 .hero {
   padding: 380px 0px 10px 0px;
   background-image: url(bilder/tohunder.jpg);
@@ -1465,6 +1466,7 @@ html {
     right: 60px;
   }
 }
+
 @media (max-width: 1000px) {
   #loginSection {
     position: relative;
@@ -1516,7 +1518,6 @@ html {
     height: 350px;
   }
 }
-
 
 @media (max-width: 750px) {
   .section1 {
@@ -1624,7 +1625,6 @@ html {
 
 }
 
-
 @media (max-width: 600px) {
   #flipCoin {
     width: 100%;
@@ -1637,6 +1637,10 @@ html {
 
   .ratingBox {
     width: 305px;
+  }
+
+  .gdpr h2 {
+    font-size: 27px;
   }
 
   .stars ion-icon {
@@ -1671,11 +1675,26 @@ html {
     margin-left: 20px;
   }
 
+  .gdpr h2 {
+    font-size: 25px;
+  }
+  #samtykkeBilde {
+    right: 66px;
+  }
+}
+
+@media(max-width:440){
+  #samtykkeBilde {
+    display: none;
+  }
 }
 
 @media (max-width: 400px) {
   #flipCoin {
     height: 1605px;
+  }
+  .gdpr h2 {
+    font-size: 22px;
   }
 
   .sectionFakeNewsSpill {
