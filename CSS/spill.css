@@ -108,7 +108,7 @@
 
 }
 .idTyveri img{
-  width: 290px;
+  width: 100%;
 }
 
 .idTyveri .bak p{
@@ -139,10 +139,6 @@
   line-height: 1.5;
   text-align: center;
   padding: 10px 10px 0;
-}
-
-.kort.snudd {
-  transform: rotateY(180deg);
 }
 
 .intro .instuksjoner {
@@ -263,6 +259,10 @@
   margin-top: 20px;
   padding: 8px 18px 8px;
 
+}
+
+.kort.snudd {
+  transform: rotateY(180deg);
 }
 .shake {
   animation: shake 0.5s ease-in-out;
