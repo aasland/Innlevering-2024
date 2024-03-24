@@ -464,6 +464,9 @@
 .reditArtikkel h2{
   font-size:18px ;
 }
+.btnLogin-popup{
+  display: none;
+}
   }
   @media(max-width:360px){
     .del{
