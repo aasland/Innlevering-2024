@@ -166,6 +166,7 @@ header a {
   background-color: var(--dark-grey);
   color: var(--white);
   font-weight: 600;
+  cursor: pointer;
 }
 
 .mediaQueryHeader {
