@@ -87,31 +87,27 @@ userComment.addEventListener("keydown", (e) => {
 //endrer tommel opp og ned knapp
 
 function addListenersToThumbs() {
-  // Get the elements to work with
   const up = document.getElementById("up");
   const upTrykket = document.getElementById("up-trykket");
   const ned = document.getElementById("ned");
   const nedTrykket = document.getElementById("ned-trykket");
 
-  // Add click event listener for the 'up' button
   function upButtonClicked() {
       if (!isShown(nedTrykket)) {
-          up.style.display = "none";
-          upTrykket.style.display = "block";
+          up.style.display = "none"
+          upTrykket.style.display = "block"
       }
   }
 
-  // Add click event listener for the 'ned' button
   function nedButtonClicked() {
       if (!isShown(upTrykket)) {
-          ned.style.display = "none";
-          nedTrykket.style.display = "block";
+          ned.style.display = "none"
+          nedTrykket.style.display = "block"
       }
   }
 
-  // Add click event listeners to their respective elements
-  up.onclick = upButtonClicked;
-  ned.onclick = nedButtonClicked;
+  up.onclick = upButtonClicked
+  ned.onclick = nedButtonClicked
 
   // Check if an element is shown or not
   function isShown(element) {
@@ -119,6 +115,5 @@ function addListenersToThumbs() {
   }
 }
 
-// You can then call the function to add events to the desired elements
-addListenersToThumbs();
+addListenersToThumbs()
 
