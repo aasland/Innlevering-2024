@@ -28,6 +28,7 @@
     border-radius: 45px;
     width: 425px;
     height: 425px;
+    padding: 0 70px 0;
 }
 
 .spill1 p {
@@ -51,4 +52,13 @@
 .spill1 button:hover{
     background-color: var(--red-light);
     transition: 0.3s;
+}
+
+@media (max-width:460px) {
+    .spill1{
+        width: 300px;
+        height: 300px;
+        padding: 0 30px 0;
+    }
+   
 }
