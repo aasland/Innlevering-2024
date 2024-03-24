@@ -1,61 +1,65 @@
+.divSectionThree {
+  font-weight: bold;
+}
+
 #sectionOmOss {
-    padding: 120px 0px 30px 0px;
-    margin-left: 120px;
-    margin-right: 120px;
+  padding: 120px 0px 30px 0px;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 .containerOmOss {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
 }
 
 .boxOmOss {
-    width: 200px;
-    height: 400px;
-    margin: 20px;
-    text-align: center;
-    padding: 15px;
-    background-color: white;
-    border-radius: 0.5em;
-    box-shadow: 0px 4px 10px lightgray;
-    line-height: 33px;
+  width: 200px;
+  height: 400px;
+  margin: 20px;
+  text-align: center;
+  padding: 15px;
+  background-color: white;
+  border-radius: 0.5em;
+  box-shadow: 0px 4px 10px lightgray;
+  line-height: 33px;
 }
 
 .boxOmOss img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    box-shadow: 0px 4px 10px lightgray;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 10px lightgray;
 }
 
 .divOmOss {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
 }
 
 .divOmOss p {
-    text-align: center;
-    line-height: 33px;
+  text-align: center;
+  line-height: 33px;
 }
 
 .divOmOss img {
-    height: 300px;
+  height: 300px;
 }
 
 #sectionOmOss .divOmOss {
-    padding-left: 30px;
-    padding-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #divBegynnelsen {
-    background-color: #c7c6c43b;
-    padding-bottom: 30px;
-    margin-top: 20px;
-    box-shadow: 0px 4px 10px lightgray;
+  background-color: #c7c6c43b;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 10px lightgray;
 }
