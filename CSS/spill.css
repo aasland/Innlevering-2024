@@ -201,7 +201,7 @@
 }
 #startSpill{
   position: fixed;
-  right: 215px;
+  right: 41%;
   text-align: center;
   cursor: pointer;
   border: none;
@@ -323,3 +323,147 @@
     transform: translateX(0);
   }
 }
+
+@media (max-width:890px){
+.del{
+  width: 700px;
+}
+.meta h2{
+  padding: 20px;
+}
+
+.apple {
+  height: 200px;
+}
+.apple h2{
+  padding-top: 10px;
+  font-size: 18px;
+  line-height: 1.3;
+}
+.idTyveri h2{
+  font-size: 19px;
+}
+.reditArtikkel p{
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 10px 10px 0;
+}
+.YouTube {
+  height: 140px;
+}
+.YouTube p{
+  margin: 0 15px 0;
+  text-align: center;
+}
+.reditArtikkel h2{
+  padding-top: 25px;
+  font-size: 22px;
+  line-height: 1.3;
+}
+}
+@media (max-width:700px){
+  .del{
+    padding-top: 120px;
+    width: 550px;
+  }
+  .meta {
+    grid-column: 1/4;
+    height: 320px;
+  }
+
+.meta h2{
+  padding: 10px 0 8px;
+}
+  
+  .toArtikler {
+    grid-column: 1/2;
+  }
+
+  .apple {
+    height: 180px;
+  }
+
+  .idTyveri{
+    grid-column: 2/4;
+  }
+  .idTyveri h2{
+    padding: 25px 5px 12px;
+    font-size: 22px;
+  }
+  .idTyveri p{
+    line-height: 1.6;
+  }
+  
+  .redit {
+    grid-column: 1/4;
+  }
+  .redit h2{
+    padding-top:35px ;
+  }
+  .redit p{
+    padding-top:25px ;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width:550px){
+
+.intro .instuksjoner {
+  height: 400px;
+}
+.del{
+  width: 400px;                                                                                                                                
+}
+.meta{
+  height: 250px;
+}
+.meta h2{
+  font-size: 25px;
+  padding-bottom: 0;
+}
+.apple h2{
+  padding: 6px 0 0;
+  font-size: 16px;
+}
+.idTyveri p{
+  font-size: 17px;
+  padding: 0 5px 0;
+}
+.reditArtikkel h2{
+  padding-top: 10px;
+}
+.reditArtikkel p{
+  padding: 10px 2px 0;
+  font-size: 16px;
+}
+}
+
+@media (max-width:500px){
+
+  .intro .instuksjoner {
+    height: 500px;
+    padding: 10px 20px 20px;
+  }
+  
+  }
+
+@media (max-width:400px){
+
+  .intro .instuksjoner {
+    height: 600px;
+  }
+#startSpill{
+  right: 37%;
+}
+
+  }
+  @media (max-width: 280px){
+    .del{
+      width: 280px;
+    }
+
+  }
+
+
+
+
