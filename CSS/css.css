@@ -166,6 +166,7 @@ header a {
   background-color: var(--dark-grey);
   color: var(--white);
   font-weight: 600;
+  cursor: pointer;
 }
 
 .mediaQueryHeader {
@@ -395,17 +396,15 @@ main {
   text-decoration: none;
 }
 
-#bildeSpill{
+#bildeSpill {
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
 
-
 .centered:hover {
   box-shadow: 0px 0px 4px 1px;
 }
-
 
 .sectionFakeNewsSpillTekst {
   margin: 20px;
@@ -1134,7 +1133,6 @@ html {
   opacity: 0.8;
 }
 
-
 /* Rate oss start */
 
 .ratingBox {
@@ -1282,7 +1280,7 @@ html {
   padding: 0px 20px 20px 20px;
 }
 
-.hero a{
+.hero a {
   z-index: 1;
   text-decoration: none;
   color: var(--white);
@@ -1382,6 +1380,10 @@ html {
     justify-content: space-around;
   }
 
+  .hero p {
+    line-height: 37px;
+  }
+
   header {
     grid-template-columns: 1fr 1fr 1fr;
     height: 80px;
@@ -1427,6 +1429,10 @@ html {
     cursor: pointer;
   }
 
+  #ratingBtn {
+    font-size: 13px;
+  }
+
   .dropdown-options a {
     display: block;
     color: var(--dark-grey);
@@ -1460,12 +1466,6 @@ html {
 }
 
 @media (max-width: 950px) {
-  
 }
 
-
-
-
 /* Media query end */
-
-

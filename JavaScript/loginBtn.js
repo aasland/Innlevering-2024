@@ -29,17 +29,12 @@ loginBtn.addEventListener("click", (event) => {
   wrapper.classList.remove("active-popup");
 });
 
-// klikkenPlussBtn.addEventListener("click", (event) => {
-//   event.preventDefault();
-//   wrapper.classList.add("active-popup");
-// });
-
 // Login end
 
 // Change icon start
 
 switchLoginString = function () {
-  btnPopup.innerHTML = `<ion-icon name="log-out"></ion-icon> Log out`;
+  btnPopup.innerHTML = `<ion-icon name="log-out"></ion-icon> Logg ut`;
   btnPopup.style.display = "flex";
   btnPopup.style.alignItems = "center";
 };
