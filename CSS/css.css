@@ -1050,7 +1050,7 @@ html {
 /* tommlene endrer farge */
 
 #up {
-  display: block;
+  display: flex;
 }
 
 #up-trykket {
@@ -1058,12 +1058,12 @@ html {
 }
 
 #ned {
-  display: block;
+  display: flex;
 }
 
 #ned-trykket {
   display: none;
-}
+} 
 
 /*Pop up modul*/
 
