@@ -86,6 +86,8 @@ userComment.addEventListener("keydown", (e) => {
 
 //endrer tommel opp og ned knapp
 
+// Fungerer men kan ikke klikke på dem flere ganger
+
 /*function addListenersToThumbs() {
   const up = document.getElementById("up");
   const upTrykket = document.getElementById("up-trykket");
