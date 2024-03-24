@@ -6,6 +6,7 @@
     padding-top: 170px;
     font-size: 40px;
     text-align: center;
+    color: var(--dark-grey);
 }
 
 .spillHer {
@@ -23,9 +24,9 @@
     justify-content: center;
     background-color: var(--dark-grey);
     color: var(--white);
-    border-radius: 30px;
-    width: 450px;
-    height: 450px;
+    border-radius: 45px;
+    width: 425px;
+    height: 425px;
 }
 
 .spill1 p {
@@ -47,6 +48,6 @@
 }
 
 .spill1 button:hover{
-    background-color: var(--red-dark);
-    transition: 0.5s;
+    background-color: var(--red-light);
+    transition: 0.3s;
 }
