@@ -93,26 +93,26 @@ function addListenersToThumbs() {
   const nedTrykket = document.getElementById("ned-trykket");
 
   function upButtonClicked() {
-      if (!isShown(nedTrykket)) {
+      //if (!isShown(nedTrykket)) {
           up.style.display = "none"
           upTrykket.style.display = "block"
-      }
+     // }
   }
 
   function nedButtonClicked() {
-      if (!isShown(upTrykket)) {
+      //if (!isShown(upTrykket)) {
           ned.style.display = "none"
           nedTrykket.style.display = "block"
-      }
+      //}
   }
 
   up.onclick = upButtonClicked
   ned.onclick = nedButtonClicked
 
-  // Check if an element is shown or not
+ /* // Check if an element is shown or not
   function isShown(element) {
       return element.style.display !== 'none';
-  }
+  } */
 }
 
 addListenersToThumbs()
