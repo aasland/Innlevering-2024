@@ -25,3 +25,9 @@
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 900px) {
+  .container-kmt {
+    width: 80%;
+  }
+}
