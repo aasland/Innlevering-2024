@@ -289,7 +289,7 @@ main {
 #flipCoin {
   grid-column: 2/4;
   text-align: center;
-  padding: 25px 0px 60px 0px;
+  padding: 0px 0px 60px 0px;
   position: relative;
   width: 940px;
   height: 500px;
@@ -913,6 +913,13 @@ html {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--dark-grey);
+}
+
+.pilTrykk{
+  grid-column: 2/3;
+  color: var(--dark-grey);
+  font-size: 20px;
+  padding: 10px;
 }
 
 .text {
@@ -1626,18 +1633,90 @@ html {
     width: 100%;
     height: 1205px;
   }
+  .sectionbakgrunn{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .ratingBox {
+    width: 305px;
+  }
+
+  .stars ion-icon {
+    font-size: 20px;
+  }
+
+  .ratingBox h1 {
+    font-size: 19px;
+  }
+  #ratingBtn {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 500px) {
   #flipCoin {
     height: 1345px;
   }
+
+  .section1 h2 {
+    font-size: 21px;
+  }
+  .section1 h1 {
+    font-size: 33px;
+  }
+  .section1 p {
+    font-size: 15px;
+  }
+
+  .btnLogin-popup {
+    font-size: 12px;
+    margin-left: 20px;
+  }
+
 }
 
 @media (max-width: 400px) {
   #flipCoin {
     height: 1605px;
   }
+
+  .sectionFakeNewsSpill {
+    height: 200px;
+  }
+
+  .centered {
+    font-size: 20px;
+  }
+
+  .ratingBox {
+    width: 230px;
+  }
+
+  .ratingBox h1 {
+    font-size: 18px;
+  }
+
+  #ratingBtn {
+    font-size: 11px;
+  }
+
+  .sectionbakgrunn {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding: 30px;
+  }
 }
+
+@media (max-width: 320px) {
+  #flipCoin {
+    height: 1705px;
+  }
+  .btnLogin-popup {
+    font-size: 11px;
+    margin-left: 10px;
+  }
+}
+
 
 /* Media query end */
