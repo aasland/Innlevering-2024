@@ -38,12 +38,6 @@ userComment.addEventListener("input", (e) => {
   }
 });
 
-userComment.addEventListener("keydown", (e) => {
-  if (e.keyCode === 13) {
-    addPost();
-    e.preventDefault(); // stopper den vanlige funskjonaliteten til enter tasten
-  }
-});
 
 function addPost() {
   console.log("Knappen fungerer");
@@ -70,7 +64,7 @@ function addPost() {
 
   comments.innerHTML += published;
 
-  addListenersToThumbs();
+  //addListenersToThumbs();
 
   userComment.value = "";
 
@@ -83,24 +77,36 @@ function addPost() {
   }
 }
 
-//<img src="${userId.image}">
+publishBtn.addEventListener("click", addPost);
 
-//publishBtn.addEventListener("click", addPost);
+userComment.addEventListener("keydown", (e) => {
+  if (e.keyCode === 13) {
+    addPost();
+    e.preventDefault(); // stopper den vanlige funskjonaliteten til enter tasten
+  }
+}); 
 
 //endrer tommel opp og end knapp
 
 function addListenersToThumbs() {
-  //  let up = getElementById("up")
-  //  let upTrykket = getElementById("up-trykket")
-  //  let ned = getElementById("ned")
-  //  let nedTrykket = getElementById("ned-trykket")
+    let up = document.getElementById("up")
+    let upTrykket = document.getElementById("up-trykket")
+    let ned = document.getElementById("ned")
+    let nedTrykket = document.getElementById("ned-trykket")
 
-  //  up.onclick = function endre(){
-  //    up.style.display = "none"
-  //    upTrykket.style.display = "block"
-  //  }
+   up.onclick = function endre(){
+      up.style.display = "none"
+     upTrykket.style.display = "block"
+    }
 
-  allThumbsUp = document.querySelectorAll(".fa-thumbs-up");
+  ned.onclick = function bytte(){
+    ned.style.display = "none"
+    nedTrykket.style.display = "block"
+  }
+
+}
+
+ /* allThumbsUp = document.querySelectorAll(".fa-thumbs-up");
   for (thumbsUp of allThumbsUp) {
     thumbsUp.addEventListener("click", function (evt) {
       console.log("Tommel OPP trykket");
@@ -116,5 +122,4 @@ function addListenersToThumbs() {
       const tommel = evt.target;
       console.log(tommel);
     });
-  }
-}
+  }*/
