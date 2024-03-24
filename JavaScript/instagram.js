@@ -38,12 +38,6 @@ userComment.addEventListener("input", (e) => {
   }
 });
 
-userComment.addEventListener("keydown", (e) => {
-  if (e.keyCode === 13) {
-    addPost();
-    e.preventDefault(); // stopper den vanlige funskjonaliteten til enter tasten
-  }
-});
 
 function addPost() {
   console.log("Knappen fungerer");
@@ -70,8 +64,6 @@ function addPost() {
 
   comments.innerHTML += published;
 
-  addListenersToThumbs();
-
   userComment.value = "";
 
   let commentsNum = document.querySelectorAll(".parents").length;
@@ -83,38 +75,37 @@ function addPost() {
   }
 }
 
-//<img src="${userId.image}">
+publishBtn.addEventListener("click", addPost);
 
-//publishBtn.addEventListener("click", addPost);
+userComment.addEventListener("keydown", (e) => {
+  if (e.keyCode === 13) {
+    addPost();
+    e.preventDefault(); // stopper den vanlige funskjonaliteten til enter tasten
+  }
+}); 
 
 //endrer tommel opp og end knapp
 
 function addListenersToThumbs() {
-  //  let up = getElementById("up")
-  //  let upTrykket = getElementById("up-trykket")
-  //  let ned = getElementById("ned")
-  //  let nedTrykket = getElementById("ned-trykket")
 
-  //  up.onclick = function endre(){
-  //    up.style.display = "none"
-  //    upTrykket.style.display = "block"
-  //  }
+  const up = document.getElementById("up");
+  const upTrykket = document.getElementById("up-trykket");
+  const ned = document.getElementById("ned");
+  const nedTrykket = document.getElementById("ned-trykket");
 
-  allThumbsUp = document.querySelectorAll(".fa-thumbs-up");
-  for (thumbsUp of allThumbsUp) {
-    thumbsUp.addEventListener("click", function (evt) {
-      console.log("Tommel OPP trykket");
-      const tommel = evt.target;
-      console.log(tommel);
-    });
+  function upButtonClicked() {
+      up.style.display = "none";
+      upTrykket.style.display = "block";
   }
 
-  allThumbsDown = document.querySelectorAll(".fa-thumbs-down");
-  for (thumbsDown of allThumbsDown) {
-    thumbsDown.addEventListener("click", function (evt) {
-      console.log("Tommel ned trykket");
-      const tommel = evt.target;
-      console.log(tommel);
-    });
+  function nedButtonClicked() {
+      ned.style.display = "none";
+      nedTrykket.style.display = "block";
   }
+
+  up.onclick = upButtonClicked;
+  ned.onclick = nedButtonClicked;
 }
+
+addListenersToThumbs();
+
