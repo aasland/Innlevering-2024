@@ -64,8 +64,6 @@ function addPost() {
 
   comments.innerHTML += published;
 
-  //addListenersToThumbs();
-
   userComment.value = "";
 
   let commentsNum = document.querySelectorAll(".parents").length;
