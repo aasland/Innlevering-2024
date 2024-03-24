@@ -16,123 +16,128 @@
 <body>
     <header>
         <div class="divContainer">
-            <div class="divSectionHeader"><a href="index.html">KLIKKEN</a></div>
+          <div class="divSectionHeader"><a href="index.html">KLIKKEN</a></div>
         </div>
         <div class="divContainer2">
-            <div class="divSectionLogin">
-                <button class="btnLogin-popup">
-                    <i class="fa-solid fa-circle-user"></i> Logg inn
-                </button>
-            </div>
+          <div class="divSectionLogin">
+            <button class="btnLogin-popup">
+              <i class="fa-solid fa-circle-user"></i> Logg inn
+            </button>
+          </div>
         </div>
         <div class="divContainer3">
-            <div class="divSectionOne">
-                <a href="contact.html">Kontakt oss</a>
-            </div>
+          <div class="divSectionOne">
+            <a href="personvern.html">Personvern</a>
+          </div>
         </div>
         <div class="divContainer4">
-            <div class="divSectionTwo"><a href="omOss.html">Om oss</a></div>
+          <div class="divSectionTwo"><a href="paidToSeeMorePage.html">Fake news</a></div>
         </div>
         <div class="divContainer5">
-            <div class="divSectionThree">
-                <a href="personvern.html">Les mer om personvern</a>
-            </div>
+          <div class="divSectionThree">
+            <a href="omOss.html">Om oss</a>
+          </div>
         </div>
         <div class="divContainer6">
-            <div class="divSectionFour">
-                <a href="instagram.html">Instagram</a>
-            </div>
+          <div class="divSectionFour">
+            <a href="contact.html">Kontakt oss</a>
+          </div>
         </div>
-
+  
         <div class="mediaQueryHeader">
-            <div class="dropdown">
-                <button><ion-icon name="menu"></ion-icon></button>
-                <div class="dropdown-options">
-                    <a href="instagram.html">Instagram</a>
-                    <a href="personvern.html">Les mer om personvern</a>
-                    <a href="omOss.html">Om oss</a>
-                    <a href="contact.html">Kontakt oss</a>
-                    <a href="spillForside.html">Spill</a>
-                </div>
+          <div class="dropdown">
+            <button><ion-icon name="menu"></ion-icon></button>
+            <div class="dropdown-options">
+              <a href="paidToSeeMorePage.html">Fake news</a>
+              <a href="personvern.html">Personvern</a>
+              <a href="instagram.html">Instagram</a>
+              <a href="spillForside.html">Spill</a>
+              <a href="omOss.html">Om oss</a>
+              <a href="contact.html">Kontakt oss</a>
             </div>
+          </div>
         </div>
-    </header>
-
-    <section id="loginSection">
+      </header>
+  
+      <section id="loginSection">
         <div class="wrapper">
-            <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
-            <div class="form-box login">
-                <h2>Login</h2>
-                <form action="#">
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                        <input type="email" required /> <label>Email</label>
-                    </div>
-
-                    <div class="input-box">
-                        <span class="icon">
-                            <ion-icon name="lock-closed"></ion-icon>
-                        </span>
-                        <input type="password" required />
-                        <label>Password</label>
-                    </div>
-
-                    <div class="remember-forgot">
-                        <label><input type="checkbox" /> Remember me</label>
-                        <a href="#">Forgot Password?</a>
-                    </div>
-
-                    <button type="submit" class="btn" onclick="switchLoginString(), PressCount()">
-                        Login
-                    </button>
-
-                    <div class="login-register">
-                        <p>
-                            Don't have an account?
-                            <a href="#" class="register-link">Register</a>
-                        </p>
-                    </div>
-                </form>
-            </div>
-
-            <div class="form-box register">
-                <h2>Registration</h2>
-                <form action="#">
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input type="text" required /> <label>Username</label>
-                    </div>
-
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                        <input type="email" required /> <label>Email</label>
-                    </div>
-
-                    <div class="input-box">
-                        <span class="icon">
-                            <ion-icon name="lock-closed"></ion-icon>
-                        </span>
-                        <input type="password" required />
-                        <label>Password</label>
-                    </div>
-
-                    <div class="remember-forgot">
-                        <label><input type="checkbox" /> I agree to the terms &
-                            conditions</label>
-                    </div>
-
-                    <button type="submit" class="btn">Register</button>
-
-                    <div class="login-register">
-                        <p>
-                            Already have an account?
-                            <a href="#" class="login-link">Login</a>
-                        </p>
-                    </div>
-                </form>
-            </div>
+          <span class="icon-close"
+            ><ion-icon name="close-outline"></ion-icon
+          ></span>
+          <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+              <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required /> <label>Email</label>
+              </div>
+  
+              <div class="input-box">
+                <span class="icon">
+                  <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" required />
+                <label>Password</label>
+              </div>
+  
+              <div class="remember-forgot">
+                <label><input type="checkbox" /> Remember me</label>
+                <a href="#">Forgot Password?</a>
+              </div>
+  
+              <button type="submit" class="btn" onclick="switchLoginString()">
+                Login
+              </button>
+  
+              <div class="login-register">
+                <p>
+                  Don't have an account?
+                  <a href="#" class="register-link">Register</a>
+                </p>
+              </div>
+            </form>
+          </div>
+  
+          <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+              <div class="input-box">
+                <span class="icon"><ion-icon name="person"></ion-icon></span>
+                <input type="text" required /> <label>Username</label>
+              </div>
+  
+              <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required /> <label>Email</label>
+              </div>
+  
+              <div class="input-box">
+                <span class="icon">
+                  <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" required />
+                <label>Password</label>
+              </div>
+  
+              <div class="remember-forgot">
+                <label
+                  ><input type="checkbox" /> I agree to the terms &
+                  conditions</label
+                >
+              </div>
+  
+              <button type="submit" class="btn">Register</button>
+  
+              <div class="login-register">
+                <p>
+                  Already have an account?
+                  <a href="#" class="login-link">Login</a>
+                </p>
+              </div>
+            </form>
+          </div>
         </div>
-    </section>
+      </section>
 
     <section>
         <div class="del">
@@ -186,11 +191,11 @@
                 <div class="kort riktig">
                     <div class="fjes front">
                         <img class="idTyveriBilde" src="bilder/id-tyveri-kopi.jpg" alt="" />
+                        <h2>i år har 43.000 nordmenn opplevd ID-tyveri</h2>
                         <p>
                             Tyveri skjer oftest i forbindelse med <br />
                             netthandel og i sosiale medier.
                         </p>
-                        <h2>43.000 nordmenn har opplevd <br>ID-tyveri</h2>
                     </div>
                     <div class="fjes bak">
                         <div>
@@ -225,11 +230,11 @@
         </div>
 
         <div class="gameOver">
-            <a href="spillForside.html"><button id="lukkKnapp">&times;</button></a>
+            <a href="spillForside.html"><button id="lukkKnappGO">&times;</button></a>
 
             <div>
-                <h1>game over</h1>
-                <p>du hadde nok blitt lurt</p>
+                <h1>Game Over</h1>
+                <p>Du kan nok blitt lurt av <br>falsk informasjon</p>
             </div>
             <a href="spill.html"> <button id="spillIgjen">prøv igjen</button></a>
         </div>
