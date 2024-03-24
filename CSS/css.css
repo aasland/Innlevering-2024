@@ -1379,6 +1379,10 @@ html {
     justify-content: space-around;
   }
 
+  .hero p {
+    line-height: 37px;
+  }
+
   header {
     grid-template-columns: 1fr 1fr 1fr;
     height: 80px;
@@ -1422,6 +1426,10 @@ html {
     border: none;
     font-size: 35px;
     cursor: pointer;
+  }
+
+  #ratingBtn {
+    font-size: 13px;
   }
 
   .dropdown-options a {
