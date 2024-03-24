@@ -382,6 +382,9 @@
   .apple {
     height: 180px;
   }
+  .apple h2{
+    font-size: 17px;
+  }
 
   .idTyveri{
     grid-column: 2/4;
@@ -425,6 +428,9 @@
   padding: 6px 0 0;
   font-size: 16px;
 }
+.YouTube p{
+  display: none;
+}
 .idTyveri p{
   font-size: 17px;
   padding: 0 5px 0;
@@ -458,12 +464,54 @@
 .reditArtikkel h2{
   font-size:18px ;
 }
+.btnLogin-popup{
+  display: none;
+}
   }
   @media(max-width:360px){
     .del{
       width: 280px;
     }
-    
+    .meta{
+      height: 230px;
+    }
+    .meta h2{
+      font-size: 20px;
+    }
+    .meta p{
+      text-align: center;
+    }
+    .apple{
+      height: 130px;
+    }
+    .apple img{
+      display: none;
+    }
+    .apple h2{
+      font-size: 15px;
+    }
+    .YouTube h2{
+      font-size: 16px;
+    }
+    .idTyveri h2{
+      font-size: 18px;
+      line-height: 1.3;
+      padding-top: 17px;
+      padding-bottom: 5px;
+    }
+    .idTyveri p{
+      font-size: 15px;
+    }
+    .redit img{
+      display: none;
+    }
+    .redit{
+      height: 160px;
+    }
+    .redit h2{
+      padding-top: 17px;
+      font-size: 19px;
+    }
   }
   
 
