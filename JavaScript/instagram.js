@@ -89,37 +89,25 @@ userComment.addEventListener("keydown", (e) => {
 //endrer tommel opp og end knapp
 
 function addListenersToThumbs() {
-    let up = document.getElementById("up")
-    let upTrykket = document.getElementById("up-trykket")
-    let ned = document.getElementById("ned")
-    let nedTrykket = document.getElementById("ned-trykket")
 
-   up.onclick = function endre(){
-      up.style.display = "none"
-     upTrykket.style.display = "block"
-    }
+  const up = document.getElementById("up");
+  const upTrykket = document.getElementById("up-trykket");
+  const ned = document.getElementById("ned");
+  const nedTrykket = document.getElementById("ned-trykket");
 
-  ned.onclick = function bytte(){
-    ned.style.display = "none"
-    nedTrykket.style.display = "block"
+  function upButtonClicked() {
+      up.style.display = "none";
+      upTrykket.style.display = "block";
   }
 
+  function nedButtonClicked() {
+      ned.style.display = "none";
+      nedTrykket.style.display = "block";
+  }
+
+  up.onclick = upButtonClicked;
+  ned.onclick = nedButtonClicked;
 }
 
- /* allThumbsUp = document.querySelectorAll(".fa-thumbs-up");
-  for (thumbsUp of allThumbsUp) {
-    thumbsUp.addEventListener("click", function (evt) {
-      console.log("Tommel OPP trykket");
-      const tommel = evt.target;
-      console.log(tommel);
-    });
-  }
+addListenersToThumbs();
 
-  allThumbsDown = document.querySelectorAll(".fa-thumbs-down");
-  for (thumbsDown of allThumbsDown) {
-    thumbsDown.addEventListener("click", function (evt) {
-      console.log("Tommel ned trykket");
-      const tommel = evt.target;
-      console.log(tommel);
-    });
-  }*/
