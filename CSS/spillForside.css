@@ -1,5 +1,5 @@
 .spillForside{
-    height: 100vh;
+    padding-bottom: 200px;
 }
 
 .spillOverskrift {
@@ -10,11 +10,11 @@
 }
 
 .spillHer {
-    margin-top: 50px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
     align-items: center;
-    justify-content: space-evenly;
 }
 
 .spill1 {

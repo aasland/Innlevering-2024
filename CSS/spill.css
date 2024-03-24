@@ -2,8 +2,8 @@
   width: 900px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 150px;
-  padding-bottom: 50px;
+  padding-top: 160px;
+  padding-bottom: 35px;
   margin: 0 auto 0;
 }
 
@@ -213,7 +213,7 @@
   border-radius: 15px;
 }
 #startSpill:hover{
-  background-color: var(--red-light);
+  background-color: var(--red-li);
   transition: 0.3s;
 }
 
@@ -268,7 +268,7 @@
   cursor: pointer;
   border: none;
   outline: none;
-  border-radius:15px;
+  border-radius:20px;
   margin-top: 22px;
   padding: 8px 18px 8px;
   background-color: var(--white);
