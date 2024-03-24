@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KLIKKEN | Hjem</title>
+    <title>KLIKKEN | Spill</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -61,104 +61,20 @@
       </div>
     </header>
 
-    <section id="loginSection">
-      <div class="wrapper">
-        <span class="icon-close"
-          ><ion-icon name="close-outline"></ion-icon
-        ></span>
-        <div class="form-box login">
-          <h2>Login</h2>
-          <form action="#">
-            <div class="input-box">
-              <span class="icon"><ion-icon name="mail"></ion-icon></span>
-              <input type="email" required /> <label>Email</label>
-            </div>
-
-            <div class="input-box">
-              <span class="icon">
-                <ion-icon name="lock-closed"></ion-icon>
-              </span>
-              <input type="password" required />
-              <label>Password</label>
-            </div>
-
-            <div class="remember-forgot">
-              <label><input type="checkbox" /> Remember me</label>
-              <a href="#">Forgot Password?</a>
-            </div>
-
-            <button
-              type="submit"
-              class="btn"
-              onclick="switchLoginString(), PressCount()"
-            >
-              Login
-            </button>
-
-            <div class="login-register">
-              <p>
-                Don't have an account?
-                <a href="#" class="register-link">Register</a>
-              </p>
-            </div>
-          </form>
-        </div>
-
-        <div class="form-box register">
-          <h2>Registration</h2>
-          <form action="#">
-            <div class="input-box">
-              <span class="icon"><ion-icon name="person"></ion-icon></span>
-              <input type="text" required /> <label>Username</label>
-            </div>
-
-            <div class="input-box">
-              <span class="icon"><ion-icon name="mail"></ion-icon></span>
-              <input type="email" required /> <label>Email</label>
-            </div>
-
-            <div class="input-box">
-              <span class="icon">
-                <ion-icon name="lock-closed"></ion-icon>
-              </span>
-              <input type="password" required />
-              <label>Password</label>
-            </div>
-
-            <div class="remember-forgot">
-              <label
-                ><input type="checkbox" /> I agree to the terms &
-                conditions</label
-              >
-            </div>
-
-            <button type="submit" class="btn">Register</button>
-
-            <div class="login-register">
-              <p>
-                Already have an account?
-                <a href="#" class="login-link">Login</a>
-              </p>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-
     <section>
       <div class="del">
         <div class="intro">
           <div class="instuksjoner">
             <button id="lukkKnapp">&times;</button>
-            <h1>hvordan du spiller</h1>
-            <h2>klarer du å finne den falske nyheten?</h2>
+            <h1>Slik spiller du</h1>
             <p>
-              disse nyhetsforsidene er det gjemt en falsk nyhet. ved å trykke på
-              nyhetsaken du tror er falsk vinner du spillet. du har to liv
-              ellers game over og spill igjen ingenting om du vinner annet en
-              kunskap
+              Blant disse nyhetsforsidene er det gjemt en falsk nyhet. Ved å
+              trykke på nyhetsaken som er falsk vinner du spillet. Men les og
+              tenk nøye før du velger, fordi du har kun to forsøk. om du ikke
+              finner riktig artikkel taper du spillet
             </p>
-            <button id="startSpill">spill</button>
+            <h2>Klarer du å finne den falske nyheten?</h2>
+            <button id="startSpill">Spill</button>
           </div>
           <div class="dusBakgrunn"></div>
         </div>
@@ -174,79 +90,92 @@
         </div>
 
         <div class="toArtikler">
-          <div class="idTyveri">
-            <div class="kort riktig">
+          <div class="apple">
+            <div class="kort feil">
               <div class="fjes front">
-                <img
-                  class="idTyveriBilde"
-                  src="bilder/id-tyveri-kopi.jpg"
-                  alt=""
-                />
-                <p>
-                  Tyveri skjer oftest i forbindelse med <br />
-                  netthandel og i sosiale medier.
-                </p>
-                <h2>43.000 nordmenn har opplevd ID-tyveri</h2>
+                <img src="bilder/apple.jpg" alt="" />
+
+                <h2>
+                  USA saksøker Apple for å ha skapt et smarttelefon-monopol
+                </h2>
               </div>
-              <div class="fjes bak">
-                <div><h2>Fake News</h2></div>
+            </div>
+          </div>
+
+          <div class="YouTube">
+            <div class="kort feil">
+              <div class="fjes front">
+                <h2>YouTube krever at du opplyser om AI-generert innhold</h2>
+                <p>Men kun hvis det kan fremstå ekte.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="idTyveri">
+          <div class="kort riktig">
+            <div class="fjes front">
+              <img
+                class="idTyveriBilde"
+                src="bilder/id-tyveri-kopi.jpg"
+                alt=""
+              />
+              <h2>I år har 43.000 nordmenn opplevd ID-tyveri</h2>
+              <p>
+                Tyveri skjer oftest i forbindelse med <br />
+                netthandel og i sosiale medier.
+              </p>
+            </div>
+            <div class="fjes bak">
+              <div>
+                <h2>Fake News</h2>
+              </div>
+              <div>
+                <p>
+                  i 2020 og 2021 opplevde <b>150.000</b> nordmenn
+                  identitestyveri
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="redit">
+          <div class="kort feil">
+            <div class="fjes front">
+              <div class="reditArtikkel">
                 <div>
+                  <img class="reditBilde" src="bilder/redit.jpg" alt="" />
+                </div>
+                <div>
+                  <h2>Reddit planlegger børsnotering</h2>
                   <p>
-                    i 2020 og 2021 opplevde <b>150.000</b> nordmenn
-                    identitestyveri
+                    Reddit-grunnlegger og toppsjef Steve Huffman varsler planer
+                    om børsnotering av nettsamfunnet på New York-børsen.
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div class="hus">
-            <div class="kort feil">
-              <div class="fjes front">
-                <img src="bilder/meta.jpg" alt="" />
-                <p>Katt- og mus-lek med europeiske myndigheter.</p>
-                <h2>Forbrukerrådet klager inn Meta</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bil">
-          <div class="kort feil">
-            <div class="fjes front">
-              <img class="metaBilde" src="bilder/meta-kopi.jpg" alt="" />
-              <h2>Forbrukerrådet klager inn Meta</h2>
-              <p>Katt- og mus-lek med europeiske myndigheter.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="båt">
-          <div class="kort feil">
-            <div class="fjes front">
-              <h2>Forbrukerrådet klager inn Meta</h2>
-              <p>Katt- og mus-lek med europeiske myndigheter.</p>
             </div>
           </div>
         </div>
       </div>
 
       <div class="gameOver">
-        <a href="spillForside.html"><button id="lukkKnapp">&times;</button></a>
+        <a href="spillForside.html"><button id="lukkKnappGO">&times;</button></a>
 
         <div>
           <h1>game over</h1>
           <p>du hadde nok blitt lurt</p>
         </div>
-        <a href="spill.html"> <button id="spillIgjen">prøv igjen</button></a>
+        <a href="spill.html"> <button id="spillIgjen">Prøv igjen</button></a>
       </div>
     </section>
 
     <footer id="footer">
-      <a href="#" id="backToTopButton"><ion-icon name="arrow-up"></ion-icon></a>
-
       <div class="tipsOssFooter">
-        <div><h2>Tips oss her:</h2></div>
+        <div>
+          <h2>Tips oss her:</h2>
+        </div>
         <div id="mail">
           <i class="fa-regular fa-envelope"></i> sofiekva@viken.no
         </div>

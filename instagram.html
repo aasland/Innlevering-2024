@@ -19,28 +19,30 @@
       <div class="divSectionHeader"><a href="index.html">KLIKKEN</a></div>
     </div>
     <div class="divContainer2">
-      <div class="divSectionLogin">
-        <button class="btnLogin-popup">
-          <i class="fa-solid fa-circle-user"></i> Logg inn
-        </button>
-      </div>
+      <!-- <div class="divSectionLogin">
+          <button class="btnLogin-popup">
+            <i class="fa-solid fa-circle-user"></i> Logg inn
+          </button>
+        </div>-->
     </div>
     <div class="divContainer3">
       <div class="divSectionOne">
-        <a href="contact.html">Kontakt oss</a>
+        <a href="personvern.html">Personvern</a>
       </div>
     </div>
     <div class="divContainer4">
-      <div class="divSectionTwo"><a href="omOss.html">Om oss</a></div>
+      <div class="divSectionTwo">
+        <a href="paidToSeeMorePage.html">Fake news</a>
+      </div>
     </div>
     <div class="divContainer5">
       <div class="divSectionThree">
-        <a href="personvern.html">Les mer om personvern</a>
+        <a href="omOss.html">Om oss</a>
       </div>
     </div>
     <div class="divContainer6">
       <div class="divSectionFour">
-        <a href="instagram.html">Instagram</a>
+        <a href="contact.html">Kontakt oss</a>
       </div>
     </div>
 
@@ -48,90 +50,100 @@
       <div class="dropdown">
         <button><ion-icon name="menu"></ion-icon></button>
         <div class="dropdown-options">
+          <a href="paidToSeeMorePage.html">Fake news</a>
+          <a href="personvern.html">Personvern</a>
           <a href="instagram.html">Instagram</a>
-          <a href="personvern.html">Les mer om personvern</a>
+          <a href="spillForside.html">Spill</a>
           <a href="omOss.html">Om oss</a>
           <a href="contact.html">Kontakt oss</a>
-          <a href="spillForside.html">Spill</a>
         </div>
       </div>
     </div>
   </header>
-  <section id="loginSection">
-    <div class="wrapper">
-      <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
-      <div class="form-box login">
-        <h2>Login</h2>
-        <form action="#">
-          <div class="input-box">
-            <span class="icon"><ion-icon name="mail"></ion-icon></span>
-            <input type="email" required /> <label>Email</label>
-          </div>
 
-          <div class="input-box">
-            <span class="icon">
-              <ion-icon name="lock-closed"></ion-icon>
-            </span>
-            <input type="password" required />
-            <label>Password</label>
-          </div>
+  <!-- <section id="loginSection">
+      <div class="wrapper">
+        <span class="icon-close"
+          ><ion-icon name="close-outline"></ion-icon
+        ></span>
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required /> <label>Email</label>
+            </div>
 
-          <div class="remember-forgot">
-            <label><input type="checkbox" /> Remember me</label>
-            <a href="#">Forgot Password?</a>
-          </div>
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="lock-closed"></ion-icon>
+              </span>
+              <input type="password" required />
+              <label>Password</label>
+            </div>
 
-          <button type="submit" class="btn" onclick="switchLoginString(), PressCount()">
-            Login
-          </button>
+            <div class="remember-forgot">
+              <label><input type="checkbox" /> Remember me</label>
+              <a href="#">Forgot Password?</a>
+            </div>
 
-          <div class="login-register">
-            <p>
-              Don't have an account?
-              <a href="#" class="register-link">Register</a>
-            </p>
-          </div>
-        </form>
+            <button
+              type="submit"
+              class="btn"
+              onclick="switchLoginString(), PressCount()"
+            >
+              Login
+            </button>
+
+            <div class="login-register">
+              <p>
+                Don't have an account?
+                <a href="#" class="register-link">Register</a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-box register">
+          <h2>Registration</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="person"></ion-icon></span>
+              <input type="text" required /> <label>Username</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required /> <label>Email</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="lock-closed"></ion-icon>
+              </span>
+              <input type="password" required />
+              <label>Password</label>
+            </div>
+
+            <div class="remember-forgot">
+              <label
+                ><input type="checkbox" /> I agree to the terms &
+                conditions</label
+              >
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+
+            <div class="login-register">
+              <p>
+                Already have an account?
+                <a href="#" class="login-link">Login</a>
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
-
-      <div class="form-box register">
-        <h2>Registration</h2>
-        <form action="#">
-          <div class="input-box">
-            <span class="icon"><ion-icon name="person"></ion-icon></span>
-            <input type="text" required /> <label>Username</label>
-          </div>
-
-          <div class="input-box">
-            <span class="icon"><ion-icon name="mail"></ion-icon></span>
-            <input type="email" required /> <label>Email</label>
-          </div>
-
-          <div class="input-box">
-            <span class="icon">
-              <ion-icon name="lock-closed"></ion-icon>
-            </span>
-            <input type="password" required />
-            <label>Password</label>
-          </div>
-
-          <div class="remember-forgot">
-            <label><input type="checkbox" /> I agree to the terms &
-              conditions</label>
-          </div>
-
-          <button type="submit" class="btn">Register</button>
-
-          <div class="login-register">
-            <p>
-              Already have an account?
-              <a href="#" class="login-link">Login</a>
-            </p>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
+    </section>-->
 
   <main class="body-insta">
     <h1 id="h1-insta">Klikk på bildet for å lese mer!</h1>
@@ -173,31 +185,43 @@
         <button data-close-button class="close-button">&times;</button>
       </div>
       <div class="modal-body">
-        <p>Falske nyeheter er ikke noe nytt, sier Petter Bae Brandzæg, professor på UiO. Han fortsetter med å fortelle
-          at en falsk nyhet som spres i USA, kan være i norge noen få sekunder etterpå. Med hastigheten på
-          internett, går alt veldig fort. Det var først etter Donald Trump entret den politiske scenen i USA i 2016
-          at vi fikk begrepe om falske nyheter slik vi kjenner det i dag.
-          <br>
-          <br>
-          Falske nyheter er blant annet artikler fra useriøse nettsider, kommentarer eller tvitring fra falske kontoer.
-          Problemet er når dette innholdet deles videre helt ukritisk. Det kan være vanskelig å avsløre avsenderen.
-          Målet er å skape kaos. Brandtzæg forteller at motivasjonen
-          til avsenderen ofte er økonomisk vinning gjennom annonseinntekter. Andre ganger kan det være politisk vinning
-          bak. Dersom det er noe som fanger interessen din på internett, burde du garsnek det kritisk. 
-          <br>
-          <br>
-          Sosiale medie plattformer oplever ofte spedning av falske nyheter. Plattformene får kritikk, fordi de er 
-          designed slik at det mest outrerte innholdet, er det som går best. Facebook har i utgangspunktet ingen 
-          redaktør, og skylder dermed på at de bare er en plattform. Twitter har derimot gjort endringer. Spesielt
-          etter tvitringen fra Donald Trump om oppfordring til vold.
-          <br>
-          <br>
-          Norge er nok mindre utsatt for påvirkning, men vi er ikke unntatt. Folket i Norge er aktive på sosiale 
-          medier, men siden vi er et lite land, blir mye raskt avslørt. Men problemet er at vi blir lurt på stadig 
-          mer sofistikerte måter. Det er lettere å manipulere innhold. Det er lett å la seg lure.
-          <br>
-          <br>
-          Les hele artikkelen <a href="https://www.forskning.no/journalistikk-partner-podcast/fake-news-du-blir-lurt-pa-stadig-mer-sofistikerte-mater/1736253" class="a-modal">her</a>.
+        <p>
+          Falske nyeheter er ikke noe nytt, sier Petter Bae Brandzæg,
+          professor på UiO. Han fortsetter med å fortelle at en falsk nyhet
+          som spres i USA, kan være i norge noen få sekunder etterpå. Med
+          hastigheten på internett, går alt veldig fort. Det var først etter
+          Donald Trump entret den politiske scenen i USA i 2016 at vi fikk
+          begrepe om falske nyheter slik vi kjenner det i dag.
+          <br />
+          <br />
+          Falske nyheter er blant annet artikler fra useriøse nettsider,
+          kommentarer eller tvitring fra falske kontoer. Problemet er når
+          dette innholdet deles videre helt ukritisk. Det kan være vanskelig å
+          avsløre avsenderen. Målet er å skape kaos. Brandtzæg forteller at
+          motivasjonen til avsenderen ofte er økonomisk vinning gjennom
+          annonseinntekter. Andre ganger kan det være politisk vinning bak.
+          Dersom det er noe som fanger interessen din på internett, burde du
+          garsnek det kritisk.
+          <br />
+          <br />
+          Sosiale medie plattformer oplever ofte spedning av falske nyheter.
+          Plattformene får kritikk, fordi de er designed slik at det mest
+          outrerte innholdet, er det som går best. Facebook har i
+          utgangspunktet ingen redaktør, og skylder dermed på at de bare er en
+          plattform. Twitter har derimot gjort endringer. Spesielt etter
+          tvitringen fra Donald Trump om oppfordring til vold.
+          <br />
+          <br />
+          Norge er nok mindre utsatt for påvirkning, men vi er ikke unntatt.
+          Folket i Norge er aktive på sosiale medier, men siden vi er et lite
+          land, blir mye raskt avslørt. Men problemet er at vi blir lurt på
+          stadig mer sofistikerte måter. Det er lettere å manipulere innhold.
+          Det er lett å la seg lure.
+          <br />
+          <br />
+          Les hele artikkelen
+          <a href="https://www.forskning.no/journalistikk-partner-podcast/fake-news-du-blir-lurt-pa-stadig-mer-sofistikerte-mater/1736253"
+            class="a-modal">her</a>.
         </p>
       </div>
     </div>
@@ -205,29 +229,92 @@
 
     <div class="modal" id="modal2">
       <div class="modal-header">
-        <h1 class="title">Den teknologsike medierevolusjonen gjør at falske nyeheter kan spres raskt og målrettet</h1>
+        <h1 class="title">
+          Den teknologsike medierevolusjonen gjør at falske nyeheter kan spres
+          raskt og målrettet
+        </h1>
         <button data-close-button class="close-button">&times;</button>
       </div>
       <div class="modal-body">
-        En studie fra 2018 i Science viste at falske nyheter sppres seks ganger raskere enn sanne nyheter. Årsaken er trolig
-        bruken av algoritmer på sosiale plattformer. Et dataprogram ser da etter innhold som skaper engasjement, for deretter 
-        å løfte frem og promotere dette innholdet til enda flere brukere. Problemet er at denne algoritmen ikke greier å 
-        skille mellom godt eller dårlig innhold, og kan dermed promotere falske nyheter. Dette har skjedd på Facebook, også 
-        under valgkamper og innhold knyttet til dette. Det handler nok i stor grad også om psykologi. 
+        <p>
+        En studie fra 2018 i Science viste at falske nyheter spres seks ganger
+        raskere enn sanne nyheter. Årsaken er trolig bruken av algoritmer på
+        sosiale plattformer. Et dataprogram ser da etter innhold som skaper
+        engasjement, for deretter å løfte frem og promotere dette innholdet
+        til enda flere brukere. Problemet er at denne algoritmen ikke greier å
+        skille mellom godt eller dårlig innhold, og kan dermed promotere
+        falske nyheter. Dette har skjedd på Facebook, også under valgkamper og
+        innhold knyttet til dette. Det handler nok i stor grad også om
+        psykologi. Falske nyeheter appelerer til følelser og de sier ofte noe
+        nytt og annet, noe som gjør at vi vil dele.
+        <br />
+        <br />
+        unge i dag burde lære mer om kildekritikk og teknologi. Uvitenhet er
+        den største trusselen. Vi blir utsatt for mye informasjon som
+        mennesket ikke er i stand til å sortere. Nå kan hvem som helst
+        publisere på plattformene. Dersom de som legger ut, har mange venner
+        som igjen har mange venner, spres innlegg som ild i tørt gress i hele
+        verden.
+        <br />
+        <br />
+        Dette blir en trussel for demokratiet, og for den faktabaserte
+        forskningen i sin søken etter sannhet. Å være kritisk til kilder er
+        uhyre viktig. Her ser forskning til og med at de fleste over 60 år i
+        Norge, ikke greier å skille mellom en ekte eller falsk nyhet. Det er
+        nødvendig med et krafttak.
+        <br />
+        <br />
+        Les hele artikkelen
+        <a href="https://www.tekna.no/magasinet/falske-nyheter---en-trussel-mot-vitenskapen/" class="a-modal">her</a>.
+        </p>
       </div>
     </div>
     <div id="overlay" class="active"></div>
 
     <div class="modal" id="modal3">
       <div class="modal-header">
-        <h1 class="title">Example Modal</h1>
+        <h1 class="title">Falske nyheter og valgpåvirkning - noe som kan skje med oss?</h1>
         <button data-close-button class="close-button">&times;</button>
       </div>
-      <div class="modal-body">hei</div>
+      <div class="modal-body">
+        <p>
+        Norge er et land med solide demokratiske tradisjoner og spilleregler
+        for valg. Men nå ser vi mørke skyer i horisonten. Når det nærmer seg
+        valgkamper, finpusses alltid partier sine partiprogram og nominerte kandidater
+        Forsøkene på å påvirke flere lands valgkamper, ikke minst den forrige amerikanske valgkampen,
+        har skapt frykt for at det samme skal skje her. I Norge opplever vi også etablering
+        av falske brukere på sosiale medier for å spre usanne nyheter, innbrudd i IT-system til partier og Storting,
+        kartlegging av offentlige personer, og utpressingsforsøk.
+        <br>
+        <br>
+        Internett og sosiale medier er fantastiske verktøy for sosial interaksjon,
+        men også et farlig instrument i hendene på destruktive krefter. Samling av data om
+        enkeltpersoner og direkte påvirkning gjennom spesielt sosiale medier har økt.
+        Planting av falske opplysninger, konstruerte bilder og videoer for å sverte og drive utpressing av
+        for eksempel partiers kandidater kan være neste fase. Falske opplysninger kan videre
+        blandes med faktiske for å øke troverdigheten og gjør det enda vanskeligere å motbevise.
+        <br>
+        <br>
+        Hvordan skal vi stå i mot diss formene for påvirkning? I Norge har vi en høy politsik
+        tillit og valgsystemet er meget robust. Vårt samfunn regnes for å være et åpent samfunn med høy grad av tillit
+        til hverandre og med en godt skolert befolkning med liten tro på konspirasjonsteorier. Samtidig viser en nylig
+        rapport at Norge har opplevd en liten nedgang i den politiske tilliten, og at konspirasjonsteorier brer om seg,
+        blant annet i ulike ungdomsmiljø.
+        <br>
+        <br>
+        Les hele artikkelen
+        <a href="https://www.nationen.no/falske-nyheter-og-valgpavirkning-noe-som-kan-skje-hos-oss/o/5-148-193818" class="a-modal">her</a>.
+        </p>
+      </div>
     </div>
     <div id="overlay" class="active"></div>
 
     <div id="kommentarfelt" class="container-kmt">
+      <div class="engagements">
+        <i class="fa-regular fa-thumbs-up"></i>
+        <i class="fa-solid fa-thumbs-up"></i>
+      </div>
+
       <div class="head">
         <h1>Del din mening</h1>
       </div>
@@ -269,11 +356,23 @@
 
       <div id="kilder" style="display: none">
         <p>
-          forskning.no (2023, 26. juli). <i>Du blir lurt på stadig mer sofistikerte måter</i>
+          forskning.no. (2023, 26. juli).
+          <i>Du blir lurt på stadig mer sofistikerte måter</i>
           <a
-            href="https://www.forskning.no/journalistikk-partner-podcast/fake-news-du-blir-lurt-pa-stadig-mer-sofistikerte-mater/1736253"
-            >https://www.forskning.no/journalistikk-partner-podcast/fake-news-du-blir-lurt-pa-stadig-mer-sofistikerte-mater/1736253</a
-          >
+            href="https://www.forskning.no/journalistikk-partner-podcast/fake-news-du-blir-lurt-pa-stadig-mer-sofistikerte-mater/1736253">https://www.forskning.no/journalistikk-partner-podcast/fake-news-du-blir-lurt-pa-stadig-mer-sofistikerte-mater/1736253</a>
+        </p>
+
+        <p>
+          Tekna. (2022, 2. juni).
+          <i>Falske nyheter - en trussel mot vitenskapen og demokratiet</i>
+          <a
+            href="https://www.tekna.no/magasinet/falske-nyheter---en-trussel-mot-vitenskapen/">https://www.tekna.no/magasinet/falske-nyheter---en-trussel-mot-vitenskapen/</a>
+        </p>
+        <p>
+          Nationen (2020, 12. oktober).
+          <i>Falske nyheter og valgpåvirkning - noe som kan skje med oss?</i>
+          <a
+            href="https://www.nationen.no/falske-nyheter-og-valgpavirkning-noe-som-kan-skje-hos-oss/o/5-148-193818">https://www.nationen.no/falske-nyheter-og-valgpavirkning-noe-som-kan-skje-hos-oss/o/5-148-193818</a>
         </p>
       </div>
     </div>
@@ -312,7 +411,7 @@
 
   <script src="JavaScript/instagram.js"></script>
   <!-- <script src="JavaScript/nightMode.js"></script>-->
-  <script src="JavaScript/loginBtn.js"></script>
+  <!-- <script src="JavaScript/loginBtn.js"></script>-->
   <script src="JavaScript/insta-modal.js"></script>
   <script src="JavaScript/kilder.js"></script>
 

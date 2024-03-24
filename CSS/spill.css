@@ -2,7 +2,7 @@
   width: 900px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 175px;
+  padding-top: 160px;
   padding-bottom: 35px;
   margin: 0 auto 0;
 }
@@ -51,16 +51,16 @@
   margin: 5px;
   height: 350px;
 }
-
 .metaBilde {
   width: 100%;
 }
-
 .meta p {
   margin: 0 auto 6px;
+  font-size: 18px;
 }
-
 .meta h2 {
+  padding-top: 15px;
+  font-size: 30px;
   margin: 3px;
 }
 
@@ -69,22 +69,54 @@
   display: flex;
   flex-direction: column;
 }
-
-.idTyveri {
-  height: 225px;
+.apple {
+  height: 240px;
   margin: 5px;
 }
-
-.idTyveri p {
+.apple p {
   font-size: 15px;
 }
-
-.idTyveri h2 {
+.apple h2 {
+  padding-top: 12px;
   text-align: center;
   font-size: 20px;
+  line-height: 1.4;
+}
+.apple img {
+  width: 100%;
 }
 
-.idTyveriBilde {
+.YouTube {
+  height: 100px;
+  margin: 5px;
+}
+.YouTube h2{
+  padding: 10px 2px 0;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.YouTube p{
+  padding-top: 8px;
+}
+
+
+.idTyveri{
+  grid-column: 1/2;
+  margin: 5px;
+}
+.idTyveri h2{
+  text-align: center;
+  padding: 9px 3px 0;
+  font-size: 20px;
+  line-height: 1.2;
+
+}
+.idTyveri p{
+  text-align: center;
+  padding-top: 10px;
+}
+.idTyveri img{
   width: 100%;
 }
 
@@ -93,25 +125,29 @@
   padding: 10px 30px 10px ;
 }
 
-.hus {
-  height: 115px;
-  margin: 5px;
-}
-
-.bil {
-  grid-column: 1/2;
-  height: 200px;
-  margin: 5px;
-}
-
-.båt {
+.redit {
   grid-column: 2/4;
-  height: 200px;
+  height: 250px;
   margin: 5px;
 }
-
-.kort.snudd {
-  transform: rotateY(180deg);
+.reditArtikkel{
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+}
+.reditBilde{
+  width: 200px;
+}
+.reditArtikkel h2{
+  padding-top: 35px;
+  text-align: center;
+  font-size: 27px;
+}
+.reditArtikkel p{
+  font-size: 21px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 10px 10px 0;
 }
 
 .intro .instuksjoner {
@@ -119,6 +155,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
+  transition: 350ms ease-in-out;
   z-index: 9;
   background-color: var(--white);
   padding: 30px;
@@ -134,7 +171,7 @@
 
 #lukkKnapp {
   position: fixed;
-  right: 30px;
+  right: 40px;
   cursor: pointer;
   border: none;
   outline: none;
@@ -155,7 +192,7 @@
 .intro h1 {
   text-align: center;
   font-size: 25px;
-  padding: 40px 0 10px;
+  padding: 35px 0 10px;
 }
 .intro h2{
   font-size: 20px;
@@ -164,7 +201,7 @@
 }
 #startSpill{
   position: fixed;
-  right: 215px;
+  right: 41%;
   text-align: center;
   cursor: pointer;
   border: none;
@@ -174,7 +211,10 @@
   font-size: 25px;
   padding: 8px 18px 8px;
   border-radius: 15px;
-  margin-top: 14px;
+}
+#startSpill:hover{
+  background-color: var(--red-light);
+  transition: 0.3s;
 }
 
 .intro .dusBakgrunn {
@@ -217,20 +257,46 @@
 .gameOver h1{
   text-align: center;
   font-size: 40px;
-  padding: 10px 0 5px;
+  padding: 10px 0 15px;
 }
 .gameOver p{
   text-align: center;
   font-size: 30px;
+  line-height: 1.3;
 }
 #spillIgjen{
   cursor: pointer;
   border: none;
   outline: none;
   border-radius:20px;
-  margin-top: 20px;
+  margin-top: 22px;
   padding: 8px 18px 8px;
+  background-color: var(--white);
+  font-size: 20px;
+}
+#spillIgjen:hover{
+  background-color: var(--dark-white);
+  transition: 0.4s;
 
+}
+
+#lukkKnappGO {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 25px;
+  font-weight: 400;
+}
+#lukkKnappGO:hover{
+  color: rgb(122, 120, 120);
+}
+
+.kort.snudd {
+  transform: rotateY(180deg);
 }
 .shake {
   animation: shake 0.5s ease-in-out;
@@ -257,3 +323,149 @@
     transform: translateX(0);
   }
 }
+
+@media (max-width:890px){
+.del{
+  width: 700px;
+}
+.meta h2{
+  padding: 20px;
+}
+
+.apple {
+  height: 200px;
+}
+.apple h2{
+  padding-top: 10px;
+  font-size: 18px;
+  line-height: 1.3;
+}
+.idTyveri h2{
+  font-size: 19px;
+}
+.reditArtikkel p{
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 10px 10px 0;
+}
+.YouTube {
+  height: 140px;
+}
+.YouTube p{
+  margin: 0 15px 0;
+  text-align: center;
+}
+.reditArtikkel h2{
+  padding-top: 25px;
+  font-size: 22px;
+  line-height: 1.3;
+}
+}
+@media (max-width:700px){
+  .del{
+    padding-top: 120px;
+    width: 550px;
+  }
+  .meta {
+    grid-column: 1/4;
+    height: 320px;
+  }
+
+.meta h2{
+  padding: 10px 0 8px;
+}
+  
+  .toArtikler {
+    grid-column: 1/2;
+  }
+
+  .apple {
+    height: 180px;
+  }
+
+  .idTyveri{
+    grid-column: 2/4;
+  }
+  .idTyveri h2{
+    padding: 25px 5px 12px;
+    font-size: 22px;
+  }
+  .idTyveri p{
+    line-height: 1.6;
+  }
+  
+  .redit {
+    grid-column: 1/4;
+  }
+  .redit h2{
+    padding-top:35px ;
+  }
+  .redit p{
+    padding-top:25px ;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width:550px){
+
+.intro .instuksjoner {
+  height: 400px;
+}
+.del{
+  width: 400px;                                                                                                                                
+}
+.meta{
+  height: 250px;
+}
+.meta h2{
+  font-size: 25px;
+  padding-bottom: 0;
+}
+.apple h2{
+  padding: 6px 0 0;
+  font-size: 16px;
+}
+.idTyveri p{
+  font-size: 17px;
+  padding: 0 5px 0;
+}
+.reditArtikkel h2{
+  padding-top: 10px;
+}
+.reditArtikkel p{
+  padding: 10px 2px 0;
+  font-size: 16px;
+}
+}
+
+@media (max-width:500px){
+  .intro .instuksjoner {
+    height: 500px;
+    padding: 10px 20px 20px;
+  }
+  }
+
+@media (max-width:400px){
+  .intro .instuksjoner {
+    height: 600px;
+  }
+#startSpill{
+  right: 37%;
+}
+.del{
+  width: 360px;
+}
+.reditArtikkel h2{
+  font-size:18px ;
+}
+  }
+  @media(max-width:360px){
+    .del{
+      width: 280px;
+    }
+    
+  }
+  
+
+
+
