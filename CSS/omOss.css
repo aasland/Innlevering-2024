@@ -63,3 +63,16 @@
   margin-top: 20px;
   box-shadow: 0px 4px 10px lightgray;
 }
+
+
+@media (max-width: 775px) {
+    .divOmOss img {
+        height: 200px;
+      }
+}
+
+@media (max-width: 500px) {
+    .divOmOss img {
+        height: 100px;
+      }
+}
