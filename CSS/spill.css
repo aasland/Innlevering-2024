@@ -439,31 +439,33 @@
 }
 
 @media (max-width:500px){
-
   .intro .instuksjoner {
     height: 500px;
     padding: 10px 20px 20px;
   }
-  
   }
 
 @media (max-width:400px){
-
   .intro .instuksjoner {
     height: 600px;
   }
 #startSpill{
   right: 37%;
 }
-
+.del{
+  width: 360px;
+}
+.reditArtikkel h2{
+  font-size:18px ;
+}
   }
-  @media (max-width: 280px){
+  @media(max-width:360px){
     .del{
       width: 280px;
     }
-
+    
   }
-
+  
 
 
 
