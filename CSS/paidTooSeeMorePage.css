@@ -165,3 +165,9 @@ label {
     padding: 0 40px 0 40px;
   }
 }
+
+@media (max-width: 550px) {
+  section p {
+    padding: 0 0px 0 0px;
+  }
+}

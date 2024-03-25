@@ -1,64 +1,69 @@
-.spillForside{
-    padding-bottom: 200px;
+.spillForside {
+  padding-bottom: 200px;
 }
 
 .spillOverskrift {
-    padding-top: 170px;
-    font-size: 40px;
-    text-align: center;
-    color: var(--dark-grey);
+  padding-top: 170px;
+  font-size: 40px;
+  text-align: center;
+  color: var(--dark-grey);
 }
 
 .spillHer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-    align-items: center;
-    margin-top: 45px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  margin-top: 45px;
 }
 
 .spill1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--dark-grey);
-    color: var(--white);
-    border-radius: 45px;
-    width: 425px;
-    height: 425px;
-    padding: 0 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-grey);
+  color: var(--white);
+  border-radius: 45px;
+  width: 425px;
+  height: 425px;
+  padding: 0 70px 0;
 }
 
 .spill1 p {
-    text-align: center;
-    font-size: 25px;
-    line-height: 1.4;
+  text-align: center;
+  font-size: 25px;
+  line-height: 1.4;
 }
 
 .spill1 button {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: var(--white);
-    border-radius: 15px;
-    padding: 10px;
-    margin: 30px;
-    font-size: 20px;
-    box-shadow: 1px 1px 8px gray;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: var(--white);
+  border-radius: 15px;
+  padding: 10px;
+  margin: 30px;
+  font-size: 20px;
+  box-shadow: 1px 1px 8px gray;
 }
 
-.spill1 button:hover{
-    background-color: var(--red-light);
-    transition: 0.3s;
+.spill1 button:hover {
+  background-color: var(--red-light);
+  transition: 0.3s;
 }
 
-@media (max-width:460px) {
-    .spill1{
-        width: 300px;
-        height: 300px;
-        padding: 0 30px 0;
-    }
-   
+@media (max-width: 460px) {
+  .spill1 {
+    width: 300px;
+    height: 300px;
+    padding: 0 30px 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  #CookieCatcher {
+    display: none;
+  }
 }
