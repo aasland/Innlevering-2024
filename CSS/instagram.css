@@ -30,4 +30,9 @@
   .container-kmt {
     width: 80%;
   }
+
+  .classKilder {
+    margin-top: 30px;
+    padding: 0 100px 0 100px;
+  }
 }

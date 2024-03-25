@@ -41,7 +41,7 @@ userComment.addEventListener("input", (e) => {
 
 function addPost() {
   console.log("Knappen fungerer");
-  //if (userComment.value) return
+
   userId.name = userName.value;
   if (userId.name === "Anonymous") {
     userId.identity = false;
@@ -86,7 +86,9 @@ userComment.addEventListener("keydown", (e) => {
 
 //endrer tommel opp og ned knapp
 
-function addListenersToThumbs() {
+// Fungerer men kan ikke klikke på dem flere ganger
+
+/*function addListenersToThumbs() {
   const up = document.getElementById("up");
   const upTrykket = document.getElementById("up-trykket");
   const ned = document.getElementById("ned");
@@ -112,8 +114,37 @@ function addListenersToThumbs() {
  /* // Check if an element is shown or not
   function isShown(element) {
       return element.style.display !== 'none';
-  } */
+  } 
 }
 
-addListenersToThumbs()
+addListenersToThumbs()*/
+
+function addListenersToThumbs() {
+  const up = document.getElementById("up")
+  const upTrykket = document.getElementById("up-trykket")
+  const ned = document.getElementById("ned")
+  const nedTrykket = document.getElementById("ned-trykket")
+
+  let upShown = true;
+  let nedShown = true;
+
+  function toggleButton(buttonId) {
+    if (buttonId === "up") {
+      upShown = !upShown;
+      up.style.display = upShown ? "block" : "none";
+      upTrykket.style.display = upShown ? "none" : "block";
+    } else if (buttonId === "ned") {
+      nedShown = !nedShown;
+      ned.style.display = nedShown ? "block" : "none";
+      nedTrykket.style.display = nedShown ? "none" : "block";
+    }
+  }
+
+  up.onclick = () => toggleButton("up")
+  upTrykket.onclick = () => toggleButton("up")
+  ned.onclick = () => toggleButton("ned")
+  nedTrykket.onclick = () => toggleButton("ned")
+}
+
+addListenersToThumbs();
 
